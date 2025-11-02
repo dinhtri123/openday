@@ -21,9 +21,12 @@
   <main>
     <!-- Main Info Section -->
     <section class="main-info">
+      <div class="info-top md">
+        <img src="./images/FPTUOPENDAYTEXT 1 (1).png" alt="">
+      </div>
       <div class="container">
         <div class="info-left">
-          <img src="./images/FPTUOPENDAYTEXT 1.png" class="md" alt="">
+          <img src="./images/Frame 1000006228.png" class="md" alt="">
           <img src="./images/FPTUOPENDAYTEXT-sm.png" class="sm">
         </div>
         <div class="info-content">
@@ -53,9 +56,9 @@
       <!-- Activities Section -->
       <section class="activities">
         <div class="activities-container">
-          <h2>Chuỗi Trải Nghiệm Đáng Nhớ</h2>
+          <h2 class="title-large">Chuỗi Trải Nghiệm Đáng Nhớ</h2>
           <p class="section-subtitle">Tại FPTU Open Day</p>
-          <div class="swiper activity-swiper">
+          <div class="swiper activity-swiper common-swiper">
             <div class="activity-grid swiper-wrapper">
               <div class="activity-card swiper-slide">
                 <div class="activity-image"><img src="./images/activity-img1.png" alt=""></div>
@@ -132,7 +135,7 @@
           <div class="big-decor">
             <img src="./images/info-decor.png" alt="">
           </div>
-          <h2>FPTU Big Open Day 2026</h2>
+          <h2 class="title-large">FPTU Big Open Day 2026</h2>
           <h3>Design Your Global Pathway – Khởi tạo hành trình toàn cầu</h3>
           <p>Sự kiện lớn nhất và duy nhất trong năm – diễn ra đồng loạt trên cả 5 campus toàn quốc.<br>
             Một ngày hội quy tụ hàng chục nghìn học sinh trên toàn quốc, nơi bạn được truyền cảm hứng, kết nối và định
@@ -175,12 +178,12 @@
         <div class="activities-container">
           <div class="campus-top">
             <p class="section-subtitle">Open Day định kỳ</p>
-            <h2>Tại Các Campus</h2>
+            <h2 class="title-large">Tại Các Campus</h2>
             <p>Ngoài Big Open Day, chuỗi Open Day hàng tháng được tổ chức tại từng campus FPTU trên toàn quốc – mang đến
               trải nghiệm cá nhân hóa cho từng khu vực.<br>
               5 Campus, 5 sắc màu trải nghiệm. Chọn Campus gần bạn nhất và đăng ký tham gia ngay!</p>
           </div>
-          <div class="swiper campus-swiper">
+          <div class="swiper campus-swiper common-swiper">
             <div class="activity-grid swiper-wrapper">
               <div class="activity-card swiper-slide">
                 <div class="activity-image"><img src="./images/campus-img1.png" alt=""></div>
@@ -254,7 +257,7 @@
 
       <!-- Schedule Section -->
       <section class="schedule">
-        <h2>Lịch Trình Sự Kiện</h2>
+        <h2 class="title-large">Lịch Trình Sự Kiện</h2>
         <div class="schedule-grid">
           <div class="schedule-item">
             <div class="schedule-item-content">
@@ -506,7 +509,7 @@
       <!-- Discover Section -->
       <section class="discover">
         <div class="discover-content">
-          <h2>Khám Phá Thêm Cùng FPTU</h2>
+          <h2 class="title-large">Khám Phá Thêm Cùng FPTU</h2>
           <p>Khám phá thêm những điều bạn quan tâm – chỉ với một cú click</p>
           <div class="discover-bottom">
             <div class="discover-left">
@@ -671,79 +674,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const createResponsiveSwiper = ({ selector, breakpoint = '(max-width: 767px)', options = {} }) => {
-      const container = document.querySelector(selector);
 
-      if (!container) {
-        return;
-      }
-
-      const mediaQuery = window.matchMedia(breakpoint);
-      let instance = null;
-
-      const mount = () => {
-        if (instance) {
-          return;
-        }
-
-        const nextEl = container.querySelector('.swiper-button-next');
-        const prevEl = container.querySelector('.swiper-button-prev');
-        const paginationEl = container.querySelector('.swiper-pagination');
-
-        const config = {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          ...options,
-        };
-
-        if (nextEl && prevEl) {
-          config.navigation = {
-            nextEl,
-            prevEl,
-          };
-        }
-
-        if (paginationEl) {
-          config.pagination = {
-            el: paginationEl,
-            clickable: true,
-          };
-        }
-
-        instance = new Swiper(container, config);
-      };
-
-      const unmount = () => {
-        if (!instance) {
-          return;
-        }
-
-        instance.destroy(true, true);
-        instance = null;
-      };
-
-      const handle = (event) => {
-        if (event.matches) {
-          mount();
-        } else {
-          unmount();
-        }
-      };
-
-      handle(mediaQuery);
-
-      if (typeof mediaQuery.addEventListener === 'function') {
-        mediaQuery.addEventListener('change', handle);
-      } else if (typeof mediaQuery.addListener === 'function') {
-        mediaQuery.addListener(handle);
-      }
-    };
-
-    createResponsiveSwiper({ selector: '.activity-swiper' });
-    createResponsiveSwiper({ selector: '.campus-swiper' });
-  </script>
   <script src="./index.js"></script>
 </body>
 
