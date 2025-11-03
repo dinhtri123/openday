@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const scheduleItems = document.querySelectorAll(".schedule-item");
-  const scheduleDates = document.querySelectorAll(".schedule-date");
-  scheduleDates.forEach((date) => {
-    date.addEventListener("click", () => {
-      scheduleItems.forEach((item) => {
-        item.classList.remove("active");
+  const mediaQuery = window.matchMedia("(max-width: 767px)");
+  if(mediaQuery.matches) {
+    const scheduleItems = document.querySelectorAll(".schedule-item");
+    const scheduleDates = document.querySelectorAll(".schedule-date");
+    scheduleDates.forEach((date) => {
+      date.addEventListener("click", () => {
+        scheduleItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+        const scheduleItem = date.closest(".schedule-item");
+        scheduleItem.classList.add("active");
       });
-      const scheduleItem = date.closest(".schedule-item");
-      scheduleItem.classList.add("active");
     });
-  });
+  }
 
   // countdowwn
   const countdown = document.querySelector(".countdown");
@@ -120,4 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
   createResponsiveSwiper({ selector: ".exp-swiper" });
   createResponsiveSwiper({ selector: ".explore-swiper" });
   createResponsiveSwiper({ selector: ".openday-swiper" });
+  createResponsiveSwiper({ selector: ".campus-explore-swiper" });
+  createResponsiveSwiper({ selector: ".campus-experience-swiper" });
 });
