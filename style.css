@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +63,35 @@ section:not(.hero) {
 /* Hero Section */
 .hero img {
   width: 100%;
+}
+.hero {
+  position: relative;
+}
+.hero-btn {
+  position: absolute;
+  bottom: 6%;
+  left: 11%;
+  z-index: 10;
+}
+.hero-btn a {
+  padding: 14px 20px;
+  border-radius: 16px;
+  color: #210b0a;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, white 66%, #f37021 113%);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+}
+.hero-btn p {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Main Info Section */
@@ -481,6 +511,7 @@ section.discover {
 }
 
 .discover-item {
+  text-decoration: none;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.95) 0%,
@@ -497,6 +528,7 @@ section.discover {
   gap: 12px;
   align-items: center;
   border-radius: 16px;
+  transition: all 0.3s;
 }
 
 .discover-item > span {
@@ -514,8 +546,11 @@ section.discover {
 .discover-item > div h3 {
   font-size: 20px;
   font-weight: 500;
+  color: var(--cl-text);
 }
-
+.discover-item:hover {
+  transform: translateY(-5px);
+}
 .discover-item > div p {
   color: #757575;
 }
@@ -754,29 +789,30 @@ footer a:hover {
   font-size: 27px;
 }
 
-.big .info-content-inner > * {
+
+.info-content-inner > * {
   margin-bottom: 24px;
   color: black;
 }
 
-.big .info-content-inner > div > p {
+.info-content-inner > div > p {
   margin-bottom: 12px;
 }
 
-.big .info-content-inner ul {
+.info-content-inner ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.big .info-content-inner ul li {
+.info-content-inner ul li {
   display: flex;
   gap: 12px;
   color: #757575;
 }
 
-.big .info-content-inner ul li span:first-child {
+.info-content-inner ul li span:first-child {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -1375,7 +1411,7 @@ footer a:hover {
   grid-template-columns: 1.5fr 1fr;
   gap: 12px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #CBCBCB;
+  border-bottom: 1px solid #cbcbcb;
 }
 .footer-campus .footer-item {
   display: flex;
@@ -1394,6 +1430,19 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1023px) {
+  .hero-btn {
+    bottom: 3%;
+  }
+  .hero-btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 8px;
+  }
+  .hero-btn p {
+    margin-top: 5px;
+    font-size: 12px;
+  }
   section:not(.hero) {
     padding: 40px 0px;
   }
@@ -1435,7 +1484,8 @@ footer a:hover {
     font-size: 22px;
   }
 
-  .schedule .schedule-item > div:not(.schedule-item-content), .schedule-month-item-bottom {
+  .schedule .schedule-item > div:not(.schedule-item-content),
+  .schedule-month-item-bottom {
     display: none;
   }
 
@@ -1511,7 +1561,7 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
   .schedule-month-list {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1754,7 +1804,8 @@ footer a:hover {
     display: none;
   }
 
-  .schedule-item.active .schedule-list, .schedule-item.active .schedule-month-item-bottom {
+  .schedule-item.active .schedule-list,
+  .schedule-item.active .schedule-month-item-bottom {
     display: flex;
   }
 
@@ -2003,7 +2054,8 @@ footer a:hover {
     font-size: 16px;
     padding: 12px 20px;
   }
-  .footer-campus .footer-inner, .schedule-month-list {
+  .footer-campus .footer-inner,
+  .schedule-month-list {
     grid-template-columns: 1fr;
   }
   .schedule-month-item-top h3 {
@@ -2011,7 +2063,7 @@ footer a:hover {
     color: var(--cl-text);
     font-size: 16px;
     padding: 0px;
-    min-height: auto;;
+    min-height: auto;
   }
   .schedule-month-item-top p {
     color: var(--cl-primary);
@@ -2034,7 +2086,7 @@ footer a:hover {
     font-size: 16px;
     padding: 12px 20px;
     line-height: 1;
-    min-height: auto;;
+    min-height: auto;
   }
   .footer-campus * {
     font-size: 14px !important;
@@ -2044,7 +2096,7 @@ footer a:hover {
     padding-bottom: 12px;
     border-bottom: 1px solid #cbcbcb;
   }
-  .footer-campus .footer-top .social-links{
+  .footer-campus .footer-top .social-links {
     gap: 24px;
   }
   .footer-campus .footer-top .social-links a {
@@ -2054,7 +2106,33 @@ footer a:hover {
   .gift-container {
     padding: 24px 16px;
   }
-  .schedule-month-top .title-large, .discover-content h2 {
+  .schedule-month-top .title-large,
+  .discover-content h2 {
     font-size: 24px;
+  }
+  .hero-btn a {
+    font-size: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 6px;
+  }
+  .hero-btn {
+    bottom: 6%;
+  }
+  .info-top {
+    position: relative;
+  }
+  .info-top span:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 90px;
+  }
+  .info-top span:last-child {
+    max-width: 110px;
+    transform: rotate(15deg);
+    position: absolute;
+    bottom: -30px;
+    left: 4px;
   }
 }

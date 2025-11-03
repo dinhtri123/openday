@@ -88,6 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
           clickable: true,
         };
       }
+      if(selector === ".campus-swiper") {
+        config.autoplay = {
+          delay: 1000,
+          disableOnInteraction: false,
+        };
+      }
 
       instance = new Swiper(container, config);
     };
@@ -125,4 +131,49 @@ document.addEventListener("DOMContentLoaded", () => {
   createResponsiveSwiper({ selector: ".openday-swiper" });
   createResponsiveSwiper({ selector: ".campus-explore-swiper" });
   createResponsiveSwiper({ selector: ".campus-experience-swiper" });
+
+  // form
+  const campusSelect = document.querySelector("#campus");
+  const timeSelect = document.querySelector("#time");
+  campusSelect.addEventListener("change", () => {
+    const campus = campusSelect.value;
+    if(campus === "HN") {
+      timeSelect.innerHTML = `
+        <option selected>Chọn thời gian</option>
+        <option value='16/11/2025'>16/11/2025  Đang mở đăng ký</option>
+        <option value='30/11/2025'>30/11/2025  Đang mở đăng ký</option>
+        <option value='18/01/2026'>18/01/2026 Big Open day </option>
+      `;
+    }
+    if(campus === "DN") {
+      timeSelect.innerHTML = `
+        <option selected>Chọn thời gian</option>
+        <option value='6/11/2025'>6/11/2025  Đang mở đăng ký</option>
+        <option value='30/11/2025'>8/11/2025  Đang mở đăng ký</option>
+        <option value='30/11/2025'>30/11/2025 Đang mở đăng ký</option>
+      `;
+    }
+    if(campus === "HCM") {
+      timeSelect.innerHTML = `
+        <option selected>Chọn thời gian</option>
+        <option value='29/11/2025'>29 - 30/11/2025  Đang mở đăng ký</option>
+        <option value='18/01/2026'>18/01/2026 Big Open day </option>
+      `;
+    }
+    if(campus === "CT") {
+      timeSelect.innerHTML = `
+        <option selected>Chọn thời gian</option>
+        <option value='16/11/2025'>16/11/2025  Đang mở đăng ký</option>
+        <option value='30/11/2025'>30/11/2025 Đang mở đăng ký</option>
+        <option value='18/01/2026'>18/01/2026 Big Open day</option>
+      `;
+    }
+    if(campus === "QN") {
+      timeSelect.innerHTML = `
+        <option selected>Chọn thời gian</option>
+        <option value='22/11/2025'>22 - 23/11/2025  Đang mở đăng ký</option>
+        <option value='18/01/2026'>18/01/2026 Big Open day</option>
+      `;
+    }
+  });
 });
