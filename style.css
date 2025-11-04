@@ -302,8 +302,11 @@ section.schedule {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  justify-content: space-between;
 }
-
+.schedule-grid > div > div{
+  flex: 1;
+}
 
 .schedule-date {
   color: var(--cl-primary);
@@ -1294,6 +1297,7 @@ footer a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin-bottom: 0px;
 }
 
 .schedule-month-item-top h3 {
@@ -2158,6 +2162,6 @@ footer a:hover {
     margin-bottom: 20px;
   }
   .schedule-month-top {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 }
