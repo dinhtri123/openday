@@ -2121,22 +2121,34 @@ footer a:hover {
   .discover-content h2 {
     font-size: 24px;
   }
-  .hero-btn a, .hero-campus .hero-btn a {
-    font-size: 10px;
-    padding: 5px 10px;
+  .hero-btn a {
+    font-size: 12px;
+    padding: 8px 20px;
     width: fit-content;
     border-radius: 6px;
   }
-  .hero-btn, .hero-campus .hero-btn {
-    bottom: 6%;
+  .hero-campus .hero-btn a {
+    font-size: 10px;
+    padding: 6px 12px;
+    width: fit-content;
+    border-radius: 6px;
   }
+  .hero-btn {
+    bottom: 35%;
+    left: 9%
+  }
+  .hero-campus .hero-btn {
+    bottom: 7%;
+  }
+  
   .info-top {
     position: relative;
+    margin-bottom: 50px;
   }
   .info-top span:first-child {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
     max-width: 90px;
   }
   .info-top span:last-child {
