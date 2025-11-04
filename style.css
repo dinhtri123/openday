@@ -304,9 +304,6 @@ section.schedule {
   gap: 12px;
 }
 
-.schedule-item > div {
-  flex: 1;
-}
 
 .schedule-date {
   color: var(--cl-primary);
@@ -788,14 +785,9 @@ footer a:hover {
 }
 
 .big .info-top h2 {
-  font-size: 64px;
   margin-bottom: 8px;
 }
 
-.big .info-top p {
-  color: var(--cl-primary);
-  font-size: 27px;
-}
 
 
 .info-content-inner > * {
@@ -1339,7 +1331,6 @@ footer a:hover {
   flex-direction: column;
   gap: 16px;
   flex: 1;
-  justify-content: flex-end;
 }
 
 .schedule-month-item-bottom > div {
@@ -1350,7 +1341,7 @@ footer a:hover {
   font-size: 14px;
 }
 
-.schedule-month-item-bottom > div:nth-child(2n) {
+.schedule-month-item-bottom > div:not(:first-child) {
   padding-top: 16px;
   border-top: 1px solid #e8e8e8;
 }
@@ -1365,6 +1356,16 @@ footer a:hover {
 }
 .schedule-month-item-top.schedule-date {
   border: none;
+}
+.schedule-top-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.schedule-top-wrapper .cta-button {
+  padding: 16px 24px;
 }
 /* campus experience section */
 .campus-experience .title-large {
@@ -1920,7 +1921,7 @@ footer a:hover {
   }
 
   .main-info .container {
-    gap: 40px;
+    gap: 0px;
   }
 
   /* big page */
@@ -2121,15 +2122,9 @@ footer a:hover {
   .discover-content h2 {
     font-size: 24px;
   }
-  .hero-btn a {
+  .hero-btn a, .hero-campus .hero-btn a {
     font-size: 12px;
     padding: 8px 20px;
-    width: fit-content;
-    border-radius: 6px;
-  }
-  .hero-campus .hero-btn a {
-    font-size: 10px;
-    padding: 6px 12px;
     width: fit-content;
     border-radius: 6px;
   }
@@ -2138,7 +2133,8 @@ footer a:hover {
     left: 9%
   }
   .hero-campus .hero-btn {
-    bottom: 7%;
+    bottom: 40%;
+    left: 5%;
   }
   
   .info-top {
@@ -2147,7 +2143,7 @@ footer a:hover {
   }
   .info-top span:first-child {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 5px;
     max-width: 90px;
   }
@@ -2157,5 +2153,11 @@ footer a:hover {
     position: absolute;
     bottom: -30px;
     left: 4px;
+  }
+  .schedule-top-wrapper {
+    margin-bottom: 20px;
+  }
+  .schedule-month-top {
+    margin-bottom: 0px;
   }
 }

@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // form
   const campusSelect = document.querySelector("#campus");
   const timeSelect = document.querySelector("#time");
-  campusSelect.addEventListener("change", () => {
+  campusSelect?.addEventListener("change", () => {
     const campus = campusSelect.value;
     if(campus === "HN") {
       timeSelect.innerHTML = `
