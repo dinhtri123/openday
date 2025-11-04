@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const countdownMinutes = document.querySelector(".countdown-minutes");
   const countdownSeconds = document.querySelector(".countdown-seconds");
   if (countdown) {
-    const countdownDate = new Date("2025-12-30").getTime();
+    const countdownDate = new Date("2026-01-18").getTime();
     const countdownInterval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

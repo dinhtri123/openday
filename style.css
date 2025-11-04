@@ -93,7 +93,15 @@ section:not(.hero) {
   margin-top: 10px;
   text-align: center;
 }
-
+.hero-campus .hero-btn {
+  bottom: 11%
+}
+.hero-campus .hero-btn a {
+  background: #f65c1e;
+  color: white;
+  font-size: 32px;
+  padding: 14px 50px;
+}
 /* Main Info Section */
 .main-info {
   position: relative;
@@ -1433,7 +1441,10 @@ footer a:hover {
   .hero-btn {
     bottom: 3%;
   }
-  .hero-btn a {
+  .hero-campus .hero-btn {
+    bottom: 8%;
+  }
+  .hero-btn a, .hero-campus .hero-btn a {
     font-size: 18px;
     padding: 10px 30px;
     width: fit-content;
@@ -2110,13 +2121,13 @@ footer a:hover {
   .discover-content h2 {
     font-size: 24px;
   }
-  .hero-btn a {
+  .hero-btn a, .hero-campus .hero-btn a {
     font-size: 10px;
     padding: 5px 10px;
     width: fit-content;
     border-radius: 6px;
   }
-  .hero-btn {
+  .hero-btn, .hero-campus .hero-btn {
     bottom: 6%;
   }
   .info-top {
