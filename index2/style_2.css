@@ -1,3 +1,60 @@
+:root {
+  --cl-primary: #f37021;
+  --cl-text: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--cl-text);
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1252px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+input {
+  font-family: inherit;
+}
+ul {
+  list-style-type: none;
+}
+
+.md {
+  display: block !important;
+}
+
+.sm {
+  display: none !important;
+}
+
+img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+section:not(.hero) {
+  padding: 80px 0px;
+}
+
 .header-top {
   background: #f2f2f2;
   padding: 10px 0px;
