@@ -155,4 +155,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+  // slider career
+  const btnPrevCareer = document.querySelector(".career-right-bottom-btn-prev");
+  const btnNextCareer = document.querySelector(".career-right-bottom-btn-next");
+  const careerImg = document.querySelector(".career-img");
+  const careerImgItems = document.querySelectorAll(".career-img img");
+  const careerRightNumberCurrent = document.querySelector(".career-right-number-current");
+  if(btnPrevCareer && btnNextCareer && careerImg && careerRightNumberCurrent) {
+    btnPrevCareer.addEventListener("click", () => {
+      careerImg.scrollLeft -= careerImg.scrollWidth / careerImgItems.length;
+    });
+    btnNextCareer.addEventListener("click", () => {
+      careerImg.scrollLeft += careerImg.scrollWidth / careerImgItems.length; 
+    });
+    careerImg.addEventListener("scroll", () => {
+      const itemWidth = careerImgItems[0].offsetWidth;
+      const currentIndex = Math.round(careerImg.scrollLeft / itemWidth) + 1;
+      careerRightNumberCurrent.textContent = Math.min(currentIndex, careerImgItems.length);
+    });
+  }
 });
