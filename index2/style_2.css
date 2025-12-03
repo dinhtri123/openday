@@ -128,6 +128,7 @@ section:not(.hero) {
   align-items: center;
   background: #fff;
   min-width: 310px;
+  z-index: 10;
 }
 .header-top-search span {
   width: 20px;
@@ -172,9 +173,25 @@ section:not(.hero) {
 .header-menu li a {
   padding-bottom: 10px;
 }
+.banner {
+  position: relative;
+}
 .banner img {
   width: 100%;
   height: 100%;
+}
+.overview-detail-banner h1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-width: 1252px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: var(--cl-primary);
+  font-size: 54px;
+  font-weight: 700;
 }
 /* local section*/
 .local {
@@ -2828,6 +2845,9 @@ section.campus-fee {
   }
 }
 @media screen and (max-width: 1023px) {
+  .overview-detail-banner h1{
+    font-size: 36px;
+  }
   .campus-brand-list {
     grid-template-columns: repeat(6, 1fr);
     gap: 32px;
@@ -2965,6 +2985,12 @@ section.campus-fee {
   }
 }
 @media screen and (max-width: 767px) {
+  .overview-detail-banner h1 {
+    font-size: 18px;
+  }
+  .banner img {
+    min-height: 170px;
+  }
   .sm {
     display: flex !important;
   }
