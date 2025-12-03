@@ -404,3 +404,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+// Campus News Slider
+const campusNewsSwiper = new Swiper('.campus-news-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.campus-news-slider .swiper-button-next',
+    prevEl: '.campus-news-slider .swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// Campus Tabs Filter
+const campusTabs = document.querySelectorAll('.campus-news-tab');
+campusTabs.forEach(tab => {
+  tab.addEventListener('click', function() {
+    campusTabs.forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    
+    const campus = this.getAttribute('data-campus');
+    // Thêm logic filter theo campus ở đây
+    console.log('Selected campus:', campus);
+  });
+});
+
