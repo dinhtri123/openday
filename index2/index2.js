@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerSearchSm = document.querySelector(
     ".header-search.sm .header-top-search"
   );
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > 100) {
+      header.classList.add("active");
+    } else {
+      header.classList.remove("active");
+    }
+  }); 
   iconMenu.addEventListener("click", () => {
     popupMenu.classList.toggle("active");
   });

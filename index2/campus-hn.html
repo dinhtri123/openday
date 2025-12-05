@@ -14,6 +14,7 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
@@ -47,36 +48,38 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="header-main">
-        <a href="/" class="header-logo">
-          <img src="./images/logo.png" alt="">
-        </a>
-        <nav class="header-nav md">
-          <ul class="header-menu">
-            <li class="active"><a href="">Về FPTU</a></li>
-            <li><a href="">Đào tạo</a></li>
-            <li><a href="">Tuyển sinh</a></li>
-            <li><a href="">Cuộc sống sinh viên</a></li>
-            <li><a href="">Nghiên cứu & đổi mới</a></li>
-            <li><a href="">Tin tức</a></li>
-          </ul>
-        </nav>
-        <div class="header-right-mobile sm">
-          <div class="header-search sm">
-            <span class="icon-search-sm">
-              <img src="./images/icon-search-mb.svg" alt="">
-            </span>
-            <div class="header-top-search">
-              <span>
-                <img src="./images/icon-search.svg" alt="">
+    <div class="header-main-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="header-nav md">
+            <ul class="header-menu">
+              <li><a href="">Về FPTU</a></li>
+              <li><a href="">Đào tạo</a></li>
+              <li><a href="">Tuyển sinh</a></li>
+              <li><a href="">Cuộc sống sinh viên</a></li>
+              <li><a href="">Nghiên cứu & đổi mới</a></li>
+              <li><a href="">Tin tức</a></li>
+            </ul>
+          </nav>
+          <div class="header-right-mobile sm">
+            <div class="header-search sm">
+              <span class="icon-search-sm">
+                <img src="./images/icon-search-mb.svg" alt="">
               </span>
-              <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              <div class="header-top-search">
+                <span>
+                  <img src="./images/icon-search.svg" alt="">
+                </span>
+                <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              </div>
             </div>
+            <span class="icon-menu">
+              <img src="./images/icon-menu.png" alt="">
+            </span>
           </div>
-          <span class="icon-menu">
-            <img src="./images/icon-menu.png" alt="">
-          </span>
         </div>
       </div>
     </div>
@@ -255,8 +258,145 @@
               alt=""></span>
         </div>
         <div class="campus-base-main">
-          <img src="./images/campus-hn-base-img.png" alt="" class="md">
-          <img src="./images/campus-hn-base-img-sm.png" alt="" class="sm">
+          <img src="./images/campus-base-bg.svg" class="campus-base-bg" alt="">
+          <div class="campus-base-list md">
+            <div class="campus-base-left">
+              <div class="campus-base-item hidden">
+              </div>
+              <div class="campus-base-item campus-base-item-center">
+                <div class="campus-base-item-center-child">
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img1.png" class="glightbox-md">
+                      <img src="./images/campus-base-img1.png" alt="Phòng học">
+                    </a>
+                    <h3>Phòng học</h3>
+                  </div>
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img2.png" class="glightbox-md">
+                      <img src="./images/campus-base-img2.png" alt="Hội trường">
+                    </a>
+                    <h3 class="campus-base-title-bottom">Hội trường</h3>
+                  </div>
+                </div>
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img3.png" class="glightbox-md">
+                    <img src="./images/campus-base-img3.png" alt="Thư viện">
+                  </a>
+                  <h3>Thư viện</h3>
+                </div>
+              </div>
+              <div class="campus-base-item">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img4.png" class="glightbox-md">
+                    <img src="./images/campus-base-img4.png" alt="Khu thể thao">
+                  </a>
+                  <h3 class="campus-base-title-left">Khu thể thao</h3>
+                </div>
+              </div>
+            </div>
+            <div class="campus-base-right">
+              <div class="campus-base-item">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img5.png" class="glightbox-md">
+                    <img src="./images/campus-base-img5.png" alt="Phòng Lab">
+                  </a>
+                  <h3 class="campus-base-title-right">Phòng Lab</h3>
+                </div>
+              </div>
+              <div class="campus-base-item campus-base-item-center">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img6.png" class="glightbox-md">
+                    <img src="./images/campus-base-img6.png" alt="">
+                  </a>
+                  <h3 class="campus-base-title-bottom">Không gian xanh</h3>
+                </div>
+                <div class="campus-base-item-center-child">
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img7.png" class="glightbox-md">
+                      <img src="./images/campus-base-img7.png" alt="">
+                    </a>
+                    <h3>Studio</h3>
+                  </div>
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img8.png" class="glightbox-md">
+                      <img src="./images/campus-base-img8.png" alt="Ký túc xá & canteen">
+                    </a>
+                    <h3 class="campus-base-title-bottom">Ký túc xá & canteen</h3>
+                  </div>
+                </div>
+
+              </div>
+              <div class="campus-base-item hidden">
+              </div>
+            </div>
+          </div>
+          <div class="campus-base-list sm">
+            <div class="campus-base-left">
+              <div class="campus-base-item campus-base-item-center">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img3.png" class="glightbox-sm">
+                    <img src="./images/campus-base-img3.png" alt="Thư viện">
+                  </a>
+                  <h3>Thư viện</h3>
+                </div>
+                <div class="campus-base-item-center-child">
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img1.png" class="glightbox-sm">
+                      <img src="./images/campus-base-img1.png" alt="Phòng học">
+                    </a>
+                    <h3>Phòng học</h3>
+                  </div>
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img2.png" class="glightbox-sm">
+                      <img src="./images/campus-base-img2.png" alt="Hội trường">
+                    </a>
+                    <h3 class="campus-base-title-bottom">Hội trường</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="campus-base-item">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img4.png" class="glightbox-sm">
+                    <img src="./images/campus-base-img4.png" alt="Khu thể thao">
+                  </a>
+                  <h3 class="campus-base-title-left">Khu thể thao</h3>
+                </div>
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img5.png" class="glightbox-sm">
+                    <img src="./images/campus-base-img5.png" alt="Phòng Lab">
+                  </a>
+                  <h3 class="campus-base-title-right">Phòng Lab</h3>
+                </div>
+              </div>
+            </div>
+            <div class="campus-base-right">
+              <div class="campus-base-item campus-base-item-center">
+                <div class="campus-base-item-img">
+                  <a href="./images/campus-base-img6.png" class="glightbox-sm">
+                    <img src="./images/campus-base-img6.png" alt="">
+                  </a>
+                  <h3 class="campus-base-title-bottom">Không gian xanh</h3>
+                </div>
+                <div class="campus-base-item-center-child">
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img7.png" class="glightbox-sm">
+                      <img src="./images/campus-base-img7.png" alt="">
+                    </a>
+                    <h3>Studio</h3>
+                  </div>
+                  <div class="campus-base-item-img">
+                    <a href="./images/campus-base-img8.png" class="glightbox-sm">
+                      <img src="./images/campus-base-img8.png" alt="Ký túc xá & canteen">
+                    </a>
+                    <h3 class="campus-base-title-bottom">Ký túc xá & canteen</h3>
+                  </div>
+                </div>
+
+              </div>
+              <div class="campus-base-item hidden">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -582,7 +722,9 @@
           <div class="title-common">
             <h2>Đời sống sinh viên tại Hola</h2>
           </div>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
         <div class="life-dk-bottom">
           <div class="life-dk-item active">
@@ -602,12 +744,16 @@
       <div class="container">
         <div class="title-common">
           <h2><strong>Cơ hội việc làm</strong> &<br>
-            <strong>Hợp tác doanh nghiệp</strong></h2>
-            <span class="title-common-decor-right primary">
-              <img src="./images/title-common-decor-right-primary.svg" alt="">
-            </span>
+            <strong>Hợp tác doanh nghiệp</strong>
+          </h2>
+          <span class="title-common-decor-right primary">
+            <img src="./images/title-common-decor-right-primary.svg" alt="">
+          </span>
         </div>
-        <p>Tại Campus Hà Nội, trường Đại học FPT  có mối quan hệ hợp tác với hơn ... doanh nghiệp và đối tác tại hơn ... quốc gia, mang đến cho sinh viên cơ hội học tập, thực tập và làm việc trong môi trường trong nước và quốc tế. Mạng lưới hợp tác này giúp sinh viên tiếp cận tri thức toàn cầu và phát triển năng lực nghề nghiệp thực tiễn</p>
+        <p>Tại Campus Hà Nội, trường Đại học FPT có mối quan hệ hợp tác với hơn ... doanh nghiệp và đối tác tại hơn ...
+          quốc gia, mang đến cho sinh viên cơ hội học tập, thực tập và làm việc trong môi trường trong nước và quốc tế.
+          Mạng lưới hợp tác này giúp sinh viên tiếp cận tri thức toàn cầu và phát triển năng lực nghề nghiệp thực tiễn
+        </p>
         <div class="campus-brand-list">
           <span>
             <img src="./images/campus-brand-img1.png" alt="">
@@ -756,8 +902,13 @@
                 <img src="./images/news-img.png" alt="">
               </div>
               <div class="campus-news-content">
-                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu</h3>
-                <p>Ngày 18/10/2025, tại Quy Nhơn (Gia Lai), Trường Đại học FPT (FPTU) tổ chức hội thảo “AI & Global Skills – Cùng kiến tạo tương lai giáo dục”, với sự tham gia của gần 200 đại biểu là lãnh đạo các trường THPT khu vực miền Trung – Tây Nguyên, cùng các chuyên gia giáo dục và doanh nghiệp công nghệ. Sự kiện là một trong chuỗi hoạt động “AI for Education” của FPTU, hướng tới mục tiêu hỗ trợ các trường phổ thông nâng cao năng lực ứng dụng AI và phát triển kỹ năng toàn cầu cho học sinh.</p>
+                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu
+                </h3>
+                <p>Ngày 18/10/2025, tại Quy Nhơn (Gia Lai), Trường Đại học FPT (FPTU) tổ chức hội thảo “AI & Global
+                  Skills – Cùng kiến tạo tương lai giáo dục”, với sự tham gia của gần 200 đại biểu là lãnh đạo các
+                  trường THPT khu vực miền Trung – Tây Nguyên, cùng các chuyên gia giáo dục và doanh nghiệp công nghệ.
+                  Sự kiện là một trong chuỗi hoạt động “AI for Education” của FPTU, hướng tới mục tiêu hỗ trợ các trường
+                  phổ thông nâng cao năng lực ứng dụng AI và phát triển kỹ năng toàn cầu cho học sinh.</p>
               </div>
             </div>
             <div class="campus-news-item swiper-slide">
@@ -765,7 +916,8 @@
                 <img src="./images/news-img.png" alt="">
               </div>
               <div class="campus-news-content">
-                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu</h3>
+                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu
+                </h3>
               </div>
             </div>
             <div class="campus-news-item swiper-slide">
@@ -773,7 +925,8 @@
                 <img src="./images/news-img.png" alt="">
               </div>
               <div class="campus-news-content">
-                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu</h3>
+                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu
+                </h3>
               </div>
             </div>
             <div class="campus-news-item swiper-slide">
@@ -781,7 +934,8 @@
                 <img src="./images/news-img.png" alt="">
               </div>
               <div class="campus-news-content">
-                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu</h3>
+                <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát triển năng lực AI và kỹ năng toàn cầu
+                </h3>
               </div>
             </div>
           </div>
@@ -893,7 +1047,7 @@
                     <img src="./images/icon-right-primary.svg" alt="">
                   </span>
                   <p><b>Tuyến 117</b><br>
-                    Nhổn  Hòa Lạc</p>
+                    Nhổn Hòa Lạc</p>
                 </li>
                 <li>
                   <span>
@@ -910,8 +1064,10 @@
             </a>
           </div>
           <div class="campus-contact-map">
-             <img src="./images/campus-contact-map-decor.svg" alt="">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6323.960246974545!2d105.52538061255726!3d21.01102843055305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5f41e95f55%3A0xcfc029607e11a4fe!2zS2h1IEPDtG5nIE5naOG7hyBDYW8gSMOyYSBM4bqhYw!5e1!3m2!1svi!2s!4v1764647444090!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="./images/campus-contact-map-decor.svg" alt="">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6323.960246974545!2d105.52538061255726!3d21.01102843055305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5f41e95f55%3A0xcfc029607e11a4fe!2zS2h1IEPDtG5nIE5naOG7hyBDYW8gSMOyYSBM4bqhYw!5e1!3m2!1svi!2s!4v1764647444090!5m2!1svi!2s"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -1075,9 +1231,31 @@
       </div>
     </div>
   </footer>
+  <div class="cta">
+    <a href="">
+      <img src="./images/icon-cta-icon1.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon2.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon3.svg" alt="">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const media = window.matchMedia("(max-width: 767px)");
+    if (media.matches) {
+      const lightbox = GLightbox({
+        selector: '.glightbox-sm'
+      });
+    }else  {
+      const lightbox = GLightbox({
+        selector: '.glightbox-md'
+      });
+    }
+    
     const infoSlider = new Swiper('.campus-info-slider', {
       loop: true,
       slidesPerView: 1,
@@ -1094,12 +1272,12 @@
         768: {
           slidesPerView: 2,
         },
-        1024: { 
+        1024: {
           slidesPerView: 3,
         },
       },
     });
-    if(media.matches) {
+    if (media.matches) {
       const newsSlider = new Swiper('.campus-news-slider', {
         loop: true,
         slidesPerView: 1,
