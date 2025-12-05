@@ -132,260 +132,251 @@
                     <span>
                         <img src="./images/icon-arrow-right-gray.svg" alt="">
                     </span>
-                    <p>Tin tức & Sự kiện</p>
-                    <span>
+                    <p>Tin tức & Sự kiện</p><span>
                         <img src="./images/icon-arrow-right-gray.svg" alt="">
                     </span>
-                    <p>Hoạt động nhà trường</p>
+                    <p>Sự kiện</p>
                 </div>
             </div>
         </div>
 
-        <section class="featured-news">
+        <section class="events-section">
             <div class="container">
                 <div class="title-common">
-                    <h2 class="title-common-text">Tin tức <strong>chung</strong></h2>
+                    <h2 class="title-common-text">Sự <strong>kiện</strong></h2>
                     <span class="title-common-decor-right">
                         <img src="./images/title-common-decor-right.svg" alt="">
                     </span>
                 </div>
 
-                <div class="news-featured-wrapper">
-                    <!-- Main featured news - spans 2 columns -->
-                    <div class="news-featured-main">
-                        <a href="#" class="news-featured-card-main">
-                            <div class="news-featured-main-image">
-                                <img src="./images/event-to-1.png" alt="Thủ khoa đầu ra ngành Công nghệ thông tin">
+                <div class="events-wrapper">
+                    <!-- Left side - Featured event -->
+                    <div class="events-featured">
+                        <div class="events-featured-card">
+                            <div class="events-featured-image">
+                                <img src="./images/event.png" alt="Open Day FPT">
                             </div>
-                        </a>
+                            <div class="events-featured-content">
+                                <h3>Trường Đại học FPT triển khai chuỗi Open Day – chương trình trải nghiệm dành cho học
+                                    sinh THPT:...
+                                </h3>
+                                <p>Từ cuối năm 2025 đến tháng 8/2026, Trường Đại học FPT triển khai chuỗi hoạt động trải
+                                    nghiệm thực tế
+                                    dành cho học sinh THPT tại 5 cơ sở: Hà Nội, TP. Hồ Chí Minh, Đà Nẵng, Cần Thơ và Quy
+                                    Nhơn. Chương
+                                    trình thuộc mô hình "Trải nghiệm thật – Chọn đúng tương lai – Sẵn sàng hội nhập toàn
+                                    cầu" mà FPTU định
+                                    hướ...</p>
+                                <div class="events-featured-meta">
+                                    <div class="event-time">
+                                        <img src="./images/icon-lock.png" alt="">
+                                        <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                    </div>
+                                    <div class="event-location">
+                                        <img src="./images/icon-location.png" alt="">
+                                        <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Main content - right side -->
-                    <div class="news-featured-main-content">
-                        <h3>Thủ khoa đầu ra ngành Công nghệ thông tin: Bỏ qua 2 trường top...</h3>
-                        <p>Với điểm GPA ấn tượng 9.12, Đinh Ngọc Ân - sinh viên chuyên ngành Trí tuệ nhân tạo đã xuất
-                            sắc trở thành
-                            Thủ khoa khóa I ngành Kỹ thuật và Công nghệ trong Lễ Tốt nghiệp đợt I năm 2025 của Trường
-                            Đại học FPT
-                            (FPTU) có...</p>
+                    <!-- Right side - Calendar and event list -->
+                    <div class="events-sidebar">
+                        <div class="events-calendar-wrapper">
+                            <h3 class="calendar-title">Lịch sự kiện tháng 11</h3>
+                            <div id="eventsCalendar"></div>
+                        </div>
+
+                        <div class="events-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-month">Th11</span>
+                                    <span class="event-day">18</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Build Education Website Using WordPress</h4>
+                                    <div class="event-meta">
+                                        <div class="event-time">
+                                            <img src="./images/icon-clock-small.svg" alt="">
+                                            <span>8:00- 11:30</span>
+                                        </div>
+                                        <div class="event-location">
+                                            <img src="./images/icon-location-small.svg" alt="">
+                                            <span>FPT Campus Đà Nẵng</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="event-month">Th11</span>
+                                    <span class="event-day">30</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Learn To Write Flash Fiction</h4>
+                                    <div class="event-meta">
+                                        <div class="event-time">
+                                            <img src="./images/icon-clock-small.svg" alt="">
+                                            <span>8:00- 11:30</span>
+                                        </div>
+                                        <div class="event-location">
+                                            <img src="./images/icon-location-small.svg" alt="">
+                                            <span>FPT Campus Đà Nẵng</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Bottom row - 3 smaller news items -->
-                    <a href="#" class="news-featured-card-small">
-                        <div class="news-featured-small-image">
-                            <img src="./images/event-to-2.png" alt="Thủ khoa Tráo Nhất Hằng">
-                        </div>
-                        <div class="news-featured-small-content">
-                            <h3>Thủ khoa Tráo Nhất Hằng và hành trình rực rỡ của một Gen Z "3 tốt"</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="news-featured-card-small">
-                        <div class="news-featured-small-image">
-                            <img src="./images/event-to-3.png" alt="Convocation Day 2025">
-                        </div>
-                        <div class="news-featured-small-content">
-                            <h3>Convocation Day 2025: Ngày hội ba thế hệ, gần 3.000 tân cử nhân...</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="news-featured-card-small">
-                        <div class="news-featured-small-image">
-                            <img src="./images/event-to-4.png" alt="Hơn 2.000 học sinh THPT">
-                        </div>
-                        <div class="news-featured-small-content">
-                            <h3>Hơn 2.000 học sinh THPT hào hứng khám phá ngành nghề và...</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- View more button -->
-                <div class="news-featured-footer">
-                    <a href="#" class="btn-view-more">
-                        Xem thêm
-                        <img src="./images/icon-arrow.svg" alt="">
-                    </a>
                 </div>
             </div>
         </section>
-        <section class="major-news-section">
+        <section class="all-events-section">
             <div class="container">
                 <div class="title-common">
-                    <h2 class="title-common-text">Tin <strong>ngành</strong></h2>
+                    <h2 class="title-common-text">Sự kiện <strong>chung</strong></h2>
                     <span class="title-common-decor-right">
                         <img src="./images/title-common-decor-right.svg" alt="">
                     </span>
                 </div>
 
-                <!-- Category Tabs -->
-                <div class="major-news-tabs">
-                    <button class="major-news-tab active" data-category="all">Công nghệ thông tin</button>
-                    <button class="major-news-tab" data-category="communication">Công nghệ truyền thông</button>
-                    <button class="major-news-tab" data-category="language">Nhiều ngành ngôn ngữ</button>
-                    <button class="major-news-tab" data-category="law">Luật</button>
-                    <button class="major-news-tab" data-category="business">Quản trị kinh doanh</button>
-                    <button class="major-news-tab" data-category="science">Khoa học máy tính</button>
+                <!-- Event Tabs -->
+                <div class="event-tabs">
+                    <button class="event-tab active" data-campus="all">Sự kiện chung</button>
+                    <button class="event-tab" data-campus="hanoi">Campus HN</button>
+                    <button class="event-tab" data-campus="hcm">Campus TP.HCM</button>
+                    <button class="event-tab" data-campus="danang">Campus ĐN</button>
+                    <button class="event-tab" data-campus="cantho">Campus CT</button>
+                    <button class="event-tab" data-campus="quynhon">Campus QN</button>
                 </div>
 
-                <!-- News Slider -->
-                <div class="major-news-slider swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <article class="major-news-card">
-                                <a href="#" class="major-news-link">
-                                    <div class="major-news-image">
-                                        <img src="./images/event-to-5.png" alt="500 thủ lĩnh học đường">
-                                    </div>
-                                    <div class="major-news-content">
-                                        <h3>500 "thủ lĩnh học đường" tiếp cận kiến thức thực tiễn về AI</h3>
-                                    </div>
-                                </a>
-                            </article>
+                <!-- Events Grid -->
+                <div class="all-events-grid">
+                    <!-- Event Card 1 -->
+                    <div class="all-event-card" data-campus="all hanoi">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-1.png" alt="400 cựu sinh viên">
                         </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <article class="major-news-card">
-                                <a href="#" class="major-news-link">
-                                    <div class="major-news-image">
-                                        <img src="./images/event-to-6.png" alt="RecruitMe">
-                                    </div>
-                                    <div class="major-news-content">
-                                        <h3>RecruitMe – Tự động hóa quy trình tuyển dụng với trí tuệ nhân...</h3>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <article class="major-news-card">
-                                <a href="#" class="major-news-link">
-                                    <div class="major-news-image">
-                                        <img src="./images/event-to-7.png" alt="Nữ sinh FPTU">
-                                    </div>
-                                    <div class="major-news-content">
-                                        <h3>Nữ sinh FPTU 'phá vỡ' rào cản định kiến: Lọt Top 20 nữ sinh Kh...</h3>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide">
-                            <article class="major-news-card">
-                                <a href="#" class="major-news-link">
-                                    <div class="major-news-image">
-                                        <img src="./images/event-to-4.png" alt="Tin ngành khác">
-                                    </div>
-                                    <div class="major-news-content">
-                                        <h3>Tiêu đề tin ngành học khác</h3>
-                                    </div>
-                                </a>
-                            </article>
+                        <div class="all-event-content">
+                            <h3>400 cựu sinh viên từ nhiều thế hệ FPTU hội ngộ tại sự kiện Homec...</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Navigation -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-
-                <!-- View More Button -->
-                <div class="major-news-footer">
-                    <a href="#" class="btn-view-more">
-                        Xem thêm
-                        <img src="./images/icon-arrow.svg" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="campus-news-section">
-            <div class="container">
-                <div class="title-common">
-                    <h2 class="title-common-text">Tin <strong>campus</strong></h2>
-                    <span class="title-common-decor-right">
-                        <img src="./images/title-common-decor-right.svg" alt="">
-                    </span>
-                </div>
-
-                <!-- Campus Tabs -->
-                <div class="campus-news-tabs">
-                    <button class="campus-news-tab active" data-campus="hn">Campus HN</button>
-                    <button class="campus-news-tab" data-campus="tphcm">Campus TP.HCM</button>
-                    <button class="campus-news-tab" data-campus="dn">Campus ĐN</button>
-                    <button class="campus-news-tab" data-campus="ct">Campus CT</button>
-                    <button class="campus-news-tab" data-campus="qn">Campus QN</button>
-                </div>
-
-                <!-- Campus News Slider -->
-                <div class="campus-news-slider swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
-                                        <img src="./images/event-to-8.png" alt="Trường Đại học FPT đưa STEM vào dạy">
-                                    </div>
-                                    <div class="campus-news-content">
-                                        <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường T...</h3>
-                                    </div>
-                                </a>
-                            </article>
+                    <!-- Event Card 2 -->
+                    <div class="all-event-card" data-campus="all hcm">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-2.png" alt="Làm chủ AI">
                         </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
-                                        <img src="./images/event-to-9.png" alt="Sinh viên Trường Đại học FPT">
-                                    </div>
-                                    <div class="campus-news-content">
-                                        <h3>Sinh viên Trường Đại học FPT có nghiên cứu khoa học được công...</h3>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
-                                        <img src="./images/event-to-10.png" alt="Trường Đại học FPT đồng hành">
-                                    </div>
-                                    <div class="campus-news-content">
-                                        <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát...</h3>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
-                                        <img src="./images/event-to-10.png" alt="Tin campus khác">
-                                    </div>
-                                    <div class="campus-news-content">
-                                        <h3>Tiêu đề tin campus khác</h3>
-                                    </div>
-                                </a>
-                            </article>
+                        <div class="all-event-content">
+                            <h3>Làm chủ AI để kiến tạo công dân số bản lĩnh và hội nhập toàn cầu</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Navigation -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <!-- Event Card 3 -->
+                    <div class="all-event-card" data-campus="all danang">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-3.png" alt="Tập huấn AI">
+                        </div>
+                        <div class="all-event-content">
+                            <h3>Trường Đại học FPT tập huấn AI cho cán bộ Đoàn quy mô toàn q...</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="all-event-card" data-campus="all hcm">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-4.png" alt="Trung tâm Chuyển đổi số">
+                        </div>
+                        <div class="all-event-content">
+                            <h3>Trường Đại học FPT và Trung tâm Chuyển đổi số TP.HCM ký kết h...</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 5 -->
+                    <div class="all-event-card" data-campus="all hcm">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-5.png" alt="Trung tâm Chuyển đổi số">
+                        </div>
+                        <div class="all-event-content">
+                            <h3>Trường Đại học FPT và Trung tâm Chuyển đổi số TP.HCM ký kết h...</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 6 -->
+                    <div class="all-event-card" data-campus="all hcm">
+                        <div class="all-event-image">
+                            <img src="./images/tin-campus-6.png" alt="Trung tâm Chuyển đổi số">
+                        </div>
+                        <div class="all-event-content">
+                            <h3>Trường Đại học FPT và Trung tâm Chuyển đổi số TP.HCM ký kết h...</h3>
+                            <div class="all-event-meta">
+                                <div class="all-event-time">
+                                    <img src="./images/icon-lock.png" alt="">
+                                    <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
+                                </div>
+                                <div class="all-event-location">
+                                    <img src="./images/icon-location.png" alt="">
+                                    <span>Trường Đại học FPT, khu CN Hòa Lạc,...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- View More Button -->
-                <div class="campus-news-footer">
+                <div class="all-events-footer">
                     <a href="#" class="btn-view-more">
                         Xem thêm
                         <img src="./images/icon-arrow.svg" alt="">

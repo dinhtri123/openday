@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-top md">
+            <div class="container">
+                <div class="header-top-search">
+                    <span>
+                        <img src="./images/icon-search.svg" alt="">
+                    </span>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+                <div class="header-top-right">
+                    <ul class="header-top-base">
+                        <li><a href="">Campus Hà Nội</a></li>
+                        <li><a href="#">Campus HCM</a></li>
+                        <li><a href="#">Campus Đà Nẵng</a></li>
+                        <li><a href="#">Campus Cần Thơ</a></li>
+                        <li><a href="#">Campus Quy Nhơn</a></li>
+                    </ul>
+                    <div class="header-top-language">
+                        <span>
+                            <img src="./images/icon-lang.svg" alt="">
+                        </span>
+                        <div>
+                            <p class="active">VN</p>
+                            <span></span>
+                            <p>EN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-main">
+                <a href="/" class="header-logo">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <nav class="header-nav md">
+                    <ul class="header-menu">
+                        <li><a href="">Về FPTU</a></li>
+                        <li><a href="">Đào tạo</a></li>
+                        <li><a href="">Tuyển sinh</a></li>
+                        <li><a href="">Cuộc sống sinh viên</a></li>
+                        <li><a href="">Nghiên cứu & đổi mới</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right-mobile sm">
+                    <div class="header-search sm">
+                        <span class="icon-search-sm">
+                            <img src="./images/icon-search-mb.svg" alt="">
+                        </span>
+                        <div class="header-top-search">
+                            <span>
+                                <img src="./images/icon-search.svg" alt="">
+                            </span>
+                            <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+                        </div>
+                    </div>
+                    <span class="icon-menu">
+                        <img src="./images/icon-menu.png" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="popup-menu sm">
+            <div class="popup-menu-inner">
+                <div class="popup-top">
+                    <a href="/">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="icon-close-menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="popup-menu-list">
+                    <ul>
+                        <li class="active"><a href="">Về FPTU</a></li>
+                        <li><a href="">Đào tạo</a></li>
+                        <li><a href="">Tuyển sinh</a></li>
+                        <li><a href="">Cuộc sống sinh viên</a></li>
+                        <li><a href="">Nghiên cứu & đổi mới</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Campus Hà Nội</a></li>
+                        <li><a href="#">Campus HCM</a></li>
+                        <li><a href="#">Campus Đà Nẵng</a></li>
+                        <li><a href="#">Campus Cần Thơ</a></li>
+                        <li><a href="#">Campus Quy Nhơn</a></li>
+                        <li>
+                            <div class="header-top-language">
+                                <span>
+                                    <img src="./images/icon-lang.svg" alt="">
+                                </span>
+                                <div>
+                                    <p class="active">VN</p>
+                                    <span></span>
+                                    <p>EN</p>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="overview-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <span>
+                        <img src="./images/icon-house.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="./images/icon-arrow-right-gray.svg" alt="">
+                    </span>
+                    <p>Tin tức & Sự kiện</p>
+                    <span>
+                        <img src="./images/icon-arrow-right-gray.svg" alt="">
+                    </span>
+                    <p>Tin tức</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="article-detail-section">
+            <div class="container">
+                <div class="article-detail-wrapper">
+                    <!-- Main Content - Left -->
+                    <article class="article-detail-main">
+                        <!-- Article Header -->
+                        <header class="article-header">
+                            <h1 class="article-title">Nguyễn Quỳnh Anh – Cựu sinh viên Trường ĐH FPT với thành tích
+                                nghiên cứu khoa học đáng nể</h1>
+                            <div class="article-meta">
+                                <img src="./images/icon-card.png" alt="Calendar" class="meta-icon">
+                                <span>Thứ Năm, 15/05/2025</span>
+                            </div>
+                        </header>
+
+                        <!-- Article Quote -->
+                        <div class="article-quote">
+                            <div class="quote-icon">
+                                <img src="./images/icon-detail.png" alt="">
+                            </div>
+                            <p>Nguyễn Quỳnh Anh, Thủ khoa chuyên ngành Kỹ thuật phần mềm tại Trường Đại học FPT (2024),
+                                đã khẳng định tài năng của mình trong ngành Công nghệ thông tin khi đạt thành tích cao
+                                trong học tập và có hơn 10 bài báo được đăng tải trên các tạp chí khoa học uy tín như
+                                IEEE, Data In Brief, IJACSA... trong 4 năm học.</p>
+                        </div>
+
+                        <div class="article-content-group">
+                            <h2 class="section-title">Dấu ấn nghiên cứu khoa học: Phân loại nông sản bằng AI</h2>
+                            <p class="section-text">Thủ khoa Nguyễn Quỳnh Anh dành nhiều tâm huyết cho nghiên cứu phát
+                                triển hệ thống "Tomatoes Healthy Check" – một ứng dụng nông nghiệp thông minh với khả
+                                năng phân loại chất lượng cà chua và dự đoán thời điểm thu hoạch tối ưu. Ứng dụng này
+                                được xây dựng trên nền tảng kỹ thuật Explainable AI (XAI), một trong những công nghệ
+                                tiên tiến nhằm cung cấp khả năng giải thích rõ ràng về cách thức hoạt động của các mô
+                                hình trí tuệ nhân tạo (AI).</p>
+                            <p class="section-text">Trước khi bắt đầu dự án, nhóm nghiên cứu đã tiến hành khảo sát về
+                                nhu cầu tiêu thụ cà chua. Theo các nghiên cứu gần đây, cà chua năm trong top 4-5 loại
+                                thực phẩm được ưa chuộng nhất trên thế giới và đang có tốc độ tăng trưởng đáng kể. Báo
+                                cáo từ Mordor Intelligence dự đoán thị trường cà chua toàn cầu sẽ tăng từ 197 tỷ USD lên
+                                249 tỷ USD trong giai đoạn 2023 – 2028.</p>
+                            <p class="section-text">Dưới sự hướng dẫn của thầy Quách Lưu Đa – giảng viên Kỹ thuật phần
+                                mềm tại Trường Đại học FPT, Quỳnh Anh và bạn đồng hành Quốc Khang (cùng chuyên ngành Kỹ
+                                thuật phần mềm) đã dùng lý thuyết Grad-CAM, một công nghệ giúp AI để nhận diện tình
+                                trạng sinh lý của quả cà chua qua hình ảnh hoặc video thu được từ webcam hoặc camera
+                                điện thoại, phân loại thành các trạng thái: chưa chín, chín, già, và hỏng.</p>
+
+                            <figure class="article-figure">
+                                <img src="./images/detail-1.png" alt="Quỳnh Anh trình bày">
+                                <figcaption>Quỳnh Anh trong buổi trình bày về dự án nghiên cứu "Tomatoes Healthy Check".
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- Article Content Group 2 -->
+                        <div class="article-content-group">
+                            <p class="section-text">Việc ứng dụng hệ thống này mang lại nhiều lợi ích quan trọng cho
+                                người nông dân, giúp cải thiện độ chính xác trong việc phân loại cà chua, đồng thời tự
+                                động hóa toàn bộ quy trình kiểm soát chất lượng. Qua đó, nông dân có thể tối ưu hóa thời
+                                gian thu hoạch, nâng cao chất lượng sản phẩm và giảm thiểu sự lãng phí trong quá trình
+                                thu hoạch.</p>
+                            <p class="section-text">Không dừng lại ở đó, Quỳnh Anh và bạn đồng hành Quốc Khang còn xây
+                                dựng một bộ đếm thông minh dựa trên sự kết hợp giữa mô hình YOLO phiên bản 5 (You Look
+                                Only Once) và MobileNetV2, một mô hình giảm thiểu dung lượng, cho phép người dùng đếm số
+                                lượng cà chua trong video hoặc hình ảnh. Tính năng này còn phép người dùng để đáng tích
+                                toán số lượng cà chua và số sánh thủu quả xuất giữa các vụ mùa một cách trực quan và
+                                chính xác.</p>
+                            <p class="section-text">Chia sẻ về dự án này, Quỳnh Anh cho biết: "Đây là một trong những
+                                nghiên cứu mình cảm thấy rất tự hào, vì nó không chỉ có tính ứng dụng cao mà còn góp
+                                phần giải quyết một vấn đề thực tiễn về AI và nông nghiệp thông minh".</p>
+
+                            <figure class="article-figure">
+                                <img src="./images/detail-2.png" alt="Hệ thống phân loại cà chua">
+                                <figcaption>Hệ thống AI phân loại và đếm cà chua tự động.</figcaption>
+                            </figure>
+                        </div>
+
+                         <!-- Article Content Group 3 -->
+                        <div class="article-content-group">
+                            <p class="section-text">Tuy nhiên, hành trình phát triển hệ thống không hề dễ dàng. Thử thách lớn nhất mà nhóm gặp phải là tìm cách áp dụng Grad-CAM để đánh giá độ hiệu quả của các mô hình học sâu trong phân loại hình ảnh cà chua. Vì XAI là một hướng nghiên cứu mới chỉ nổi lên trong vài năm gần đây, đặc biệt là ở châu Âu, nên các tài liệu tham khảo rất hạn chế, hầu hết đều là các nguồn nước ngoài bằng tiếng Anh.</p>
+                            <p class="section-text">Dù gặp nhiều khó khăn về tài liệu và kỹ thuật, Quỳnh Anh và bạn đồng hành vẫn không nản lòng. Nhờ sự hỗ trợ tận tình từ giảng viên hướng dẫn cùng sự quyết tâm và kiên trì, cả hai đã dành hơn nửa năm để hoàn thiện dự án. Thành quả này ngoài là bước đệm cho sự phát triển chuyên môn của Quỳnh Anh còn mở ra tiềm năng áp dụng rộng rãi công nghệ AI trong nông nghiệp thông minh tại Việt Nam.</p>
+                            <p class="section-text">Với nghiên cứu này, nhóm của Quỳnh Anh đã đạt giải nhì tại cuộc thi Nghiên cứu khoa học FPT Edu ResFes 2023 và được đăng tải trên tạp chí khoa học quốc tế Q1 IEEE Access – tạp chí khoa học bình duyệt truy cập mở được xuất bản bởi Viện Kỹ sư điện và điện tử (Mỹ), được thành lập vào năm 2013, xếp thuộc SCIE-Q1 (năm 2020).</p>
+                            <p class="section-text">Dự án này, cũng đã giúp Quỳnh Anh có thêm động lực để thực hiện mong muốn phát triển thêm các ứng dụng mở rộng như theo dõi sức khỏe nhiều loại cây trồng và quản lý tài nguyên nông nghiệp, tạo ra một hệ sinh thái nông nghiệp thông minh toàn diện</p>    
+                        </div>
+
+                        <div class="article-content-group">
+                            <h2 class="section-title">“Bóng hồng” IT với loạt thành tích ấn tượng</h2>
+                            <p class="section-text">Với Quỳnh Anh, niềm đam mê khoa học công nghệ không chỉ nằm ở việc học tập hay đạt thành tích cao mà còn trở thành định hướng lâu dài trong sự nghiệp. “Nhiều người nghĩ con gái học công nghệ thông tin sẽ gặp khó khăn, nhưng mình thấy nữ sinh có những lợi thế riêng như sự tỉ mỉ, cẩn thận, giảm thiểu sai sót, khả năng giao tiếp và xử lý vấn đề uyển chuyển. Đây đều là những tố chất cần thiết để thành công trong ngành”, cô chia sẻ thêm</p>
+                           
+                            <figure class="article-figure">
+                                <img src="./images/detail-3.png" alt="Quỳnh Anh trình bày">
+                                <figcaption>Quỳnh Anh trong đại diện Tân cử nhân phát biểu trong lễ tốt nghiệp năm 2024.
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                          <!-- Article Content Group 3 -->
+                        <div class="article-content-group">
+                            <p class="section-text">Bên cạnh đó, Quỳnh Anh còn đạt hàng loạt giải thưởng cao trong nghiên cứu như: Nữ sinh Nghiên cứu Khoa học Việt Nam 2023 (do Trung tâm Phát triển Khoa học, Công nghệ và Tài năng trẻ phát động), giải khuyến khích Euréka 2023 – lĩnh vực Công nghệ thông tin, giải Best Presentation tại ICIIT Conference 2024 và giải Nhì FPT Edu Research Festival 2 năm liên tiếp (2022, 2023) do Khối Giáo dục FPT tổ chức. </p>
+                            <p class="section-text">Chia sẻ về bí quyết thành công, Quỳnh Anh cho biết cô luôn xây dựng kế hoạch chi tiết và quản lý thời gian hợp lý giữa học tập, nghiên cứu và nghỉ ngơi. “Mình luôn hoàn thành công việc trước deadline để tránh áp lực và giữ hiệu suất cao nhất. Thành công không phải là kết quả của những khoảnh khắc đột phá, mà là thành quả của những nỗ lực nhỏ, bền bỉ qua từng ngày”, Quỳnh Anh nói.  </p>
+                            <p class="section-text">Bên cạnh thành tích nổi bật, Quỳnh Anh luôn dành sự biết ơn chân thành cho những người đã đồng hành cùng mình, đặc biệt là thầy Quách Luyl Đa. Cô bày tỏ lòng tri ân đối với sự hướng dẫn tận tâm của thầy – người đã giúp cô khám phá ra tiềm năng và tình yêu với ngành Công nghệ thông tin. Hiện tại, Quỳnh Anh làm việc tại Khối Giáo dục FPT, tiếp tục tham gia các dự án thực tế để trau dồi thêm kiến thức, kinh nghiệm và hướng đến những mục tiêu lớn hơn trong tương lai.  </p>
+                
+                        </div>
+
+                          <!-- Article Author -->
+                        <div class="article-author">
+                            <img src="./images/icon-author.png" alt="Author" class="author-icon">
+                            <span class="author-name">My Linh</span>
+                        </div>
+                        <!-- More sections can be added here -->
+                    </article>
+
+                    <!-- Sidebar - Right -->
+                    <aside class="article-sidebar">
+                        <!-- Latest Posts -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Bài viết mới nhất</h3>
+                            <div class="latest-posts">
+                                <!-- Post 1 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-1.png" alt="Cựu sinh viên Trường Đại học FPT">
+                                        </div>
+                                        <h4 class="latest-post-title">Cựu sinh viên Trường Đại học FPT khám phá tiềm
+                                            năng AI tr...</h4>
+                                    </a>
+                                </article>
+
+                                <!-- Post 2 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-2.png" alt="Các giáo sư quốc tế">
+                                        </div>
+                                        <h4 class="latest-post-title">Các giáo sư quốc tế chia sẻ bí quyết viết bài báo
+                                            nghiên cứu...</h4>
+                                    </a>
+                                </article>
+
+                                <!-- Post 3 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-3.png" alt="Phạm Đức Anh">
+                                        </div>
+                                        <h4 class="latest-post-title">Phạm Đức Anh: Chàng trai đam mê xe hộp trúng 2 học
+                                            bổng c...</h4>
+                                    </a>
+                                </article>
+
+                                <!-- Post 4 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-3.png" alt="500 thủ lĩnh học đường">
+                                        </div>
+                                        <h4 class="latest-post-title">500 "thủ lĩnh học đường" tiếp cận kiến thức thực
+                                            tiễn về AI</h4>
+                                    </a>
+                                </article>
+
+                                <!-- Post 5 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-3.png" alt="Sinh viên Trường Đại học FPT">
+                                        </div>
+                                        <h4 class="latest-post-title">Sinh viên Trường Đại học FPT tạo được đội phá với
+                                            dự án Kế...</h4>
+                                    </a>
+                                </article>
+
+                                <!-- Post 6 -->
+                                <article class="latest-post-item">
+                                    <a href="#" class="latest-post-link">
+                                        <div class="latest-post-thumb">
+                                            <img src="./images/new-3.png" alt="Việt Nam trong bản có màu gì">
+                                        </div>
+                                        <h4 class="latest-post-title">"Việt Nam trong bản có màu gì?" – Chiến dịch
+                                            truyền thôn...</h4>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-banner">
+                            <img src="./images/event-hoc-bong.png" alt="Học bổng">
+                            <span class="sidebar-banner-label">Học bổng</span>
+                        </div>
+
+                        <div class="sidebar-banner">
+                            <img src="./images/event-tuyen-sinh.png" alt="Tuyển sinh">
+                            <span class="sidebar-banner-label">Tuyển sinh</span>
+                        </div>
+
+                        <div class="sidebar-banner">
+                            <img src="./images/event-openday.png" alt="Banner">
+                            <span class="sidebar-banner-label">Openday</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+         <section class="featured-news">
+            <div class="container">
+                <div class="title-common">
+                    <h2 class="title-common-text">Tin cùng chuyên mục</h2>
+                    <span class="title-common-decor-right">
+                        <img src="./images/title-common-decor-right.svg" alt="">
+                    </span>
+                </div>
+
+                <div class="news-featured-wrapper">
+                    <!-- Bottom row - 3 smaller news items -->
+                    <a href="#" class="news-featured-card-small">
+                        <div class="news-featured-small-image">
+                            <img src="./images/new-4.png" alt="Thủ khoa Tráo Nhất Hằng">
+                        </div>
+                        <div class="news-featured-small-content">
+                            <h3>“Việt Nam trong bạn có màu gì?” – Chiến dịch truyền thông của sinh viên...</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-featured-card-small">
+                        <div class="news-featured-small-image">
+                            <img src="./images/new-5.png" alt="Convocation Day 2025">
+                        </div>
+                        <div class="news-featured-small-content">
+                            <h3>RecruitMe – Tự động hóa quy trình tuyển dụng với trí tuệ nhân tạo (AI) của sinh viên Trường Đại học FPT</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-featured-card-small">
+                        <div class="news-featured-small-image">
+                            <img src="./images/new-6.png" alt="Hơn 2.000 học sinh THPT">
+                        </div>
+                        <div class="news-featured-small-content">
+                            <h3>RecruitMe – Tự động hóa quy trình tuyển dụng với trí tuệ nhân tạo (AI) của sinh viên Trường Đại học FPT</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- View more button -->
+                <div class="news-featured-footer">
+                    <a href="#" class="btn-view-more">
+                        Xem thêm
+                        <img src="./images/icon-arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer2">
+        <div class="container">
+            <div class="footer-list">
+                <a href="/">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <div class="footer-social sm">
+                    <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+                        <img src="./images/icon-fb-color.svg" alt="">
+                    </a>
+                    <a href="https://zalo.me/daihocfpt" target="_blank">
+                        <img src="./images/icon-zalo.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+                        <img src="./images/icon-ytb-color.svg" alt="">
+                    </a>
+                    <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+                        <img src="./images/icon-tiktok-color.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <h3>Giới thiệu chung</h3>
+                    <ul>
+                        <li><a href="">Về FPTU</a></li>
+                        <li><a href="">Cơ sử vật chất & campus</a></li>
+                        <li><a href="">Đối tác & hợp tác quốc tế</a></li>
+                        <li><a href="">Liên hệ với chúng tôi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>Truy cập nhanh</h3>
+                    <ul>
+                        <li><a href="">Thông tin tuyển sinh năm 2026</a></li>
+                        <li><a href="">Open days</a></li>
+                        <li><a href="">Học phí</a></li>
+                        <li><a href="">Học bổng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>Học tập tại FPTU</h3>
+                    <ul>
+                        <li><a href="">Ngành - Chuyên ngành đào tạo</a></li>
+                        <li><a href="">Cuộc sống sinh viên</a></li>
+                        <li><a href="">Dự án startup nổi bật</a></li>
+                        <li><a href="">Trải nghiệm học tập toàn cầu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:(024) 7300 5588">(024) 7300 5588</a></li>
+                    </ul>
+                    <h3>Email</h3>
+                    <ul>
+                        <li><a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item sm">
+                    <h3>Thông tin Campus</h3>
+                </div>
+                <div class="footer-item footer-campus">
+                    <h3>HÀ NỘI <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+                    <div>
+                        <h4>Địa chỉ</h4>
+                        <p>Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, Xã Hòa Lạc, TP.
+                            Hà Nội</p>
+                    </div>
+                    <div>
+                        <h4>Hotline</h4>
+                        <a href="tel:(024) 7300 5588">(024) 7300 5588 </a>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a>
+                    </div>
+                </div>
+                <div class="footer-item footer-campus">
+                    <h3>TP. HỒ CHÍ MINH <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+                    <div>
+                        <h4>Địa chỉ</h4>
+                        <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+                    </div>
+                    <div>
+                        <h4>Hotline</h4>
+                        <a href="tel:(028) 7300 5588">(028) 7300 5588 </a>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tuyensinhhcm@fpt.edu.vn">tuyensinhhcm@fpt.edu.vn</a>
+                    </div>
+                </div>
+                <div class="footer-item footer-campus">
+                    <h3>ĐÀ NẴNG <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+                    <div>
+                        <h4>Địa chỉ</h4>
+                        <p>Khu đô thị công nghệ FPT Đà Nẵng, Phường Ngũ Hành Sơn, TP. Đà Nẵng</p>
+                    </div>
+                    <div>
+                        <h4>Hotline</h4>
+                        <a href="tel:(0236) 730 0999">(0236) 730 0999 </a>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tuyensinhdanang@fpt.edu.vn">tuyensinhdanang@fpt.edu.vn</a>
+                    </div>
+                </div>
+                <div class="footer-item footer-campus">
+                    <h3>CẦN THƠ <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+                    <div>
+                        <h4>Địa chỉ</h4>
+                        <p>Số 600, đường Nguyễn Văn Cừ (nối dài), Phường An Bình, Thành phố Cần Thơ</p>
+                    </div>
+                    <div>
+                        <h4>Hotline</h4>
+                        <a href="tel:(0292) 730 3636">(0292) 730 3636 </a>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tuyensinhcantho@fpt.edu.vn">tuyensinhcantho@fpt.edu.vn</a>
+                    </div>
+                </div>
+                <div class="footer-item footer-campus">
+                    <h3>QUY NHƠN <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+                    <div>
+                        <h4>Địa chỉ</h4>
+                        <p>Khu đô thị mới An Phú Thịnh, Phường Quy Nhơn Đông, Tỉnh Gia Lai</p>
+                    </div>
+                    <div>
+                        <h4>Hotline</h4>
+                        <a href="tel:(0256) 7300 999">(0256) 7300 999 </a>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:tuyensinhquynhon@fpt.edu.vn">tuyensinhquynhon@fpt.edu.vn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Bản quyền thuộc về Trường Đại học FPT.</p>
+                <div class="footer-social md">
+                    <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+                        <img src="./images/icon-fb-color.svg" alt="">
+                    </a>
+                    <a href="https://zalo.me/daihocfpt" target="_blank">
+                        <img src="./images/icon-zalo.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+                        <img src="./images/icon-ytb-color.svg" alt="">
+                    </a>
+                    <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+                        <img src="./images/icon-tiktok-color.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const media = window.matchMedia("(max-width: 767px)");
+        const swiper = new Swiper('.overview-link-slider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        if (media.matches) {
+            const infoSlider = new Swiper('.info-slider', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                centeredSlides: true,
+                loopedSlides: 3,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        } 
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
