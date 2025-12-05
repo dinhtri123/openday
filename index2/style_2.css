@@ -2632,6 +2632,7 @@ h3.campus-base-title-right::before {
   max-width: 500px !important;
   width: 100%;
   padding: 15px;
+  box-shadow: 0px 0px 0px !important;
 }
 section.campus-fee {
   overflow: hidden;
@@ -4344,7 +4345,8 @@ section.campus-fee {
     min-height: 40px;
   }
   .campus-base-list {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
   .campus-base-item.hidden {
     display: none;
@@ -4388,11 +4390,15 @@ section.campus-fee {
   .campus-base-bg {
     display: none;
   }
-  .campus-base-left .campus-base-item:last-child {
+  .campus-base-left .campus-base-item:last-child, .campus-base-right .campus-base-item:first-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     max-width: 100%;
+    aspect-ratio: auto;
+  }
+  .campus-base-left .campus-base-item:last-child .campus-base-item.hidden, .campus-base-right .campus-base-item:first-child .campus-base-item.hidden {
+    display: block;
     aspect-ratio: auto;
   }
   .campus-base-right .campus-base-item-center {
@@ -4407,4 +4413,5 @@ section.campus-fee {
   .campus-base-right .campus-base-item-center > div:first-child img { 
     aspect-ratio: 16/9;
   }
+
 }
