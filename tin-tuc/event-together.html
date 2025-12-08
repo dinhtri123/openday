@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -141,7 +142,7 @@
             </div>
         </div>
 
-        <section class="featured-news">
+        <section class="news-featured">
             <div class="container">
                 <div class="title-common">
                     <h2 class="title-common-text">Tin tức <strong>chung</strong></h2>
@@ -211,7 +212,7 @@
         <section class="major-news-section">
             <div class="container">
                 <div class="title-common">
-                    <h2 class="title-common-text">Tin <strong>ngành</strong></h2>
+                    <h2 class="title-common-text"><strong>Tin ngành</strong></h2>
                     <span class="title-common-decor-right">
                         <img src="./images/title-common-decor-right.svg" alt="">
                     </span>
@@ -301,35 +302,35 @@
                 </div>
             </div>
         </section>
-        <section class="campus-news-section">
+        <section class="campus-tabs-section">
             <div class="container">
                 <div class="title-common">
-                    <h2 class="title-common-text">Tin <strong>campus</strong></h2>
+                    <h2 class="title-common-text"><strong>Tin campus</strong></h2>
                     <span class="title-common-decor-right">
                         <img src="./images/title-common-decor-right.svg" alt="">
                     </span>
                 </div>
 
                 <!-- Campus Tabs -->
-                <div class="campus-news-tabs">
-                    <button class="campus-news-tab active" data-campus="hn">Campus HN</button>
-                    <button class="campus-news-tab" data-campus="tphcm">Campus TP.HCM</button>
-                    <button class="campus-news-tab" data-campus="dn">Campus ĐN</button>
-                    <button class="campus-news-tab" data-campus="ct">Campus CT</button>
-                    <button class="campus-news-tab" data-campus="qn">Campus QN</button>
+                <div class="campus-tabs-list">
+                    <button class="campus-tab-btn active" data-campus="hn">Campus HN</button>
+                    <button class="campus-tab-btn" data-campus="tphcm">Campus TP.HCM</button>
+                    <button class="campus-tab-btn" data-campus="dn">Campus ĐN</button>
+                    <button class="campus-tab-btn" data-campus="ct">Campus CT</button>
+                    <button class="campus-tab-btn" data-campus="qn">Campus QN</button>
                 </div>
 
-                <!-- Campus News Slider -->
-                <div class="campus-news-slider swiper">
+                <!-- Campus Slider -->
+                <div class="campus-tabs-slider swiper">
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
                         <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
+                            <article class="campus-tabs-card">
+                                <a href="#" class="campus-tabs-link">
+                                    <div class="campus-tabs-image">
                                         <img src="./images/event-to-8.png" alt="Trường Đại học FPT đưa STEM vào dạy">
                                     </div>
-                                    <div class="campus-news-content">
+                                    <div class="campus-tabs-content">
                                         <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường T...</h3>
                                     </div>
                                 </a>
@@ -338,12 +339,12 @@
 
                         <!-- Slide 2 -->
                         <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
+                            <article class="campus-tabs-card">
+                                <a href="#" class="campus-tabs-link">
+                                    <div class="campus-tabs-image">
                                         <img src="./images/event-to-9.png" alt="Sinh viên Trường Đại học FPT">
                                     </div>
-                                    <div class="campus-news-content">
+                                    <div class="campus-tabs-content">
                                         <h3>Sinh viên Trường Đại học FPT có nghiên cứu khoa học được công...</h3>
                                     </div>
                                 </a>
@@ -352,12 +353,12 @@
 
                         <!-- Slide 3 -->
                         <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
+                            <article class="campus-tabs-card">
+                                <a href="#" class="campus-tabs-link">
+                                    <div class="campus-tabs-image">
                                         <img src="./images/event-to-10.png" alt="Trường Đại học FPT đồng hành">
                                     </div>
-                                    <div class="campus-news-content">
+                                    <div class="campus-tabs-content">
                                         <h3>Trường Đại học FPT đồng hành cùng các trường phổ thông phát...</h3>
                                     </div>
                                 </a>
@@ -366,12 +367,12 @@
 
                         <!-- Slide 4 -->
                         <div class="swiper-slide">
-                            <article class="campus-news-card">
-                                <a href="#" class="campus-news-link">
-                                    <div class="campus-news-image">
+                            <article class="campus-tabs-card">
+                                <a href="#" class="campus-tabs-link">
+                                    <div class="campus-tabs-image">
                                         <img src="./images/event-to-10.png" alt="Tin campus khác">
                                     </div>
-                                    <div class="campus-news-content">
+                                    <div class="campus-tabs-content">
                                         <h3>Tiêu đề tin campus khác</h3>
                                     </div>
                                 </a>
@@ -385,7 +386,7 @@
                 </div>
 
                 <!-- View More Button -->
-                <div class="campus-news-footer">
+                <div class="campus-tabs-footer">
                     <a href="#" class="btn-view-more">
                         Xem thêm
                         <img src="./images/icon-arrow.svg" alt="">
@@ -593,6 +594,7 @@
         } 
     </script>
     <script src="./script.js"></script>
+    <script src="./index2.js"></script>
 </body>
 
 </html>
