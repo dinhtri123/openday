@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_2.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -381,54 +382,67 @@
         </div>
       </div>
     </section>
-    <section class="info overview-info">
-      <img src="./images/info-bg.svg" alt="" class="info-img">
-      <img src="./images/info-decor-line.svg" alt="" class="info-decor-line">
+    <section class="campus-news">
       <div class="container">
-        <h2 class="title-large-2">
-          Khám Phá Thêm<br>
-          <strong>Cùng FPTU </strong>
-        </h2>
-        <div class="info-main swiper info-slider">
-          <div class="swiper-wrapper">
-            <div class="info-item swiper-slide">
-              <img src="./images/overview-info-img1.png" alt="">
-              <div class="overview-info-content">
-                <h3>Học bổng</h3>
-                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
-                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
-                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+        <!-- Title Section -->
+        <div class="campus-news-header">
+          <h2 class="campus-news-title">
+            Báo chí <strong>nói về FPTU</strong>
+          </h2>
+        </div>
+
+        <!-- News Cards Grid -->
+        <div class="campus-news-grid">
+          <!-- Card 1 -->
+          <article class="campus-news-card">
+            <a href="#" class="campus-news-card-link">
+              <div class="campus-news-card-image">
+                <img src="./images/campus-new1.png" alt="Trường Đại học FPT tổ chức cuộc thi AI và Robotics">
               </div>
-            </div>
-            <div class="info-item swiper-slide">
-              <img src="./images/overview-info-img11.jpg" alt="">
-              <div class="overview-info-content">
-                <h3>Tuyển sinh</h3>
-                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
-                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
-                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              <div class="campus-news-card-content">
+                <h3 class="campus-news-card-title">Trường Đại học FPT tổ chức cuộc thi AI và Robotics</h3>
               </div>
-            </div>
-            <div class="info-item swiper-slide  ">
-              <img src="./images/overview-info-img12.jpg" alt="">
-              <div class="overview-info-content">
-                <h3>Campus</h3>
-                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
-                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
-                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+            </a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="campus-news-card">
+            <a href="#" class="campus-news-card-link">
+              <div class="campus-news-card-image">
+                <img src="./images/campus-new2.png" alt="Cựu Cốc FPTU: Từ sinh viên hướng nội đến học bổng Thạc sĩ">
               </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next sm"></div>
-          <div class="swiper-button-prev sm"></div>
+              <div class="campus-news-card-content">
+                <h3 class="campus-news-card-title">Cựu Cốc FPTU: Từ sinh viên hướng nội đến học bổng Thạc sĩ</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="campus-news-card">
+            <a href="#" class="campus-news-card-link">
+              <div class="campus-news-card-image">
+                <img src="./images/campus-new3.png" alt="Nữ sinh Trường Đại học FPT mang loạt nghiên cứu">
+              </div>
+              <div class="campus-news-card-content">
+                <h3 class="campus-news-card-title">Nữ sinh Trường Đại học FPT mang loạt nghiên cứu</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- View More Button -->
+        <div class="campus-news-footer">
+          <a href="#" class="campus-news-btn">
+            <span>Xem thêm</span>
+            <img src="./images/icon-arrow.svg" alt="Arrow icon">
+          </a>
         </div>
       </div>
     </section>
     <section class="events-section">
       <div class="container">
         <div class="title-common">
-          <h2 class="title-common-text">Sự <strong>kiện</strong></h2>
+          <h2 class="title-common-text"><strong>Sự kiện</strong></h2>
           <span class="title-common-decor-right">
             <img src="./images/title-common-decor-right.svg" alt="">
           </span>
@@ -479,11 +493,11 @@
                   <h4>Build Education Website Using WordPress</h4>
                   <div class="event-meta">
                     <div class="event-time">
-                      <img src="./images/icon-clock-small.svg" alt="">
+                      <img src="./images/icon-lock.png" alt="Clock icon">
                       <span>8:00- 11:30</span>
                     </div>
                     <div class="event-location">
-                      <img src="./images/icon-location-small.svg" alt="">
+                      <img src="./images/icon-location.png" alt="Location icon">
                       <span>FPT Campus Đà Nẵng</span>
                     </div>
                   </div>
@@ -499,11 +513,11 @@
                   <h4>Learn To Write Flash Fiction</h4>
                   <div class="event-meta">
                     <div class="event-time">
-                      <img src="./images/icon-clock-small.svg" alt="">
+                      <img src="./images/icon-lock.png" alt="Clock icon">
                       <span>8:00- 11:30</span>
                     </div>
                     <div class="event-location">
-                      <img src="./images/icon-location-small.svg" alt="">
+                      <img src="./images/icon-location.png" alt="Location icon">
                       <span>FPT Campus Đà Nẵng</span>
                     </div>
                   </div>
@@ -516,12 +530,12 @@
     </section>
     <section class="all-events-section">
       <div class="container">
-        <div class="title-common">
+        <!-- <div class="title-common">
           <h2 class="title-common-text">Sự kiện <strong>chung</strong></h2>
           <span class="title-common-decor-right">
             <img src="./images/title-common-decor-right.svg" alt="">
           </span>
-        </div>
+        </div> -->
 
         <!-- Event Tabs -->
         <div class="event-tabs">
@@ -624,7 +638,7 @@
               <h3>Trường Đại học FPT và Trung tâm Chuyển đổi số TP.HCM ký kết h...</h3>
               <div class="all-event-meta">
                 <div class="all-event-time">
-                 <img src="./images/icon-lock.png" alt="">
+                  <img src="./images/icon-lock.png" alt="">
                   <span>14:00 - 17:00 | Thứ 7, 27/12/2025</span>
                 </div>
                 <div class="all-event-location">
@@ -864,6 +878,7 @@
     } 
   </script>
   <script src="./script.js"></script>
+  <script src="./index2.js"></script>
 </body>
 
 </html>
