@@ -182,4 +182,14 @@ document.addEventListener("DOMContentLoaded", () => {
       careerRightNumberCurrent.textContent = Math.min(currentIndex, careerImgItems.length);
     });
   }
+  // recruitment faq
+  const recruitmentFaqItems = document.querySelectorAll(".recuitment-faq-item");
+  recruitmentFaqItems.forEach((recruitmentFaqItem) => {
+    recruitmentFaqItem.addEventListener("click", () => {
+      recruitmentFaqItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+      recruitmentFaqItem.classList.add("active");
+    });
+  });
 });

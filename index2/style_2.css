@@ -43,7 +43,9 @@ ul {
 .sm {
   display: none !important;
 }
-
+button {
+  font-family: inherit;
+}
 img {
   width: auto;
   height: 100%;
@@ -3010,6 +3012,427 @@ section.campus-fee {
   object-fit: contain;
   object-position: center;
 }
+
+/* recruitment */
+.recruitment-intro-img {
+  position: relative;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+.recruitment-intro-img > img:first-child {
+  aspect-ratio: 16/9;
+  max-height: 220px;
+}
+.recruitment-intro-img > img:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  max-width: 140px;
+  width: 100%;
+  max-height: 190px;
+  height: 100%;
+}
+.recruitment-intro-content > div p {
+  color: #3d3d3d;
+}
+.recruitment-method h2 {
+  text-align: center;
+}
+.recruitment-method p {
+  text-align: center;
+  margin: 40px 0px;
+  color: #3d3d3d;
+}
+.recruitment-method .future-btn {
+  margin: 0px auto;
+}
+.recruitment-method-bg {
+  margin-top: 80px;
+  width: 100%;
+}
+.recruitment-method-bg img {
+  width: 100%;
+}
+.recruitment-scho.major-detail-feature::before {
+  background-position: 0px -130px;
+}
+.recruitment-scho:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/recruitment-scho-decor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.recruitment-method {
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+  padding-bottom: 0px !important;
+}
+section.recruitment-scho {
+  background: #fafafa;
+  padding-top: 80px !important;
+}
+section.recruitment-scho .title-common {
+  justify-content: flex-start;
+}
+.recruitment-scho-list {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+}
+.recruitment-scho-left {
+  display: flex;
+  flex-direction: column;
+}
+.recruitment-scho-left p {
+  margin: 8px 0px;
+  line-height: 1.5;
+  color: #3d3d3d;
+}
+.recruitment-scho-left-img img {
+  width: 100%;
+}
+.recruitment-scho-list img:not(.future-btn img) {
+  border-radius: 4px;
+  width: 100%;
+}
+.recruitment-scho-top-content {
+  margin-bottom: 40px;
+  flex: 1;
+}
+.recruitment-scho-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.recruitment-scho-right > div {
+  flex: 1;
+}
+.recruitment-scho-right > div:first-child {
+  flex: 1 1 100%;
+}
+.recruitment-fee > div > p {
+  margin-top: 12px;
+  color: #3d3d3d;
+}
+.recruitment-fee-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+.recruitment-fee-item {
+  background-image: url("./images/recruitment-fee-item-bg.png");
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  padding: 32px;
+  background-position: center;
+}
+.recruitment-fee-item > img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+.recruitment-fee-item p {
+  font-weight: 700;
+  color: #707070;
+}
+.recruitment-fee-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #242424;
+}
+.recruitment-policy-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+.recruitment-policy-right p {
+  color: #3d3d3d;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.recruitment-policy-left {
+  display: flex;
+  flex-direction: column;
+}
+.recruitment-policy-left span {
+  position: relative;
+  display: flex;
+}
+.recruitment-intro-img::before {
+  background-image: url("./images/recruitment-decor1.svg");
+  width: 120px;
+  height: 160px;
+}
+.recruitment-policy-left span:first-child::before,
+.recruitment-policy-left span:last-child::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-image: url("images/recruitment-decor1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 160px;
+  z-index: 1;
+}
+.recruitment-policy-left span:last-child::after {
+  top: auto;
+  bottom: -15px;
+  right: -15px;
+  left: auto;
+  transform: rotate(180deg);
+}
+.recruitment-policy-left span img {
+  border-radius: 4px;
+}
+.recruitment-policy-left span:nth-child(2) {
+  margin-top: -100px;
+  justify-content: flex-end;
+  border: 4px solid white;
+  width: fit-content;
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: 8px;
+}
+.recruitment-policy-left span:nth-child(3) {
+  border: 4px solid white;
+  border-radius: 8px;
+  width: fit-content;
+  margin: -30px auto 0px;
+}
+.recruitment-event .event-main {
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+}
+.recruitment-event .title-common {
+  justify-content: flex-start;
+}
+.recruitment-exam .recruitment-policy-left span:nth-child(2) {
+  margin-left: 10%;
+  margin-top: -60px;
+}
+.recruitment-exam .recruitment-policy-left span:nth-child(3) {
+  margin-right: 0px;
+}
+.recruitment-news-slider {
+  margin-top: 60px;
+}
+.recruitment-news-item img {
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.recruitment-news-item h3 {
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+.recruitment-news .future-btn {
+  margin: 60px auto 0px;
+}
+.recruitment-form {
+  overflow: hidden;
+}
+.recruitment-form-main {
+  position: relative;
+  background-color: white;
+  padding: 40px;
+  margin-top: 60px;
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, #f2f2f2 0%, #ff8b2a 7.38%);
+  border-image-slice: 1;
+  box-shadow: 0px 0px 10px 0px #ff6a0026;
+}
+.recruitment-form-main::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(90deg, #f2f2f2 0%, #ff8b2a 7.38%);
+  border-image-slice: 1;
+  background: white;
+  transform: rotate(45deg);
+}
+.recruitment-form-main::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid;
+  border-image-source: linear-gradient(90deg, #f2f2f2 0%, #ff8b2a 7.38%);
+  border-image-slice: 1;
+  background: white;
+  transform: rotate(45deg);
+}
+.recruitment-form-main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.recruitment-form-main form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.recruitment-form-main form label {
+  font-weight: 700;
+  color: #09090b;
+  font-size: 14px;
+}
+.recruitment-form-main form input,
+.recruitment-form-main form select {
+  min-height: 40px;
+  border-radius: 4px;
+  border: 1px solid #d4d4d8;
+  padding: 10px 16px;
+  font-family: inherit;
+}
+.recruitment-form-main form input:placeholder,
+.recruitment-form-main form select:placeholder {
+  font-size: 14px;
+  color: #71717a;
+}
+.recruitment-form-main form > div.recruitment-form-action {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row;
+}
+.recruitment-form-main form > div.recruitment-form-action button {
+  border: none;
+  margin-top: 0px;
+}
+.recuitment-faq-list {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 40px auto 0px;
+}
+.recuitment-faq-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recuitment-faq-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  position: relative;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+.recuitment-faq-item-title::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  border-right: 1px solid #d9d9d9;
+  background: white;
+  transform: rotate(45deg);
+}
+.recuitment-faq-item-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  border-left: 1px solid #d9d9d9;
+  background: white;
+  transform: rotate(45deg);
+}
+.recuitment-faq-item-title h3 {
+  padding-left: 24px;
+  border-left: 4px solid var(--cl-primary);
+  font-size: 18px;
+}
+.recuitment-faq-item-title-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recuitment-faq-item-title-icon i {
+  font-size: 20px;
+  color: var(--cl-primary);
+  transform: all 0.3s ease;
+}
+.recuitment-faq-item-title-icon i:last-child {
+  display: none;
+}
+.recuitment-faq-item.active .recuitment-faq-item-title-icon i:first-child {
+  display: none;
+}
+.recuitment-faq-item.active .recuitment-faq-item-title-icon i:last-child {
+  display: block;
+}
+.recuitment-faq-item-content {
+  box-shadow: 2px 2px 12px 0px #0000001a;
+  padding: 32px;
+  max-width: calc(100% - 64px);
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #e4e4e4;
+  display: none;
+}
+.recuitment-faq-item.active .recuitment-faq-item-content {
+  display: block;
+}
+.recuitment-faq-item-content p {
+  color: #707070;
+  line-height: 1.5;
+}
+.recuitment-faq-item-content p:not(:last-child) {
+  margin-bottom: 16px;
+}
+.recruitment-explore .major-detail-explore-list {
+  gap: 0px;
+}
+.recruitment-explore .major-detail-explore-item:nth-child(1) {
+  transform: rotate(-5deg) translateY(20px) !important;
+}
+.recruitment-explore .major-detail-explore-item:nth-child(3) {
+  transform: rotate(5deg) translateY(20px) !important;
+}
+.recruitment-explore .major-detail-explore-item:nth-child(2) {
+  transform: rotate(1deg) translateY(-50px) !important;
+}
+.recruitment-explore-swiper {
+  padding: 60px 20px !important;
+}
 @media screen and (min-width: 1024px) {
   .major-detail-explore-item:nth-child(1) {
     transform: rotate(-3deg) translateY(20px);
@@ -3033,8 +3456,27 @@ section.campus-fee {
   .overview-train-tab-item {
     padding-left: 60px;
   }
+  .recruitment-fee-list {
+    gap: 20px;
+  }
+  .recruitment-fee-item {
+    padding: 22px;
+  }
 }
 @media screen and (max-width: 1023px) {
+  section.recruitment-explore .major-detail-explore-item.swiper-slide {
+    transform: none !important;
+  }
+  .recruitment-scho-list,
+  .recruitment-scho-right {
+    gap: 16px;
+  }
+  .recruitment-policy-main {
+    gap: 40px;
+  }
+  .recruitment-fee-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .overview-detail-banner h1 {
     font-size: 36px;
   }
@@ -4390,14 +4832,16 @@ section.campus-fee {
   .campus-base-bg {
     display: none;
   }
-  .campus-base-left .campus-base-item:last-child, .campus-base-right .campus-base-item:first-child {
+  .campus-base-left .campus-base-item:last-child,
+  .campus-base-right .campus-base-item:first-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     max-width: 100%;
     aspect-ratio: auto;
   }
-  .campus-base-left .campus-base-item:last-child .campus-base-item.hidden, .campus-base-right .campus-base-item:first-child .campus-base-item.hidden {
+  .campus-base-left .campus-base-item:last-child .campus-base-item.hidden,
+  .campus-base-right .campus-base-item:first-child .campus-base-item.hidden {
     display: block;
     aspect-ratio: auto;
   }
@@ -4410,8 +4854,168 @@ section.campus-fee {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
-  .campus-base-right .campus-base-item-center > div:first-child img { 
+  .campus-base-right .campus-base-item-center > div:first-child img {
     aspect-ratio: 16/9;
   }
-
+  .recruitment-scho-list {
+    grid-template-columns: 1fr;
+  }
+  .recruitment-fee-list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 12px;
+  }
+  .recruitment-policy-main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .recruitment-event .event-main {
+    grid-template-columns: 1fr;
+  }
+  .recruitment-form-main form {
+    grid-template-columns: 1fr;
+  }
+  .recruitment-form-main form > div.recruitment-form-action {
+    grid-column: span 1;
+  }
+  .recruitment-intro-img > img:first-child {
+    max-width: 90%;
+  }
+  .recruitment-intro-img > img:last-child {
+    bottom: 0px;
+    max-width: 120px;
+    max-height: 160px;
+  }
+  .recruitment-intro-img {
+    padding-bottom: 40px !important;
+  }
+  .recruitment-intro-img::before {
+    width: 70px;
+  }
+  .recruitment-intro-img::after {
+    right: -10px;
+    bottom: -10px;
+  }
+  .recruitment-method p {
+    margin: 20px 0px;
+  }
+  .recruitment-method-bg {
+    margin-top: 40px;
+  }
+  section.recruitment-scho {
+    padding-top: 24px !important;
+  }
+  .recruitment-fee-item p {
+    font-size: 14px;
+  }
+  .recruitment-fee-item h3 {
+    font-size: 16px;
+  }
+  .recruitment-fee-item {
+    padding: 18px;
+  }
+  .recruitment-fee-item .future-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .recruitment-policy-left span:first-child::before {
+    top: -10px;
+    left: -12px;
+    width: 100px;
+    height: 120px;
+    background-size: 100%;
+  }
+  .recruitment-policy-left span:last-child::after {
+    width: 80px;
+    height: 100px;
+    bottom: -15px;
+    right: -15px;
+  }
+  .recruitment-policy-left span:nth-child(1) {
+    padding-right: 40px;
+  }
+  .recruitment-policy-left span:nth-child(2) {
+    margin-top: -40px;
+    width: 50%;
+  }
+  .recruitment-policy-left span:nth-child(3) {
+    max-width: 50%;
+  }
+  .recruitment-news-slider {
+    margin-top: 24px;
+    padding-bottom: 50px !important;
+  }
+  .recruitment-news .future-btn {
+    margin: 20px auto 0px;
+  }
+  .recruitment-news-slider .swiper-pagination {
+    justify-content: center;
+  }
+  .recruitment-news-item img {
+    margin-bottom: 12px;
+  }
+  .recruitment-news-item h3 {
+    font-size: 18px;
+  }
+  .recruitment-form-main::after {
+    width: 50px;
+    height: 50px;
+    bottom: -26px;
+    left: -26px;
+  }
+  .recruitment-form-main::before {
+    width: 50px;
+    height: 50px;
+    top: -26px;
+    right: -26px;
+  }
+  .recruitment-form-main {
+    margin-top: 24px;
+    padding: 25px;
+  }
+  .recruitment-form-main form {
+    gap: 20px;
+  }
+  .recruitment-form-main form > div {
+    gap: 6px;
+  }
+  .recruitment-form-main form label {
+    font-size: 12px;
+  }
+  .recruitment-form-main form > div.recruitment-form-action button {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .recuitment-faq-item-title {
+    gap: 10px;
+    padding: 10px 20px;
+    min-height: 55px;
+  }
+  .recuitment-faq-item-title h3 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .recuitment-faq-item-title::before {
+    width: 19px;
+    height: 19px;
+    top: -10px;
+    left: -10px;
+  }
+  .recuitment-faq-item-title::after {
+    width: 19px;
+    height: 19px;
+    bottom: -10px;
+    right: -10px;
+  }
+  .recuitment-faq-item-content {
+    max-width: calc(100% - 32px);
+    padding: 16px;
+  }
+  .recuitment-faq-item-content p {
+    font-size: 14px;
+  }
+  .recruitment-explore-swiper {
+    padding: 0px 0px 50px !important;
+  }
 }
