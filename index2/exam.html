@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top md">
+      <div class="container">
+        <div class="header-top-search">
+          <span>
+            <img src="./images/icon-search.svg" alt="">
+          </span>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="header-top-right">
+          <ul class="header-top-base">
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+          </ul>
+          <div class="header-top-language">
+            <span>
+              <img src="./images/icon-lang.svg" alt="">
+            </span>
+            <div>
+              <p class="active">VN</p>
+              <span></span>
+              <p>EN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="header-nav md">
+            <ul class="header-menu">
+              <li><a href="">Về FPTU</a></li>
+              <li><a href="">Đào tạo</a></li>
+              <li><a href="">Tuyển sinh</a></li>
+              <li><a href="">Cuộc sống sinh viên</a></li>
+              <li><a href="">Nghiên cứu & đổi mới</a></li>
+              <li><a href="">Tin tức</a></li>
+            </ul>
+          </nav>
+          <div class="header-right-mobile sm">
+            <div class="header-search sm">
+              <span class="icon-search-sm">
+                <img src="./images/icon-search-mb.svg" alt="">
+              </span>
+              <div class="header-top-search">
+                <span>
+                  <img src="./images/icon-search.svg" alt="">
+                </span>
+                <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              </div>
+            </div>
+            <span class="icon-menu">
+              <img src="./images/icon-menu.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-menu sm">
+      <div class="popup-menu-inner">
+        <div class="popup-top">
+          <a href="/">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <div class="icon-close-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="popup-menu-list">
+          <ul>
+            <li class="active"><a href="">Về FPTU</a></li>
+            <li><a href="">Đào tạo</a></li>
+            <li><a href="">Tuyển sinh</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Nghiên cứu & đổi mới</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+            <li>
+              <div class="header-top-language">
+                <span>
+                  <img src="./images/icon-lang.svg" alt="">
+                </span>
+                <div>
+                  <p class="active">VN</p>
+                  <span></span>
+                  <p>EN</p>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="overview-hero">
+      <div class="banner">
+        <img src="./images/exam-banner.png" alt="">
+      </div>
+    </div>
+    <section class="exam-intro">
+      <div class="container">
+        <div class="exam-intro-main">
+          <div class="exam-intro-image">
+            <img src="./images/exam-intro-img.png" alt="">
+          </div>
+          <div class="exam-intro-content">
+            <div class="title-common">
+              <h2>Giới thiệu <strong>Kỳ thi sơ tuyển</strong><br> vào FPTU</h2>
+            </div>
+            <p>Trong kỷ nguyên AI và toàn cầu hóa, điều quyết định tương lai không chỉ là kiến thức – mà là năng lực
+              thật để thích ứng, sáng tạo và vươn xa.<br>
+              Trường đại học FPT tin rằng năng lực không đo bằng điểm số, mà thể hiện qua tư duy, trải nghiệm và hành
+              động. Vì thế, FPTU tổ chức Kỳ thi Đánh giá năng lực 2026 – nơi học sinh được khám phá, chứng minh và khẳng
+              định chính mình.<br>
+              “Mỗi bạn trẻ đều có năng lực riêng – chỉ cần được bật sáng đúng cách.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-calendar">
+      <div class="container">
+        <div class="title-common">
+          <h2><strong>Lịch trình thi</strong></h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="exam-calendar-main">
+          <div class="exam-calendar-item">
+            <div class="calendar-item-icon">
+              <img src="./images/exam-calendar-icon1.svg" alt="">
+            </div>
+            <h3>Từ 15/12/2025</h3>
+            <p>Mở đăng ký</p>
+          </div>
+          <div class="exam-calendar-item">
+            <div class="calendar-item-icon">
+              <img src="./images/exam-calendar-icon2.svg" alt="">
+            </div>
+            <h3>31/03/2026</h3>
+            <p>Hạn chót đăng ký</p>
+          </div>
+          <div class="exam-calendar-item">
+            <div class="calendar-item-icon">
+              <img src="./images/exam-calendar-icon3.svg" alt="">
+            </div>
+            <h3>18/04/2026</h3>
+            <p>Ngày thi chính thức</p>
+          </div>
+          <div class="exam-calendar-item">
+            <div class="calendar-item-icon">
+              <img src="./images/exam-calendar-icon4.svg" alt="">
+            </div>
+            <h3>15/05/2026</h3>
+            <p>Công bố điểm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-benefit">
+      <div class="container">
+        <div class="title-common">
+          <span class="title-common-decor-left md"><img src="./images/title-common-decor-right.svg" alt=""></span>
+          <h2><strong>Quyền lợi</strong> khi tham gia</h2>
+          <span class="title-common-decor-right md"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="exam-benefit-main">
+          <div class="exam-benefit-item">
+            <span class="exam-benefit-item-number">
+              1
+            </span>
+            <p>Cửa ngõ vào<br class="md"> Trường Đại học FPT </p>
+          </div>
+          <div class="exam-benefit-item">
+            <span class="exam-benefit-item-number">
+              2
+            </span>
+            <p>Cơ hội nhận học bổng<br class="md">
+              giá trị</p>
+          </div>
+          <div class="exam-benefit-item">
+            <span class="exam-benefit-item-number">
+              3
+            </span>
+            <p>Thử sức (về ngành)</p>
+          </div>
+          <div class="exam-benefit-item">
+            <span class="exam-benefit-item-number">
+              4
+            </span>
+            <p>Thuận tiện tham gia kỳ thi tại nhiều điểm thi trên toàn quốc</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="exam-bg">
+      <img src="./images/exam-benefit-bg2.png" alt="">
+      <div class="container">
+        <div class="exam-bg-inner">
+          <div class="title-common">
+            <h2><strong>Hình thức thi tuyển</strong></h2>
+          </div>
+          <p>Bài thi được thực hiện trên giấy, thời gian từ 150 phút gồm 02 phần thi</p>
+        </div>
+      </div>
+    </div>
+    <section class="exam-form">
+      <div class="container">
+        <div class="exam-form-main">
+          <div class="exam-form-top">
+            <h2>Đề thi mẫu</h2>
+            <div class="exam-form-top-content">
+              <h3>KỲ THI SƠ TUYỂN VÀO TRƯỜNG ĐẠI HỌC FPT 2026</h3>
+              <p>Kiến thức chung và kiến thức chuyên biệt</p>
+              <div>
+                <p>Trắc nghiệm khách quan: <b>100 câu</b></p>
+                <p>Thời gian làm bài: <b>150 phút </b></p>
+              </div>
+            </div>
+          </div>
+          <div class="exam-form-content">
+            <div class="exam-form-content-top">
+              <p>
+                <img src="./images/exam-form-conten-top-icon.svg" alt="">
+                <span>Nội dung thi gồm 2 phần:</span>
+              </p>
+              <ul>
+                <li>1. Kiến thức chung (bắt buộc)</li>
+                <li>2. Kiến thức chuyên biệt (tự chọn) khoa học - công nghệ, sáng tạo, kinh tế - xã hội.</li>
+              </ul>
+            </div>
+            <div class="exam-form-content-bottom">
+              <div>
+                <p><b>A. Phần bắt buộc </b>70 câu</p>
+                <ul>
+                  <li>1. Tính toán (30 câu) (SAT, GMAT, GAOKAO)
+                  </li>
+                  <li>2. Khả năng đọc hiểu (20 câu) (SAT)
+                  </li>
+                  <li>3. Data Sufficiency (20 câu) (GMAT)
+                    hoặc Quantitative Comparison (GRE)</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>B. Phần tự chọn, thí sinh tự chọn 1 trong 3 phần sau </b>Mỗi phần 30 câu</p>
+                <ul>
+                  <li>1. Tính toán (30 câu) (SAT, GMAT, GAOKAO)
+                  </li>
+                  <li>2. Khả năng đọc hiểu (20 câu) (SAT)
+                  </li>
+                  <li>3. Data Sufficiency (20 câu) (GMAT)
+                    hoặc Quantitative Comparison (GRE)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="exam-form-action">
+            <span class="title-common-decor-left md">
+              <img src="./images/title-common-decor-right.svg" alt="">
+            </span>
+            <button class="future-btn">
+              Xem đề thi mẫu
+              <img src="./images/icon-arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-guide">
+      <div class="container">
+        <div class="title-common">
+          <h2><strong>Hướng dẫn</strong> ôn tập</h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="exam-guide-main">
+          <div class="exam-guide-item">
+            <h3>A. Phần bắt buộc (70 câu)</h3>
+            <div class="exam-guide-item-content">
+              <h4>Tính toán: Đại số tuyến tính & phương trình </h4>
+              <ul>
+                <li>Hàm số & đồ thị</li>
+                <li>Hình học phẳng & không gian
+                </li>
+                <li>Bài toán thực tế
+                </li>
+                <li>Số học & logic </li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+            <div class="exam-guide-item-content">
+              <h4>Khả năng đọc hiểu</h4>
+              <ul>
+                <li>Văn học
+                </li>
+                <li>Khoa học xã hội</li>
+                <li>Lịch sử</li>
+                <li>Khoa học tự nhiên</li>
+                <li>Chủ đề mở rộng (nghệ thuật, triết học, AI, tâm lý, giáo dục)</li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+            <div class="exam-guide-item-content">
+              <h4>Data Sufficiency</h4>
+              <ul>
+                <li>Đại số & phương trình
+                </li>
+                <li>Số học</li>
+                <li>Hình học & đo lường</li>
+                <li>Bài toán thức tế</li>
+                <li>Suy luận logic</li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="exam-guide-item">
+            <h3>B. Phần tự chọn (70 câu)</h3>
+            <div class="exam-guide-item-content">
+              <h4>Sáng tạo Nghệ thuật - Nội dung</h4>
+              <ul>
+                <li>Visual thinking</li>
+                <li>Logo thinking</li>
+                <li>Emotion & Storytelling</li>
+                <li>Storytelling & ý nghĩa ẩn dụ</li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+            <div class="exam-guide-item-content">
+              <h4>Reasoning</h4>
+              <ul>
+                <li>Xác định kết luận chính
+                </li>
+                <li>Xác định giả định
+                </li>
+                <li>Câu hỏi củng cố & suy yếu
+                </li>
+                <li>Nhận diện lỗi suy luận
+                </li>
+                <li>Tìm lập luận tương tự
+                </li>
+                <li>Suy luận hợp lệ từ thông tin cho trước</li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+            <div class="exam-guide-item-content">
+              <h4>Reasoning</h4>
+              <ul>
+                <li>Kinh tế vĩ mô chuyên sâu
+                </li>
+                <li>Chính sách phát triển và xu hướng hiện đại
+                </li>
+                <li>Kiến thức Địa chính trị - Thời sự</li>
+              </ul>
+              <a href="" class="future-btn">
+                Xem thêm
+                <img src="./images/icon-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="campus-fee exam-study">
+      <div class="container">
+        <div class="campus-fee-main">
+          <img src="./images/exam-banner-study.png" alt="">
+          <span class="exam-study-decor">
+            <img src="./images/exam-study-decor.svg" alt="" >
+          </span>
+          <div class="campus-fee-content">
+            <h3>Luyện thi cùng AI</h3>
+            <p>Nâng tầm điểm số, đột phá kiến thức với phương pháp<br> 
+              luyện thi thông minh cùng AI.</p>
+          </div>
+          <a href="" class="campus-fee-btn">
+            Luyện thi ngay
+            <span>
+              <img src="./images/icon-arrow.png" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="recruitment-form exam-register-form">
+      <div class="container">
+        <div class="title-common">
+          <h2><strong>Đăng ký thi</strong>
+          </h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="recruitment-form-main">
+          <form action="">
+            <div>
+              <label for="name">Bạn là</label>
+              <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn">
+            </div>
+            <div>
+              <label for="city">Tỉnh thành</label>
+              <select name="city" id="city">
+                <option selected>Chọn Quận/Huyện</option>
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">TP. Hồ Chí Minh</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="QN">Quy Nhơn</option>
+                <option value="CT">Cần Thơ</option>
+              </select>
+            </div>
+            <div>
+              <label for="phone">Số điện thoại</label>
+              <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn">
+            </div>
+            <div>
+              <label for="location">Chọn địa điểm thi</label>
+              <select name="location" id="location">
+                <option selected>Chọn địa điểm bạn muôn thi</option>
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">TP. Hồ Chí Minh</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="QN">Quy Nhơn</option>
+                <option value="CT">Cần Thơ</option>
+              </select>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+            </div>
+            <div class="field-note">
+              <label for="note">Ước mơ tương lai - Bạn muốn trở thành ai trong tương lai?</label>
+              <textarea name="" id="note" placeholder="Câu hỏi ko bắt buộc, quà sẽ được trao sau khi tham dự kỳ thi"></textarea>
+            </div>
+            <div class="field-highschool">
+              <div>
+                <label for="high-school">Trường THPT</label>
+                <input type="text" name="high-school" id="high-school" placeholder="Nhập tên trường của bạn">
+              </div>
+              <div>
+                <label for="class-name">Lớp</label>
+                <input type="text" name="class-name" id="class-name" placeholder="Nhập tên lớp của bạn">
+              </div>
+            </div>
+            <div class="recruitment-form-action">
+              <span class="title-common-decor-left md"><img src="./images/title-common-decor-right.svg" alt=""></span>
+              <button type="submit" class="future-btn">Đăng ký ngay – Bắt đầu hành trình của bạn <img
+                  src="./images/icon-arrow.png" alt=""></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="major-detail-explore">
+      <div class="container">
+        <div class="title-common">
+          <h2>Khám phá thêm <br><strong>cùng FPTU</strong></h2>
+        </div>
+
+        <div class="swiper exam-explore-swiper">
+          <div class="swiper-wrapper major-detail-explore-list">
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Học bổng</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img3.png" alt="">
+              </div>
+              <div>
+                <h3>Tuyển sinh</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Campus</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img1.png" alt="">
+              </div>
+              <div>
+                <h3>Đào tạo</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer2">
+    <div class="container">
+      <div class="footer-list">
+        <a href="/">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <div class="footer-social sm">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-item">
+          <h3>Giới thiệu chung</h3>
+          <ul>
+            <li><a href="">Về FPTU</a></li>
+            <li><a href="">Cơ sử vật chất & campus</a></li>
+            <li><a href="">Đối tác & hợp tác quốc tế</a></li>
+            <li><a href="">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Truy cập nhanh</h3>
+          <ul>
+            <li><a href="">Thông tin tuyển sinh năm 2026</a></li>
+            <li><a href="">Open days</a></li>
+            <li><a href="">Học phí</a></li>
+            <li><a href="">Học bổng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Học tập tại FPTU</h3>
+          <ul>
+            <li><a href="">Ngành - Chuyên ngành đào tạo</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Dự án startup nổi bật</a></li>
+            <li><a href="">Trải nghiệm học tập toàn cầu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:(024) 7300 5588">(024) 7300 5588</a></li>
+          </ul>
+          <h3>Email</h3>
+          <ul>
+            <li><a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer-item sm">
+          <h3>Thông tin Campus</h3>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>HÀ NỘI <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, Xã Hòa Lạc, TP. Hà Nội</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(024) 7300 5588">(024) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>TP. HỒ CHÍ MINH <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(028) 7300 5588">(028) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhcm@fpt.edu.vn">tuyensinhhcm@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>ĐÀ NẴNG <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị công nghệ FPT Đà Nẵng, Phường Ngũ Hành Sơn, TP. Đà Nẵng</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0236) 730 0999">(0236) 730 0999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhdanang@fpt.edu.vn">tuyensinhdanang@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>CẦN THƠ <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Số 600, đường Nguyễn Văn Cừ (nối dài), Phường An Bình, Thành phố Cần Thơ</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0292) 730 3636">(0292) 730 3636 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhcantho@fpt.edu.vn">tuyensinhcantho@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>QUY NHƠN <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị mới An Phú Thịnh, Phường Quy Nhơn Đông, Tỉnh Gia Lai</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0256) 7300 999">(0256) 7300 999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhquynhon@fpt.edu.vn">tuyensinhquynhon@fpt.edu.vn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bản quyền thuộc về Trường Đại học FPT.</p>
+        <div class="footer-social md">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cta">
+    <a href="">
+      <img src="./images/icon-cta-icon1.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon2.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon3.svg" alt="">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const media = window.matchMedia("(max-width: 1024px)");
+    if (media.matches) {
+      const swiper = new Swiper('.exam-explore-swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+  </script> 
+  <script src="./index2.js"></script>
+</body>
+
+</html>
