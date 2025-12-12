@@ -3771,3 +3771,1649 @@
   }
 }
 
+
+/* ============================================= CSS TIN TUC TRANG HCM=========== */
+/* Student Life Section */
+.student-life {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.student-life-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.student-life-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.student-tab {
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  color: #242424;
+  background-image: url('./images/Background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.student-tab.active {
+  background-image: url('./images/Background-orang.png');
+  color: #fff;
+}
+
+.student-tab:hover:not(.active) {
+  opacity: 0.8;
+}
+
+/* Tab Content */
+.student-tab-content {
+  display: none;
+}
+
+.student-tab-content.active {
+  display: block;
+}
+
+/* Grid Layout - 7:3 ratio */
+.student-content-grid {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+/* Main Featured Card - Left Side (70%) */
+.student-featured-main {
+  grid-column: span 1;
+}
+
+.student-card-large {
+  display: block;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.student-card-large:hover {
+  transform: translateY(-4px);
+}
+
+.student-card-large .student-card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 400px;
+}
+
+.student-card-large .student-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.student-card-large:hover .student-card-image img {
+  transform: scale(1.05);
+}
+
+.student-card-large .student-card-content {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-card-large .student-card-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.student-card-large:hover .student-card-content h3 {
+  color: var(--cl-primary);
+}
+
+.student-card-large .student-card-content p {
+  font-size: 14px;
+  color: #707070;
+  line-height: 1.6;
+}
+
+/* Right Side - 2 Smaller Cards (30%) */
+.student-featured-side {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.student-card-small {
+  display: block;
+  transition: transform 0.3s ease;
+  flex: 1;
+}
+
+.student-card-small:hover {
+  transform: translateY(-4px);
+}
+
+.student-card-small .student-card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 200px;
+}
+
+.student-card-small .student-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.student-card-small:hover .student-card-image img {
+  transform: scale(1.05);
+}
+
+.student-card-small .student-card-content {
+  padding: 16px 0;
+}
+
+.student-card-small .student-card-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.student-card-small:hover .student-card-content h3 {
+  color: var(--cl-primary);
+}
+
+/* Footer */
+.student-life-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-view-more-student {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background-color: var(--cl-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-view-more-student:hover {
+  background-color: #d85f1a;
+  transform: translateY(-2px);
+}
+
+.btn-view-more-student img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .student-life-tabs {
+    overflow-x: auto;
+  }
+
+  .student-tab {
+    padding: 10px 24px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .student-content-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .student-card-large .student-card-image {
+    height: 300px;
+  }
+
+  .student-card-small .student-card-image {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .student-life {
+    padding: 40px 0;
+  }
+
+  .student-life-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .student-life-tabs {
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+
+  .student-tab {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .student-content-grid {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  /* Main card on mobile - Keep full layout */
+  .student-card-large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-card-large .student-card-image {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .student-card-large .student-card-content {
+    padding: 16px 0;
+    gap: 8px;
+  }
+
+  .student-card-large .student-card-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .student-card-large .student-card-content p {
+    font-size: 13px;
+    color: #707070;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Small cards on mobile - Display as a single row with 2 columns */
+  .student-featured-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .student-card-small {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-card-small .student-card-image {
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .student-card-small .student-card-content {
+    padding: 0;
+  }
+
+  .student-card-small .student-card-content h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+  }
+
+  .btn-view-more-student {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+/* ====================================
+   FTPU Students Section
+   ==================================== */
+
+.ftpu-students {
+  padding: 80px 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Decoration */
+.ftpu-students::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("./images/major-detail-feature-decor.svg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.ftpu-students .container {
+  position: relative;
+  z-index: 10;
+}
+
+/* ====================================
+   Section Title
+   ==================================== */
+
+.ftpu-students .intro-title {
+  margin-bottom: 32px;
+}
+
+/* ====================================
+   Tabs Navigation
+   ==================================== */
+
+.ftpu-students-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.ftpu-tab-btn {
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  color: #242424;
+  background-image: url('./images/Background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.ftpu-tab-btn.active {
+  background-image: url('./images/Background-orang.png');
+  color: #fff;
+}
+
+.ftpu-tab-btn:hover:not(.active) {
+  opacity: 0.8;
+}
+
+/* ====================================
+   Tab Content
+   ==================================== */
+
+.ftpu-tab-content {
+  display: none;
+}
+
+.ftpu-tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====================================
+   Content Grid Layout
+   ==================================== */
+
+.ftpu-students-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+/* ====================================
+   Main Card (Featured - Left Side)
+   ==================================== */
+
+.ftpu-students-main-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ftpu-students-main-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ftpu-students-main-image {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+}
+
+.ftpu-students-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ftpu-students-main-card:hover .ftpu-students-main-image img {
+  transform: scale(1.05);
+}
+
+.ftpu-students-main-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fafafa;
+}
+
+.ftpu-students-main-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.ftpu-students-main-card:hover .ftpu-students-main-content h3 {
+  color: var(--cl-primary);
+}
+
+.ftpu-students-main-content p {
+  font-size: 14px;
+  color: #707070;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ====================================
+   Small Cards Sidebar (Right Side)
+   ==================================== */
+
+.ftpu-students-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ftpu-students-small-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ftpu-students-small-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ftpu-students-small-image {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.ftpu-students-small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ftpu-students-small-card:hover .ftpu-students-small-image img {
+  transform: scale(1.05);
+}
+
+.ftpu-students-small-content {
+  padding: 16px;
+  background: #fafafa;
+}
+
+.ftpu-students-small-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.ftpu-students-small-card:hover .ftpu-students-small-content h3 {
+  color: var(--cl-primary);
+}
+
+/* ====================================
+   View More Button
+   ==================================== */
+
+.ftpu-students-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.ftpu-students .btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background-color: var(--cl-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.ftpu-students .btn-view-more:hover {
+  background-color: #d85f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.3);
+}
+
+.ftpu-students .btn-view-more img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ftpu-students .btn-view-more:hover img {
+  transform: translateX(4px);
+}
+
+/* ====================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .ftpu-students {
+    padding: 60px 0;
+  }
+
+  .ftpu-students .intro-title {
+    margin-bottom: 24px;
+  }
+
+  /* Tabs - Horizontal scroll */
+  .ftpu-students-tabs {
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .ftpu-students-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ftpu-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Single column layout */
+  .ftpu-students-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Adjust image heights */
+  .ftpu-students-main-image {
+    height: 260px;
+  }
+
+  .ftpu-students-small-image {
+    height: 160px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE (Max 767px)
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .ftpu-students {
+    padding: 40px 0;
+  }
+
+  .ftpu-students::before {
+    background-size: contain;
+  }
+
+  .ftpu-students .intro-title {
+    margin-bottom: 24px;
+  }
+
+  /* Tabs - Mobile */
+  .ftpu-students-tabs {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .ftpu-tab-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Single column layout */
+  .ftpu-students-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  /* Main card appears first */
+  .ftpu-students-main {
+    order: -1;
+  }
+
+  /* Main card - Mobile styling */
+  .ftpu-students-main-image {
+    height: 200px;
+  }
+
+  .ftpu-students-main-content {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .ftpu-students-main-content h3 {
+    font-size: 16px;
+    -webkit-line-clamp: 2;
+  }
+
+  .ftpu-students-main-content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Small cards - 2 columns grid on mobile */
+  .ftpu-students-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .ftpu-students-small-card {
+    border-radius: 8px;
+  }
+
+  .ftpu-students-small-image {
+    height: 120px;
+  }
+
+  .ftpu-students-small-content {
+    padding: 12px;
+  }
+
+  .ftpu-students-small-content h3 {
+    font-size: 13px;
+    -webkit-line-clamp: 3;
+    line-height: 1.4;
+  }
+
+  /* View More Button - Full width on mobile */
+  .ftpu-students .btn-view-more {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .ftpu-students .btn-view-more img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+/* ====================================
+   Campus Experience Section
+   ==================================== */
+
+.campus-experience {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.campus-experience .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ====================================
+   Title with Right-Aligned Border
+   ==================================== */
+
+.campus-experience-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.campus-experience-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.3;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Border line bên phải title */
+.campus-experience-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+/* ====================================
+   Content Grid Layout - 7:3 Ratio
+   ==================================== */
+
+.campus-experience-wrapper {
+  display: grid;
+  grid-template-columns: 7fr 3fr; /* 70% : 30% */
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+/* ====================================
+   Main Card (Featured - Left Side)
+   ==================================== */
+
+.campus-experience-main-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-experience-main-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.campus-experience-main-image {
+  position: relative;
+  overflow: hidden;
+  height: 450px; /* Cao hơn vì card lớn hơn */
+  border-radius: 8px;
+}
+
+.campus-experience-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.campus-experience-main-card:hover .campus-experience-main-image img {
+  transform: scale(1.05);
+}
+
+.campus-experience-main-content {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.campus-experience-main-content h3 {
+  font-size: 22px; /* Lớn hơn một chút */
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.campus-experience-main-card:hover .campus-experience-main-content h3 {
+  color: var(--cl-primary);
+}
+
+.campus-experience-main-content p {
+  font-size: 14px;
+  color: #707070;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ====================================
+   Small Cards Sidebar (Right Side - 30%)
+   ==================================== */
+
+.campus-experience-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.campus-experience-small-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-experience-small-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.campus-experience-small-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* Cao hơn để cân đối */
+  border-radius: 8px;
+}
+
+.campus-experience-small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.campus-experience-small-card:hover .campus-experience-small-image img {
+  transform: scale(1.05);
+}
+
+.campus-experience-small-content {
+  padding: 16px 0;
+}
+
+.campus-experience-small-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.campus-experience-small-card:hover .campus-experience-small-content h3 {
+  color: var(--cl-primary);
+}
+
+/* ====================================
+   View More Button
+   ==================================== */
+
+.campus-experience-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.campus-experience .btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background-color: var(--cl-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.campus-experience .btn-view-more:hover {
+  background-color: #d85f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.3);
+}
+
+.campus-experience .btn-view-more img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.campus-experience .btn-view-more:hover img {
+  transform: translateX(4px);
+}
+
+/* ====================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .campus-experience {
+    padding: 60px 0;
+  }
+
+  .campus-experience-header {
+    margin-bottom: 32px;
+  }
+
+  .campus-experience-title {
+    font-size: 28px;
+  }
+
+  /* Single column layout */
+  .campus-experience-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Adjust image heights */
+  .campus-experience-main-image {
+    height: 300px;
+  }
+
+  .campus-experience-small-image {
+    height: 180px;
+  }
+
+  .campus-experience-main-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE (Max 767px)
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .campus-experience {
+    padding: 40px 0;
+  }
+
+  .campus-experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .campus-experience-title {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  /* Border full width on mobile */
+  .campus-experience-header::after {
+    width: 100%;
+  }
+
+  /* Single column layout */
+  .campus-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  /* Main card appears first */
+  .campus-experience-main {
+    order: -1;
+  }
+
+  /* Main card - Mobile styling */
+  .campus-experience-main-image {
+    height: 220px;
+  }
+
+  .campus-experience-main-content {
+    padding: 16px 0;
+    gap: 8px;
+  }
+
+  .campus-experience-main-content h3 {
+    font-size: 16px;
+    -webkit-line-clamp: 2;
+  }
+
+  .campus-experience-main-content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Small cards - 2 columns grid on mobile */
+  .campus-experience-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .campus-experience-small-image {
+    height: 120px;
+  }
+
+  .campus-experience-small-content {
+    padding: 12px 0;
+  }
+
+  .campus-experience-small-content h3 {
+    font-size: 13px;
+    -webkit-line-clamp: 3;
+    line-height: 1.4;
+  }
+
+  /* View More Button - Full width on mobile */
+  .campus-experience .btn-view-more {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .campus-experience .btn-view-more img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+/* ======================================= TRANG HCM 3 =========  */
+/* ====================================
+   Career & Orientation Section
+   ==================================== */
+
+.career-orientation {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Header with right decoration */
+.career-orientation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.career-orientation-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1.3;
+}
+
+.title-decor-right {
+  flex-shrink: 0;
+}
+
+.title-decor-right img {
+  height: 24px;
+  width: auto;
+}
+
+/* Category Tabs */
+.career-orientation-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.career-orientation-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.career-tab {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url('./images/Background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #242424;
+}
+
+.career-tab.active {
+  background-image: url('./images/Background-orang.png');
+  color: #fff;
+}
+
+.career-tab:hover:not(.active) {
+  opacity: 0.8;
+}
+
+/* Slider */
+.career-slider {
+  position: relative;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.career-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.career-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.career-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.career-image {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  border-radius: 8px 8px 0 0;
+}
+
+.career-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.career-link:hover .career-image img {
+  transform: scale(1.05);
+}
+
+.career-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+}
+
+.career-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.career-link:hover .career-content h3 {
+  color: var(--cl-primary);
+}
+
+/* Swiper Navigation */
+.career-slider .swiper-button-prev,
+.career-slider .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  top: 40%;
+  transition: all 0.3s ease;
+}
+
+.career-slider .swiper-button-prev {
+  left: 0;
+}
+
+.career-slider .swiper-button-next {
+  right: 0;
+}
+
+.career-slider .swiper-button-prev:after,
+.career-slider .swiper-button-next:after {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+}
+
+.career-slider .swiper-button-prev:hover,
+.career-slider .swiper-button-next:hover {
+  background-color: var(--cl-primary);
+}
+
+.career-slider .swiper-button-prev:hover:after,
+.career-slider .swiper-button-next:hover:after {
+  color: #fff;
+}
+
+/* View More Button */
+.career-orientation-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.career-orientation-footer .btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background-color: var(--cl-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.career-orientation-footer .btn-view-more:hover {
+  background-color: #d85f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.3);
+}
+
+.career-orientation-footer .btn-view-more img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.career-orientation-footer .btn-view-more:hover img {
+  transform: translateX(4px);
+}
+
+/* ====================================
+   Business Partnership Section
+   ==================================== */
+
+.business-partnership {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+/* Header with right decoration */
+.business-partnership-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.business-partnership-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1.3;
+}
+
+/* Category Tabs */
+.business-partnership-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.business-partnership-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.business-tab {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: url('./images/Background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #242424;
+}
+
+.business-tab.active {
+  background-image: url('./images/Background-orang.png');
+  color: #fff;
+}
+
+.business-tab:hover:not(.active) {
+  opacity: 0.8;
+}
+
+/* Slider */
+.business-slider {
+  position: relative;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.business-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.business-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.business-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.business-image {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  border-radius: 8px 8px 0 0;
+}
+
+.business-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.business-link:hover .business-image img {
+  transform: scale(1.05);
+}
+
+.business-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+}
+
+.business-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.business-link:hover .business-content h3 {
+  color: var(--cl-primary);
+}
+
+/* Swiper Navigation */
+.business-slider .swiper-button-prev,
+.business-slider .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  top: 40%;
+  transition: all 0.3s ease;
+}
+
+.business-slider .swiper-button-prev {
+  left: 0;
+}
+
+.business-slider .swiper-button-next {
+  right: 0;
+}
+
+.business-slider .swiper-button-prev:after,
+.business-slider .swiper-button-next:after {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+}
+
+.business-slider .swiper-button-prev:hover,
+.business-slider .swiper-button-next:hover {
+  background-color: var(--cl-primary);
+}
+
+.business-slider .swiper-button-prev:hover:after,
+.business-slider .swiper-button-next:hover:after {
+  color: #fff;
+}
+
+/* View More Button */
+.business-partnership-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.business-partnership-footer .btn-view-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background-color: var(--cl-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.business-partnership-footer .btn-view-more:hover {
+  background-color: #d85f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 106, 0, 0.3);
+}
+
+.business-partnership-footer .btn-view-more img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.business-partnership-footer .btn-view-more:hover img {
+  transform: translateX(4px);
+}
+
+/* ====================================
+   RESPONSIVE - TABLET
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .career-orientation,
+  .business-partnership {
+    padding: 60px 0;
+  }
+
+  .career-orientation-title,
+  .business-partnership-title {
+    font-size: 28px;
+  }
+
+  .career-orientation-tabs,
+  .business-partnership-tabs {
+    margin-bottom: 24px;
+  }
+
+  .career-tab,
+  .business-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .career-slider,
+  .business-slider {
+    padding: 0 40px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .career-orientation,
+  .business-partnership {
+    padding: 40px 0;
+  }
+
+  .career-orientation-header,
+  .business-partnership-header {
+    margin-bottom: 24px;
+  }
+
+  .career-orientation-title,
+  .business-partnership-title {
+    font-size: 22px;
+  }
+
+  .title-decor-right img {
+    height: 18px;
+  }
+
+  .career-orientation-tabs,
+  .business-partnership-tabs {
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+
+  .career-tab,
+  .business-tab {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .career-slider,
+  .business-slider {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .career-image,
+  .business-image {
+    height: 180px;
+  }
+
+  .career-content,
+  .business-content {
+    padding: 16px;
+  }
+
+  .career-content h3,
+  .business-content h3 {
+    font-size: 14px;
+  }
+
+  .career-slider .swiper-button-prev,
+  .career-slider .swiper-button-next,
+  .business-slider .swiper-button-prev,
+  .business-slider .swiper-button-next {
+    display: none;
+  }
+
+  .career-orientation-footer .btn-view-more,
+  .business-partnership-footer .btn-view-more {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .career-orientation-footer .btn-view-more img,
+  .business-partnership-footer .btn-view-more img {
+    width: 16px;
+    height: 16px;
+  }
+}
