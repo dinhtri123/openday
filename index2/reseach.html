@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top md">
+      <div class="container">
+        <div class="header-top-search">
+          <span>
+            <img src="./images/icon-search.svg" alt="">
+          </span>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="header-top-right">
+          <ul class="header-top-base">
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+          </ul>
+          <div class="header-top-language">
+            <span>
+              <img src="./images/icon-lang.svg" alt="">
+            </span>
+            <div>
+              <p class="active">VN</p>
+              <span></span>
+              <p>EN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="header-nav md">
+            <ul class="header-menu">
+              <li><a href="">Về FPTU</a></li>
+              <li><a href="">Đào tạo</a></li>
+              <li><a href="">Tuyển sinh</a></li>
+              <li><a href="">Cuộc sống sinh viên</a></li>
+              <li><a href="">Nghiên cứu & đổi mới</a></li>
+              <li><a href="">Tin tức</a></li>
+            </ul>
+          </nav>
+          <div class="header-right-mobile sm">
+            <div class="header-search sm">
+              <span class="icon-search-sm">
+                <img src="./images/icon-search-mb.svg" alt="">
+              </span>
+              <div class="header-top-search">
+                <span>
+                  <img src="./images/icon-search.svg" alt="">
+                </span>
+                <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              </div>
+            </div>
+            <span class="icon-menu">
+              <img src="./images/icon-menu.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-menu sm">
+      <div class="popup-menu-inner">
+        <div class="popup-top">
+          <a href="/">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <div class="icon-close-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="popup-menu-list">
+          <ul>
+            <li class="active"><a href="">Về FPTU</a></li>
+            <li><a href="">Đào tạo</a></li>
+            <li><a href="">Tuyển sinh</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Nghiên cứu & đổi mới</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+            <li>
+              <div class="header-top-language">
+                <span>
+                  <img src="./images/icon-lang.svg" alt="">
+                </span>
+                <div>
+                  <p class="active">VN</p>
+                  <span></span>
+                  <p>EN</p>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="overview-hero">
+      <div class="banner">
+        <img src="./images/campus-hn-banner.png" alt="">
+      </div>
+      <div class="container">
+        <div class="breadcrumb">
+          <span>
+            <img src="./images/icon-house.svg" alt="">
+          </span>
+          <span>
+            <img src="./images/icon-arrow-right-gray.svg" alt="">
+          </span>
+          <p>Nghiên cứu và đổi mới</p>
+        </div>
+      </div>
+    </div>
+    <section class="reseach-intro">
+      <div class="container">
+        <div class="title-common">
+          <span class="title-common-decor-left">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+          <h2><strong>Giới thiệu</strong></h2>
+          <span class="title-common-decor-right">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <p>Với tầm nhìn toàn cầu, Trường Đại học FPT xem nghiên cứu khoa học và đổi mới sáng tạo là nền tảng để kiến tạo
+          tri thức và giải quyết những thách thức của thời đại. Chúng tôi thúc đẩy các nghiên cứu liên ngành, hợp tác
+          giữa giảng viên, sinh viên và doanh nghiệp. Với trọng tâm vào các lĩnh vực công nghệ thông tin, trí tuệ nhân
+          tạo (AI), kinh tế số và ứng dụng thực tiễn, hoạt động nghiên cứu tại trường không chỉ mang tính học thuật mà
+          còn gắn kết chặt chẽ với doanh nghiệp và cộng đồng quốc tế, dành những nguồn lực và ưu tiên tốt nhất cho hoạt
+          động nghiên cứu khoa học của giảng viên và sinh viên.</p>
+      </div>
+    </section>
+    <section class="research-achivement">
+      <div class="container">
+        <div class="title-common">
+          <span class="title-common-decor-left">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+          <h2><strong>Thành tựu</strong></h2>
+          <span class="title-common-decor-right">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <div class="achivement-list">
+          <div class="achivement-item">
+            <span>26</span>
+            <p>Bằng</p>
+            <h3>Sáng chế</h3>
+          </div>
+          <div class="achivement-item">
+            <span>93</span>
+            <p>Đề tài</p>
+            <h3>Nghiên cứu khoa học 2020 - 2025</h3>
+          </div>
+          <div class="achivement-item">
+            <span>141</span>
+            <p>Sinh viên</p>
+            <h3>Có bài báo Q1 có danh sách</h3>
+          </div>
+          <div class="achivement-item">
+            <span>97</span>
+            <p>Nhà khoa học</p>
+            <h3>Có danh sách thành</h3>
+          </div>
+          <div class="achivement-item">
+            <span>26</span>
+            <p>Đề tài</p>
+            <h3>Số bài báo/công bố khoa học</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-intro">
+      <div class="container">
+        <div class="exam-intro-main">
+          <div class="exam-intro-image">
+            <img src="./images/exam-intro-img.png" alt="">
+          </div>
+          <div class="exam-intro-content">
+            <div class="title-common">
+              <h2>Chính sách khuyến khích <strong>nghiên cứu khoa học</strong></h2>
+            </div>
+            <p>Trường Đại học FPT triển khai nhiều chính sách nhằm khuyến khích hoạt động nghiên cứu khoa học trong toàn
+              Trường. Ba chính sách mới nhất gồm Quyết định 497, 542 và 543 đang được áp dụng, tập trung vào khen thưởng
+              công bố quốc tế, hỗ trợ kinh phí tham dự hội nghị – hội thảo khoa học, và quy định quy trình quản lý đề
+              tài nghiên cứu. Các chính sách này tạo động lực cho giảng viên và sinh viên nâng cao chất lượng nghiên
+              cứu, đẩy mạnh hợp tác học thuật và tăng cường số lượng công bố khoa học uy tín.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="research-project">
+      <div class="container">
+        <div class="title-common">
+          <h2>Dự án <strong>nổi bật</strong></h2>
+          <span class="title-common-decor-right">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <p class="research-project-desc">Nhờ các chính sách khuyến khích mạnh mẽ cho nghiên cứu và đổi mới sáng
+          tạo,Trường Đại học FPT đã đạt được nhiều thành tựu ấn tượng trên mặt trận khoa học trong những năm gần đây.
+          Giảng viên và sinh viên liên tiếp công bố các bài nghiên cứu trên các tạp chí và hội nghị uy tín, góp phần đưa
+          FPTU vào Top 17 trường đại học Việt Nam có số lượng công bố khoa học cao nhất năm 2024.</p>
+        <div class="research-project-main">
+          <div class="research-project-list swiper">
+            <div class="swiper-wrapper">
+              <div class="research-project-item swiper-slide">
+                <img src="./images/research-project-img1.png" alt="">
+                <h3>Công trình 1</h3>
+              </div>
+              <div class="research-project-item swiper-slide">
+                <img src="./images/research-project-img2.png" alt="">
+                <h3>Công trình 2</h3>
+              </div>
+              <div class="research-project-item swiper-slide">
+                <img src="./images/research-project-img1.png" alt="">
+                <h3>Công trình 3</h3>
+              </div>
+              <div class="research-project-item swiper-slide">
+                <img src="./images/research-project-img2.png" alt="">
+                <h3>Công trình 4</h3>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="research-project-btn research-slider-btn">
+            <div class="swiper-button-next research-slider-btn-next"></div>
+            <div class="swiper-button-prev research-slider-btn-prev"></div>
+          </div>
+        </div>
+        <a href="" class="future-btn">
+          Xem thêm
+          <img src="./images/icon-arrow.svg" alt="">
+        </a>
+      </div>
+    </section>
+    <section class="research-forum">
+      <div class="container">
+        <div class="title-common">
+          <h2>Diễn đàn <br class="sm"><strong>nghiên cứu khoa học</strong></h2>
+          <span class="title-common-decor-right">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <div class="research-forum-list">
+          <div class="research-forum-item">
+            <span class="forum-item-img">
+              <img src="./images/research-forum-img1.png" alt="">
+            </span>
+            <div class="forum-item-right">
+              <div class="forum-item-content">
+                <h3>1. Hội nghị FPT Language and Education Conference (FLEC)</h3>
+                <div>
+                  <p>Lĩnh vực</p>
+                  <ul>
+                    <li>Ngôn ngữ học ứng dụng</li>
+                    <li>Giảng dạy tiếng Anh</li>
+                    <li>Đổi mới giáo dục</li>
+                    <li>Công nghệ trong dạy & học</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Lịch sử tổ chức</p>
+                  <b>2024, 2026</b>
+                </div>
+                <div>
+                  <p>Đơn vị phụ trách</p>
+                  <b>Phòng Quản lý Khoa học, Khoa Tiếng Anh</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="research-forum-item">
+            <span class="forum-item-img">
+              <img src="./images/research-forum-img2.png" alt="">
+            </span>
+            <div class="forum-item-right">
+              <div class="forum-item-content">
+                <h3>2. Hội nghị FPT Conference on Business, Economics, and Management (FCBEM)</h3>
+                <div>
+                  <p>Lĩnh vực</p>
+                  <ul>
+                    <li>Kinh tế, quản trị</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Lịch sử tổ chức</p>
+                  <b>Thường niên từ năm 2020 đến 2025</b>
+                </div>
+                <div>
+                  <p>Đơn vị phụ trách</p>
+                  <b>Phòng Quản lý Khoa học</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="research-forum-item">
+            <span class="forum-item-img">
+              <img src="./images/research-forum-img3.jpg" alt="">
+            </span>
+            <div class="forum-item-right">
+              <div class="forum-item-content">
+                <h3>3. Hội nghị FPT International Conference on Emerging Trends in Computing - FETC</h3>
+                <div>
+                  <p>Lĩnh vực</p>
+                  <ul>
+                    <li>Khoa học máy tính</li>
+                    <li>Công nghệ thông tin</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Lịch sử tổ chức</p>
+                  <b> 25 - 26 tháng 10 năm 2025</b>
+                </div>
+                <div>
+                  <p>Đơn vị phụ trách</p>
+                  <b>Phòng Quản lý Khoa học</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="research-news">
+      <div class="container">
+        <div class="title-common">
+          <h2><strong>Tin tức</strong> cập nhật</h2>
+          <span class="title-common-decor-right">
+            <img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <div class="research-news-main">
+          <div class="research-news-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="research-news-item swiper-slide">
+                <img src="./images/research-news-img.png" alt="">
+                <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường THPT Quảng Ngãi</h3>
+              </div>
+              <div class="research-news-item swiper-slide">
+                <img src="./images/research-news-img.png" alt="">
+                <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường THPT Quảng Ngãi</h3>
+              </div>
+              <div class="research-news-item swiper-slide">
+                <img src="./images/research-news-img.png" alt="">
+                <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường THPT Quảng Ngãi</h3>
+              </div>
+              <div class="research-news-item swiper-slide">
+                <img src="./images/research-news-img.png" alt="">
+                <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường THPT Quảng Ngãi</h3>
+              </div>
+              <div class="research-news-item swiper-slide">
+                <img src="./images/research-news-img.png" alt="">
+                <h3>Trường Đại học FPT đưa STEM vào dạy và học cho 40 trường THPT Quảng Ngãi</h3>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="research-news-btn research-slider-btn">
+            <div class="swiper-button-next research-slider-btn-next"></div>
+            <div class="swiper-button-prev research-slider-btn-prev"></div>
+          </div>
+          <a href="" class="future-btn">
+            Xem thêm
+            <img src="./images/icon-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="research-partner">
+      <div class="container">
+        <div class="title-common">
+          <h2>Gương mặt <strong>khoa học</strong></h2>
+        </div>
+        <div class="research-partner-main">
+          <div class="research-partner-slider">
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-partner-img1.png" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-partner-img2.png" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-partner-img3.png" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-forum-img3.jpg" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-forum-img2.png" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+            <div class="research-partner-item">
+              <span class="research-partner-item-img">
+                <img src="./images/research-forum-img1.png" alt="">
+              </span>
+              <div>
+                <h3>TS. Nguyễn Phi Hùng</h3>
+                <p>Giảng viên Bộ môn Quản trị Kinh doanh</p>
+              </div>
+            </div>
+          </div>
+          <div class="research-partner-btn">
+            <button class="research-partner-btn-prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="research-partner-btn-next">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="research-partner-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer2">
+    <div class="container">
+      <div class="footer-list">
+        <a href="/">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <div class="footer-social sm">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-item">
+          <h3>Giới thiệu chung</h3>
+          <ul>
+            <li><a href="">Về FPTU</a></li>
+            <li><a href="">Cơ sử vật chất & campus</a></li>
+            <li><a href="">Đối tác & hợp tác quốc tế</a></li>
+            <li><a href="">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Truy cập nhanh</h3>
+          <ul>
+            <li><a href="">Thông tin tuyển sinh năm 2026</a></li>
+            <li><a href="">Open days</a></li>
+            <li><a href="">Học phí</a></li>
+            <li><a href="">Học bổng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Học tập tại FPTU</h3>
+          <ul>
+            <li><a href="">Ngành - Chuyên ngành đào tạo</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Dự án startup nổi bật</a></li>
+            <li><a href="">Trải nghiệm học tập toàn cầu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:(024) 7300 5588">(024) 7300 5588</a></li>
+          </ul>
+          <h3>Email</h3>
+          <ul>
+            <li><a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer-item sm">
+          <h3>Thông tin Campus</h3>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>HÀ NỘI <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, Xã Hòa Lạc, TP. Hà Nội</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(024) 7300 5588">(024) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>TP. HỒ CHÍ MINH <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(028) 7300 5588">(028) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhcm@fpt.edu.vn">tuyensinhhcm@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>ĐÀ NẴNG <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị công nghệ FPT Đà Nẵng, Phường Ngũ Hành Sơn, TP. Đà Nẵng</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0236) 730 0999">(0236) 730 0999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhdanang@fpt.edu.vn">tuyensinhdanang@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>CẦN THƠ <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Số 600, đường Nguyễn Văn Cừ (nối dài), Phường An Bình, Thành phố Cần Thơ</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0292) 730 3636">(0292) 730 3636 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhcantho@fpt.edu.vn">tuyensinhcantho@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>QUY NHƠN <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị mới An Phú Thịnh, Phường Quy Nhơn Đông, Tỉnh Gia Lai</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0256) 7300 999">(0256) 7300 999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhquynhon@fpt.edu.vn">tuyensinhquynhon@fpt.edu.vn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bản quyền thuộc về Trường Đại học FPT.</p>
+        <div class="footer-social md">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cta">
+    <a href="">
+      <img src="./images/icon-cta-icon1.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon2.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon3.svg" alt="">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.research-project-list', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.research-project-btn .swiper-button-next',
+        prevEl: '.research-project-btn .swiper-button-prev',
+      },
+      slidesPerView: 1,
+      spaceBetween: 32,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    });
+    const researchNewsSlider = new Swiper('.research-news-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: '.research-news-btn .swiper-button-next',
+        prevEl: '.research-news-btn .swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+  <script src="./index2.js"></script>
+</body>
+
+</html>

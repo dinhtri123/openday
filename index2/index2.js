@@ -192,4 +192,129 @@ document.addEventListener("DOMContentLoaded", () => {
       recruitmentFaqItem.classList.add("active");
     });
   });
+
+  // research partner slider
+  const partnerSlider = document.querySelector(".research-partner-slider");
+  if(partnerSlider) {
+    const partnerSliderItems = document.querySelectorAll(".research-partner-item");
+    const partnerSliderPrev = document.querySelector(".research-partner-btn-prev");
+    const partnerSliderNext = document.querySelector(".research-partner-btn-next");
+    const partnerMain = document.querySelector(".research-partner-main");
+    const partnerPagination = document.querySelector(".research-partner-pagination");
+    const totalItems = partnerSliderItems.length;
+    let currentIndex = 0;
+    let isTransitioning = false;
+    const gap = 32;
+    if(media.matches) {
+      visibleItems = 1;
+    }else {
+      visibleItems = 3;
+    }
+    const originalItems = Array.from(partnerSliderItems);
+    originalItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      partnerSlider.appendChild(clone);
+
+    });
+    originalItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      partnerSlider.insertBefore(clone, partnerSlider.lasttChild);
+    });
+
+    const allItems = document.querySelectorAll(".research-partner-item");
+    currentIndex = totalItems;
+    for (let i = 0; i < totalItems; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('research-partner-dot');
+      if (i === 0) {
+        dot.classList.add('active');
+      }
+      dot.dataset.index = i;
+      partnerPagination.appendChild(dot);
+    }
+    const paginationDots = document.querySelectorAll('.research-partner-dot');
+
+    function updatePagination() {
+      const realIndex = currentIndex % totalItems;
+      paginationDots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === realIndex) {
+          dot.classList.add('active');
+        }
+      });
+    }
+
+    paginationDots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        if (isTransitioning) return;
+        const targetIndex = parseInt(dot.dataset.index);
+        isTransitioning = true;
+        currentIndex = totalItems + targetIndex;
+        updateSlider();
+        updatePagination();
+      });
+    });
+
+    function setItemWidths() {
+      const containerWidth = partnerMain.offsetWidth;
+      const itemWidth = (containerWidth - gap * (visibleItems - 1)) / visibleItems;
+      allItems.forEach(item => {
+        item.style.width = `${itemWidth}px`;
+      });
+      return itemWidth;
+    }
+
+    function updateSlider(animate = true) {
+      const itemWidth = setItemWidths(); 
+      const slideWidth = itemWidth + gap; 
+      const containerWidth = partnerMain.offsetWidth;
+      const offset = (containerWidth - itemWidth) / 2; 
+      
+      if (animate) {
+        partnerSlider.style.transition = 'transform 0.4s ease';
+      } else {
+        partnerSlider.style.transition = 'none';
+      }
+      partnerSlider.style.transform = `translateX(${offset - currentIndex * slideWidth}px)`;
+      
+      allItems.forEach((item, index) => {
+        item.classList.remove('active');
+        if (index === currentIndex) {
+          item.classList.add('active');
+        }
+      });
+      updatePagination();
+    }
+
+    partnerSlider.addEventListener('transitionend', () => {
+      isTransitioning = false;
+      
+      if (currentIndex >= totalItems * 2) {
+        currentIndex = totalItems;
+        updateSlider(false);
+      }
+      if (currentIndex < totalItems) {
+        currentIndex = totalItems * 2 - 1;
+        updateSlider(false);
+      }
+    });
+
+    partnerSliderNext.addEventListener('click', () => {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      currentIndex++;
+      updateSlider();
+    });
+    
+    partnerSliderPrev.addEventListener('click', () => {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      currentIndex--;
+      updateSlider();
+    });
+    
+    window.addEventListener('resize', () => updateSlider(false));
+    
+    updateSlider(false);
+  }
 });
