@@ -260,3 +260,109 @@ campusTabBtns.forEach(tab => {
     console.log('Selected campus:', campus);
   });
 });
+
+
+// ==========================================JS TRANG TIN TUC HCM
+// JavaScript for Student Life Section
+document.addEventListener('DOMContentLoaded', function() {
+  // Tab switching for Student Life section
+  const studentTabButtons = document.querySelectorAll('.student-tab');
+  const studentTabContents = document.querySelectorAll('.student-tab-content');
+
+  studentTabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const tabName = this.getAttribute('data-tab');
+
+      // Remove active class from all tabs and contents
+      studentTabButtons.forEach(btn => btn.classList.remove('active'));
+      studentTabContents.forEach(content => content.classList.remove('active'));
+
+      // Add active class to clicked tab and corresponding content
+      this.classList.add('active');
+      document.getElementById(tabName).classList.add('active');
+    });
+  });
+});
+
+// FTPU Students Tabs
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.ftpu-tab-btn');
+  const tabContents = document.querySelectorAll('.ftpu-tab-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetTab = this.getAttribute('data-tab');
+
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      this.classList.add('active');
+      
+      const targetContent = document.getElementById(targetTab);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+});
+
+// TRANG HCM 3
+// Initialize Swiper for Career Orientation
+const careerSwiper = new Swiper('.career-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.career-slider .swiper-button-next',
+    prevEl: '.career-slider .swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// Initialize Swiper for Business Partnership
+const businessSwiper = new Swiper('.business-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.business-slider .swiper-button-next',
+    prevEl: '.business-slider .swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});
+
+// Tabs functionality for Career Orientation
+const careerTabs = document.querySelectorAll('.career-tab');
+careerTabs.forEach(tab => {
+  tab.addEventListener('click', function() {
+    careerTabs.forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    // Add logic to filter content by category
+  });
+});
+
+// Tabs functionality for Business Partnership
+const businessTabs = document.querySelectorAll('.business-tab');
+businessTabs.forEach(tab => {
+  tab.addEventListener('click', function() {
+    businessTabs.forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+    // Add logic to filter content by category
+  });
+});

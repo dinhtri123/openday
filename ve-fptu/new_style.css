@@ -1,0 +1,1323 @@
+.brand-story {
+  padding: 80px 0;
+}
+
+.brand-story-main {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.brand-story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-story-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.brand-story-content p {
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.brand-story-slogan {
+  font-weight: 700;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.brand-story-gallery {
+  position: relative;
+  height: 100%;
+}
+
+.brand-story-gallery-decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.brand-story-gallery-decor-top {
+  top: -30px;
+  left: -50px;
+}
+
+.brand-story-gallery-decor-top img {
+  width: 120px;
+  height: auto;
+}
+
+.brand-story-gallery-decor-bottom {
+  bottom: -20px;
+  right: -40px;
+}
+
+.brand-story-gallery-decor-bottom img {
+  width: 140px;
+  height: auto;
+}
+
+.brand-story-gallery-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  height: 100%;
+  align-items: center;
+}
+
+.gallery-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: -50px;
+}
+
+.gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-top {
+  width: 100%;
+  height: 220px;
+}
+
+.gallery-bottom-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.gallery-item-small {
+  width: 100%;
+  height: 220px;
+}
+
+.gallery-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.gallery-item-large {
+  width: 100%;
+  height: 420px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .brand-story-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .brand-story-gallery-grid {
+    grid-template-columns: 180px 1fr;
+    align-items: start;
+  }
+  
+  .gallery-left {
+    margin-top: -40px;
+  }
+  
+  .gallery-right {
+    margin-top: 40px;
+  }
+  
+  .gallery-item-top {
+    width: 180px;
+    height: 200px;
+  }
+  
+  .gallery-item-small {
+    height: 200px;
+  }
+  
+  .gallery-item-large {
+    height: 350px;
+  }
+  
+  .brand-story-gallery-decor-top {
+    left: -30px;
+  }
+  
+  .brand-story-gallery-decor-top img {
+    width: 90px;
+  }
+  
+  .brand-story-gallery-decor-bottom img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-story {
+    padding: 60px 0 80px;
+  }
+  
+  .brand-story-main {
+    gap: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .brand-story-title {
+    font-size: 20px;
+  }
+  
+  .brand-story-slogan {
+    font-size: 13px;
+  }
+  
+  .brand-story-gallery {
+    position: relative;
+    min-height: 350px;
+    padding: 20px 10px;
+  }
+  
+  .brand-story-gallery-decor-top {
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .brand-story-gallery-decor-top img {
+    width: 80px;
+  }
+  
+  .brand-story-gallery-decor-bottom {
+    display: block;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+  }
+  
+  .brand-story-gallery-decor-bottom img {
+    width: 90px;
+  }
+  
+  .brand-story-gallery-grid {
+    display: block;
+    position: relative;
+    height: auto;
+  }
+  
+  .gallery-left {
+    margin-top: 0;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .gallery-item-top {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+  }
+  
+  .gallery-bottom-group {
+    display: flex;
+    gap: 8px;
+    margin-left: 10px;
+  }
+  
+  .gallery-item-small {
+    width: 90px;
+    height: 110px;
+  }
+  
+  .gallery-right {
+    margin-top: -160px;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .gallery-item-large {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+.core-values {
+  padding: 80px 0;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.core-value-card {
+  background-image: url('./images/background-thuonghieu-1.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 32px 24px;
+  filter: drop-shadow(0 4px 20px rgba(255, 102, 0, 0.15));
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  min-height: 280px;
+}
+
+.core-value-card:hover {
+  transform: translateY(-8px);
+  filter: drop-shadow(0 8px 30px rgba(255, 102, 0, 0.25));
+}
+
+.core-value-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-value-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.core-value-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.core-value-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .core-values {
+    padding: 60px 0;
+  }
+  
+  .core-values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .core-value-card {
+    padding: 28px 20px;
+    min-height: 240px;
+  }
+  
+  .core-value-icon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .core-value-title {
+    font-size: 18px;
+  }
+  
+  .core-value-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .core-values {
+    padding: 50px 0;
+  }
+  
+  .core-values-grid {
+    gap: 20px;
+  }
+  
+  .core-value-card {
+    padding: 24px 20px;
+    gap: 12px;
+    min-height: 220px;
+  }
+  
+  .core-value-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .core-value-title {
+    font-size: 17px;
+  }
+  
+  .core-value-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.leadership {
+  padding: 80px 0;
+  position: relative;
+  background: #fafafa;
+}
+
+.leadership::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  background-image: url('./images/intro-decor.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.leadership .container {
+  position: relative;
+  z-index: 1;
+}
+
+.leadership h2 {
+  margin-bottom: 32px;
+}
+
+.leadership-tabs {
+  margin-bottom: 40px;
+}
+
+.leadership-tab {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1e1e;
+  padding: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.leadership-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.leadership-card-main {
+  background-image: url('./images/thuonghieu-background-2.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px 40px;
+  position: relative;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.08));
+}
+
+.leadership-card-decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.leadership-card-decor-top {
+  top: -30px;
+  left: -50px;
+}
+
+.leadership-card-decor-top img {
+  width: 120px;
+  height: auto;
+}
+
+.leadership-card-decor-bottom {
+  bottom: -20px;
+  right: -40px;
+}
+
+.leadership-card-decor-bottom img {
+  width: 140px;
+  height: auto;
+}
+
+.leadership-card-overlay {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.leadership-card-overlay img {
+  width: auto;
+  height: 23px;
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+.leadership-card-main-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.leadership-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.leadership-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.leadership-card-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.leadership-card-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Grid 4 cột - 2 cards trên (Phó Chủ tịch) */
+.leadership-grid-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Grid 4 cột - 4 cards dưới (Ủy viên) */
+.leadership-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.leadership-card-small {
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.leadership-card-small:hover {
+  transform: translateY(-8px);
+}
+
+.leadership-card-small .leadership-card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.08));
+}
+
+.leadership-card-small:hover .leadership-card-image {
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
+}
+
+.leadership-card-small .leadership-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadership-card-small .leadership-card-info {
+  padding: 20px;
+  text-align: center;
+  gap: 4px;
+  background: white;
+  border-radius: 0 0 12px 12px;
+}
+
+.leadership-card-small .leadership-card-name {
+  font-size: 16px;
+}
+
+.leadership-card-title {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .leadership {
+    padding: 60px 0;
+  }
+
+  .leadership-card-main {
+    padding: 60px 32px 32px;
+  }
+
+  .leadership-card-overlay img {
+    height: 60px;
+    transform: scale(1.5);
+  }
+
+  .leadership-card-main-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .leadership-card-main-inner .leadership-card-image {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .leadership-grid-top,
+  .leadership-grid-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .leadership {
+    padding: 50px 0;
+  }
+
+  .leadership-tab {
+    font-size: 18px;
+  }
+
+  .leadership-card-main {
+    padding: 50px 24px 24px;
+  }
+
+  .leadership-card-decor-top img {
+    width: 80px;
+  }
+
+  .leadership-card-decor-bottom img {
+    width: 90px;
+  }
+
+  .leadership-card-overlay img {
+    height: 50px;
+    transform: scale(1.3);
+  }
+
+  .leadership-card-name {
+    font-size: 18px;
+  }
+
+  .leadership-card-desc {
+    font-size: 14px;
+  }
+
+  .leadership-grid-top,
+  .leadership-grid-bottom {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .leadership-card-small .leadership-card-image {
+    height: 200px;
+  }
+
+  .leadership-card-small .leadership-card-info {
+    padding: 16px;
+  }
+}
+
+.management {
+  padding: 80px 0;
+  position: relative;
+  background: #ffffff;
+}
+
+.management::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  background-image: url('./images/intro-decor.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.management .container {
+  position: relative;
+  z-index: 1;
+}
+
+.management h2 {
+  margin-bottom: 32px;
+}
+
+.management-tabs {
+  margin-bottom: 40px;
+}
+
+.management-tab {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1e1e;
+  padding: 12px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.management-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.management-card-main {
+  background-image: url('./images/thuonghieu-background-2.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px 40px;
+  position: relative;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.08));
+}
+
+.management-card-decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.management-card-decor-top {
+  top: -30px;
+  left: -50px;
+}
+
+.management-card-decor-top img {
+  width: 120px;
+  height: auto;
+}
+
+.management-card-decor-bottom {
+  bottom: -20px;
+  right: -40px;
+}
+
+.management-card-decor-bottom img {
+  width: 140px;
+  height: auto;
+}
+
+.management-card-overlay {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.management-card-overlay img {
+  width: auto;
+  height: 23px;
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+/* ĐÂY LÀ PHẦN THAY ĐỔI - Content trước, Image sau */
+.management-card-main-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 280px; /* Đảo ngược: content 1fr, image 280px */
+  gap: 40px;
+  align-items: start;
+}
+
+.management-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.management-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.management-card-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.management-card-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Grid 4 cột cho Phó Hiệu trưởng */
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.management-card-small {
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.management-card-small:hover {
+  transform: translateY(-8px);
+}
+
+.management-card-small .management-card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.08));
+}
+
+.management-card-small:hover .management-card-image {
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
+}
+
+.management-card-small .management-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.management-card-small .management-card-info {
+  padding: 20px;
+  text-align: center;
+  gap: 4px;
+  background: white;
+  border-radius: 0 0 12px 12px;
+}
+
+.management-card-small .management-card-name {
+  font-size: 16px;
+}
+
+.management-card-title {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .management {
+    padding: 60px 0;
+  }
+
+  .management-card-main {
+    padding: 60px 32px 32px;
+  }
+
+  .management-card-overlay img {
+    height: 60px;
+    transform: scale(1.5);
+  }
+
+  .management-card-main-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .management-card-main-inner .management-card-image {
+    max-width: 240px;
+    margin: 0 auto;
+    order: -1; /* Đưa image lên trên content khi mobile */
+  }
+
+  .management-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .management {
+    padding: 50px 0;
+  }
+
+  .management-tab {
+    font-size: 18px;
+  }
+
+  .management-card-main {
+    padding: 50px 24px 24px;
+  }
+
+  .management-card-decor-top img {
+    width: 80px;
+  }
+
+  .management-card-decor-bottom img {
+    width: 90px;
+  }
+
+  .management-card-overlay img {
+    height: 50px;
+    transform: scale(1.3);
+  }
+
+  .management-card-name {
+    font-size: 18px;
+  }
+
+  .management-card-desc {
+    font-size: 14px;
+  }
+
+  .management-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .management-card-small .management-card-image {
+    height: 200px;
+  }
+
+  .management-card-small .management-card-info {
+    padding: 16px;
+  }
+}
+
+
+.history {
+  padding: 80px 0;
+  position: relative;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+/* Desktop layout: 5-5 */
+.history-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Image Desktop */
+.history-image-desk {
+  position: relative;
+}
+
+.history-image-desk img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Mobile - ẩn ở desktop */
+.history-image-mobi {
+  display: none;
+}
+
+/* Content */
+.history-content {
+  position: relative;
+}
+
+/* Title Desktop - "Lịch sử" trên, "hình thành + icon" dưới */
+.history-title-desk {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #1e1e1e;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+.history-title-desk > span:first-child {
+  display: block;
+}
+
+.history-title-desk > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.history-title-desk strong {
+  font-weight: 700;
+  color: var(--cl-primary);
+}
+
+.history-title-desk .history-title-decor img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* Title Mobile - ẩn ở desktop */
+.history-title-mobi {
+  display: none;
+}
+
+/* Subtitle */
+.history-subtitle {
+  margin-bottom: 32px;
+}
+
+.history-subtitle h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 0 0 8px 0;
+}
+
+.history-subtitle p {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
+
+/* Quote box */
+.history-quote {
+  position: relative;
+  padding: 30px 40px;
+  background-image: url('./images/brand-history-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  min-height: 140px;
+}
+
+.history-quote-icon {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.history-quote-icon img {
+  width: 80px;
+  height: auto;
+}
+
+.history-quote-content {
+  position: relative;
+  z-index: 1;
+}
+
+.history-quote-year {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 12px;
+}
+
+.history-quote-text {
+  font-size: 20px;
+  color: var(--cl-primary);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Timeline desktop - bung ra full width */
+.history-milestones {
+  margin: 0 -40px;
+  padding: 0 40px;
+}
+
+.history-timeline {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.history-timeline-item {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.history-timeline-year {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+
+.history-timeline-year::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 6px;
+  background: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.history-timeline-year::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 6px;
+  background: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.history-timeline-item.active .history-timeline-year {
+  color: var(--cl-primary);
+}
+
+.history-timeline-item.active .history-timeline-year::before,
+.history-timeline-item.active .history-timeline-year::after {
+  background: var(--cl-primary);
+  height: 8px;
+}
+
+.history-timeline-item:hover .history-timeline-year {
+  color: var(--cl-primary);
+  transform: translateY(-2px);
+}
+
+.history-timeline-item:hover .history-timeline-year::before,
+.history-timeline-item:hover .history-timeline-year::after {
+  background: var(--cl-primary);
+  height: 8px;
+}
+
+/* RESPONSIVE - MOBILE */
+@media (max-width: 991px) {
+  .history {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  /* Layout 1 cột */
+  .history-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Ẩn image desktop */
+  .history-image-desk {
+    display: none;
+  }
+
+  /* Ẩn title desktop */
+  .history-title-desk {
+    display: none;
+  }
+
+  /* Hiện title mobile - "Lịch sử hình thành" cùng dòng, icon bên phải */
+  .history-title-mobi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+    gap: 12px;
+  }
+
+  .history-title-mobi > span:first-child {
+    white-space: nowrap;
+  }
+
+  .history-title-mobi strong {
+    font-weight: 700;
+    color: var(--cl-primary);
+  }
+
+  .history-title-mobi .history-title-decor {
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .history-title-mobi .history-title-decor img {
+    height: 16px;
+    width: auto;
+    display: block;
+  }
+
+  /* Hiện image mobile - đặt sau timeline */
+  .history-image-mobi {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .history-image-mobi img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  /* Subtitle */
+  .history-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .history-subtitle h3 {
+    font-size: 16px;
+  }
+
+  .history-subtitle p {
+    font-size: 13px;
+  }
+
+  /* Quote mobile */
+  .history-quote {
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 100px;
+    margin-bottom: 24px;
+  }
+
+  .history-quote-icon {
+    top: -15px;
+    right: 16px;
+  }
+
+  .history-quote-icon img {
+    width: 50px;
+  }
+
+  .history-quote-year {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .history-quote-text {
+    font-size: 13px;
+  }
+
+  /* Timeline mobile với nền xám */
+  .history-milestones {
+    background: #f5f5f5;
+    padding: 20px 16px;
+    border-radius: 12px;
+    margin: 0 -16px;
+  }
+
+  .history-timeline {
+    gap: 16px;
+    overflow-x: auto;
+    padding: 16px 0;
+    justify-content: center;
+  }
+
+  .history-timeline-year {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .history-timeline-year::before {
+    top: -12px;
+    height: 8px;
+    background: #ddd;
+  }
+
+  .history-timeline-year::after {
+    bottom: -12px;
+    height: 8px;
+    background: #ddd;
+  }
+
+  .history-timeline-item.active .history-timeline-year {
+    font-size: 16px;
+  }
+
+  .history-timeline-item.active .history-timeline-year::before,
+  .history-timeline-item.active .history-timeline-year::after {
+    height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .history-title-mobi {
+    font-size: 20px;
+  }
+
+  .history-title-mobi .history-title-decor img {
+    height: 14px;
+  }
+
+  .history-subtitle h3 {
+    font-size: 14px;
+  }
+
+  .history-subtitle p {
+    font-size: 12px;
+  }
+
+  .history-timeline-year {
+    font-size: 12px;
+  }
+}

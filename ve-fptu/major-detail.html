@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top md">
+      <div class="container">
+        <div class="header-top-search">
+          <span>
+            <img src="./images/icon-search.svg" alt="">
+          </span>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="header-top-right">
+          <ul class="header-top-base">
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+          </ul>
+          <div class="header-top-language">
+            <span>
+              <img src="./images/icon-lang.svg" alt="">
+            </span>
+            <div>
+              <p class="active">VN</p>
+              <span></span>
+              <p>EN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="header-nav md">
+            <ul class="header-menu">
+              <li><a href="">Về FPTU</a></li>
+              <li><a href="">Đào tạo</a></li>
+              <li><a href="">Tuyển sinh</a></li>
+              <li><a href="">Cuộc sống sinh viên</a></li>
+              <li><a href="">Nghiên cứu & đổi mới</a></li>
+              <li><a href="">Tin tức</a></li>
+            </ul>
+          </nav>
+          <div class="header-right-mobile sm">
+            <div class="header-search sm">
+              <span class="icon-search-sm">
+                <img src="./images/icon-search-mb.svg" alt="">
+              </span>
+              <div class="header-top-search">
+                <span>
+                  <img src="./images/icon-search.svg" alt="">
+                </span>
+                <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              </div>
+            </div>
+            <span class="icon-menu">
+              <img src="./images/icon-menu.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-menu sm">
+      <div class="popup-menu-inner">
+        <div class="popup-top">
+          <a href="/">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <div class="icon-close-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="popup-menu-list">
+          <ul>
+            <li class="active"><a href="">Về FPTU</a></li>
+            <li><a href="">Đào tạo</a></li>
+            <li><a href="">Tuyển sinh</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Nghiên cứu & đổi mới</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+            <li>
+              <div class="header-top-language">
+                <span>
+                  <img src="./images/icon-lang.svg" alt="">
+                </span>
+                <div>
+                  <p class="active">VN</p>
+                  <span></span>
+                  <p>EN</p>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="overview-hero">
+      <div class="banner">
+        <img src="./images/major-page-banner.jpg" alt="">
+      </div>
+      <div class="container">
+        <div class="breadcrumb">
+          <span>
+            <img src="./images/icon-house.svg" alt="">
+          </span>
+          <span>
+            <img src="./images/icon-arrow-right-gray.svg" alt="">
+          </span>
+          <p>Đào tạo</p>
+          <span>
+            <img src="./images/icon-arrow-right-gray.svg" alt="">
+          </span>
+          <p>Ngành công nghệ thông tin</p><span>
+            <img src="./images/icon-arrow-right-gray.svg" alt="">
+          </span>
+          <p>An toàn thông tin</p>
+        </div>
+      </div>
+    </div>
+    <section class="major-detail-intro">
+      <div class="container">
+        <div class="title-common">
+          <h2 class="title-common-text">Giới thiệu <strong> chuyên ngành</strong></h2>
+          </h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <div class="major-detail-intro-main">
+          <div class="major-detail-intro-content">
+            <div>
+              <p>Trong thế giới nơi dữ liệu trở thành “tài sản chiến lược”, An toàn thông tin là tuyến phòng thủ sống
+                còn
+                bảo vệ tương lai số của tổ chức, doanh nghiệp và quốc gia.</p>
+              <p>Tại Trường Đại học FPT – nơi công nghệ, AI và trải nghiệm toàn cầu hội tụ – chương trình An toàn thông
+                tin được thiết kế theo triết lý “Security by Design – Security by AI”, kết hợp nền tảng học thuật vững
+                chắc với công nghệ tiên tiến và thực hành doanh nghiệp thực tế.</p>
+              <p>Sinh viên được học trong môi trường quốc tế, trải nghiệm các tình huống tấn công – phòng thủ thực
+                chiến,
+                tham gia dự án thật cùng chuyên gia bảo mật tại FPT, Viettel, VNPT, NCSC, VSEC…, từ đó phát triển tư duy
+                toàn cầu và năng lực thực hành vững vàng.</p>
+              <p>Sau bốn năm, sinh viên trở thành kỹ sư An toàn thông tin toàn cầu – làm chủ công nghệ bảo mật thông
+                minh trong kỷ nguyên AI.</p>
+            </div>
+            <a href="" class="future-btn">Tìm hiểu ngay <img src="./images/icon-arrow.png" alt=""></a>
+          </div>
+          <div class="major-detail-intro-img">
+            <img src="./images/major-detail-intro-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="major-detail-feature">
+      <div class="container">
+        <div class="title-common">
+          <h2 class="title-common-text"><strong>Đặc điểm nổi bật <br class="sm"></strong> của chương trình</h2>
+          </h2>
+          <span class="title-common-decor-right sm"><img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <div class="major-detail-feature-list">
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon1.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Tích hợp trí tuệ nhân tạo (AI)</h3>
+              <p>Ứng dụng AI trong giám sát, phát hiện và phản ứng sự cố an ninh mạng, giúp sinh viên làm chủ công nghệ
+                bảo mật thông minh và đón đầu xu hướng AI-driven Security.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon2.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Cập nhật theo xu hướng toàn cầu</h3>
+              <p>Chương trình đào tạo luôn bám sát công nghệ và phương pháp mới nhất trong lĩnh vực Cyber Security, giúp
+                sinh viên bắt nhịp với tốc độ phát triển của thế giới số.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon3.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Học theo chuẩn quốc tế NICE (NIST – Hoa Kỳ)</h3>
+              <p>Cấu trúc “combo môn học theo Roles” giúp sinh viên định hướng chuyên sâu theo An toàn ứng dụng, An toàn
+                hệ thống hoặc AI trong bảo mật.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon4.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Tích hợp chứng chỉ quốc tế</h3>
+              <p>Ứng dụng AI trong giám sát, phát hiện và phản ứng sự cố an ninh mạng, giúp sinh viên làm chủ công nghệ
+                bảo mật thông minh và đón đầu xu hướng AI-driven Security.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon5.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Thực chiến doanh nghiệp (OJT)</h3>
+              <p>Học kỳ thực tập tại các công ty hàng đầu như FPT Software, VNPT, NCSC, VSEC, mang đến trải nghiệm thực
+                tế và cơ hội việc làm sớm.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon6.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Thực hành trên Cyber Range</h3>
+              <p>Hệ thống mô phỏng tấn công – phòng thủ hiện đại giúp sinh viên rèn luyện kỹ năng bảo mật trong môi
+                trường sát thực tế.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span>
+              <img src="./images/major-detail-feature-icon7.svg" alt="">
+            </span>
+            <div>
+              <img src="./images/major-detail-feature-icon-line.svg" alt="">
+              <h3>Liên ngành – đa cơ hội</h3>
+              <p>Kết nối với các lĩnh vực AI, Kỹ thuật phần mềm, Kinh doanh, mở rộng khả năng ứng dụng bảo mật trong
+                nhiều môi trường công nghệ khác nhau.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="major-detail-career">
+      <div class="container">
+        <div class="title-common">
+          <h2>Tiềm năng &<br>
+            <strong>Cơ hội nghề nghiệp</strong>
+          </h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt="">
+          </span>
+        </div>
+        <p class="major-detail-career-desc">Theo tổ chức (ISC)², thế giới hiện thiếu hơn 4 triệu chuyên gia an ninh
+          mạng, khiến đây trở thành lĩnh vực có tốc độ tăng trưởng nhân lực nhanh nhất toàn cầu. Sinh viên tốt nghiệp
+          ngành An toàn thông tin tại Trường Đại học FPT có thể đảm nhiệm các vị trí như:</p>
+        <div class="major-detail-career-main">
+          <div class="career-img">
+            <img src="./images/major-detail-career-img.png" alt="">
+            <img src="./images/major-detail-career-img.png" alt="">
+            <img src="./images/major-detail-career-img.png" alt="">
+            <img src="./images/major-detail-career-img.png" alt="">
+            <img src="./images/major-detail-career-img.png" alt="">
+
+          </div>
+          <div class="career-right">
+            <ul class="career-list">
+              <li class="career-item">
+                <p>Chuyên viên phân tích và phòng thủ an ninh mạng (Security Analyst, Cyber Defense Engineer)</p>
+              </li>
+              <li class="career-item">
+                <p>Kỹ sư kiểm thử xâm nhập (Penetration Tester)</p>
+              </li>
+              <li class="career-item">
+                <p>Chuyên gia điều tra số (Digital Forensics Specialist)</p>
+              </li>
+              <li class="career-item">
+                <p>Chuyên viên bảo mật đám mây và IoT (Cloud/IoT Security Expert)</p>
+              </li>
+              <li class="career-item">
+                <p>Quản lý rủi ro và tư vấn an ninh mạng (Cyber Risk Manager, Security Consultant)</p>
+              </li>
+            </ul>
+            <div class="career-right-bottom">
+              <div class="career-right-bottom-btn">
+                <span class="career-right-bottom-btn-prev"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="career-right-bottom-btn-next"><i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+              <div class="career-right-number">
+                <span class="career-right-number-current">1</span>
+                <span>/</span>
+                <span class="career-right-number-total">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="overview-train major-detail-train">
+      <div class="container">
+        <h2 class="intro-title">
+          <span><img src="./images/decor-line-left.svg" alt=""></span>
+          <span>Tổng quan<br>
+            <strong>Chương trình đào tạo</strong></span>
+          </span>
+          <span><img src="./images/decor-line-right.svg" class="md" alt="">
+            <img src="./images/decor-line-right-sm.svg" alt="" class="sm"></span>
+        </h2>
+        <div class="overview-tab">
+          <div class="overview-train-tab">
+            <div class="overview-train-tab-item active" data-tab="train-tab-1">
+              <div>
+                <span>GĐ1</span>
+                <p>2 Tháng - 1 Năm</p>
+              </div>
+              <h3>Giai đoạn nền tảng</h3>
+            </div>
+            <div class="overview-train-tab-item" data-tab="train-tab-2">
+              <div>
+                <span>GĐ2</span>
+                <p>Học kỳ 1 – Học kỳ 5</p>
+              </div>
+              <h3>Giai đoạn cơ bản<br>
+                & Cơ sở ngành</h3>
+            </div>
+            <div class="overview-train-tab-item" data-tab="train-tab-3">
+              <div>
+                <span>GĐ3</span>
+                <p>Học kỳ 6</p>
+              </div>
+              <h3>Đào toạn trong doanh nghiệp<br> (OJT)</h3>
+            </div>
+            <div class="overview-train-tab-item" data-tab="train-tab-4">
+              <div>
+                <span>GĐ4</span>
+                <p>Học kỳ 7 – Học kỳ 9</p>
+              </div>
+              <h3>Chuyên ngành hẹp &<br>
+                Khoá luận tốt nghiệp</h3>
+            </div>
+          </div>
+        </div>
+        <div class="overview-train-content">
+          <div class="train-content-tab active" id="train-tab-1">
+            <div class="train-content-top">
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon1.svg" alt=""></span>
+                  <h4>NỘI DUNG HỌC</h4>
+                </div>
+                <ul>
+                  <li>Tuần lễ định hướng</li>
+                  <li>Tháng rèn luyện tập trung</li>
+                  <li>Giai đoạn tiếng Anh nền tảng</li>
+                  <li>Giai đoạn tiếng Anh nền tảng</li>
+                  <li>Học phần Vovinam và Nhạc cụ dân tộc</li>
+                </ul>
+              </div>
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon2.svg" alt=""></span>
+                  <h4>KẾT QUẢ ĐẠT ĐƯỢC</h4>
+                </div>
+                <ul>
+                  <li>Trang bị phương pháp học đại học hiệu quả: tự học, thuyết trình – phản biện, làm việc nhóm</li>
+                  <li>Đạt trình độ tiếng Anh tối thiểu tương đương IELTS 6.0</li>
+                  <li>Sẵn sàng lĩnh hội kiến thức chuyên ngành bằng giáo trình quốc tế trong các học kỳ tiếp theo</li>
+                </ul>
+              </div>
+            </div>
+            <div class="train-content-note">
+              <span>
+                <img src="./images/train-tab-icon3.svg" alt="">
+                <strong>LƯU Ý</strong>
+              </span>
+              <p>Sinh viên có chứng chỉ tiếng Anh tương đương IELTS 6.0 được miễn đào tạo giai
+                đoạn
+                tiếng Anh chuẩn bị.</p>
+            </div>
+          </div>
+          <div class="train-content-tab" id="train-tab-2">
+            <div class="train-content-top">
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon1.svg" alt=""></span>
+                  <h4>NỘI DUNG HỌC</h4>
+                </div>
+                <ul>
+                  <li>Các khối kiến thức và kỹ năng liên quan đến nghiệp vụ chuyên môn</li>
+                  <li>Ngoại ngữ thứ hai:</li>
+                  <ul>
+                    <li>Tiếng Nhật dành cho khối ngành Công nghệ thông tin</li>
+                    <li>Tiếng Trung dành cho khối ngành Kinh tế</li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon2.svg" alt=""></span>
+                  <h4>KẾT QUẢ ĐẠT ĐƯỢC</h4>
+                </div>
+                <ul>
+                  <li>Hiểu sâu nền tảng chuyên ngành</li>
+                  <li>Phát triển tư duy nghề nghiệp</li>
+                  <li>Mở rộng năng lực ngoại ngữ và khả năng hội nhập quốc tế</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="train-content-tab" id="train-tab-3">
+            <div class="train-content-top">
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon1.svg" alt=""></span>
+                  <h4>NỘI DUNG HỌC</h4>
+                </div>
+                <ul>
+                  <li>Sinh viên được đào tạo trong doanh nghiệp (On the Job Training)</li>
+                  <li>Được hướng dẫn bởi lãnh đạo ưu tú và chuyên gia hàng đầu trong ngành tại các doanh nghiệp như FPT
+                    Software, Bosch, KMS Technology...</li>
+                  <li>Trực tiếp tham gia vào các dự án thực tế của doanh nghiệp</li>
+                </ul>
+              </div>
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon2.svg" alt=""></span>
+                  <h4>KẾT QUẢ ĐẠT ĐƯỢC</h4>
+                </div>
+                <ul>
+                  <li>Trải nghiệm môi trường làm việc chuyên nghiệp</li>
+                  <li>Phát triển kỹ năng nghề nghiệp và tác phong doanh nghiệp</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="train-content-tab" id="train-tab-4">
+            <div class="train-content-top">
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon1.svg" alt=""></span>
+                  <h4>NỘI DUNG HỌC</h4>
+                </div>
+                <ul>
+                  <li>Lựa chọn chuyên ngành chuyên sâu theo đúng định hướng nghề nghiệp</li>
+                  <li>Thực hiện khóa luận tốt nghiệp dưới sự hướng dẫn của giảng viên và chuyên gia có kinh nghiệm từ
+                    các doanh nghiệp, tổ chức hàng đầu trong ngành</li>
+                </ul>
+              </div>
+              <div class="train-content-top-item">
+                <div>
+                  <span><img src="./images/train-tab-icon2.svg" alt=""></span>
+                  <h4>KẾT QUẢ ĐẠT ĐƯỢC</h4>
+                </div>
+                <ul>
+                  <li>Hoàn thiện kiến thức chuyên sâu</li>
+                  <li>Củng cố năng lực nghiên cứu và ứng dụng</li>
+                  <li>Sẵn sàng khởi nghiệp hoặc gia nhập thị trường lao động toàn cầu</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="major-detail-explore">
+      <div class="container">
+        <div class="title-common">
+          <h2>Khám phá thêm <br><strong>cùng FPTU</strong></h2>
+        </div>
+
+        <div class="swiper major-detail-explore-swiper">
+          <div class="swiper-wrapper major-detail-explore-list">
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Học bổng</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img3.png" alt="">
+              </div>
+              <div>
+                <h3>Tuyển sinh</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Campus</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img1.png" alt="">
+              </div>
+              <div>
+                <h3>Đào tạo</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer2">
+    <div class="container">
+      <div class="footer-list">
+        <a href="/">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <div class="footer-social sm">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-item">
+          <h3>Giới thiệu chung</h3>
+          <ul>
+            <li><a href="">Về FPTU</a></li>
+            <li><a href="">Cơ sử vật chất & campus</a></li>
+            <li><a href="">Đối tác & hợp tác quốc tế</a></li>
+            <li><a href="">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Truy cập nhanh</h3>
+          <ul>
+            <li><a href="">Thông tin tuyển sinh năm 2026</a></li>
+            <li><a href="">Open days</a></li>
+            <li><a href="">Học phí</a></li>
+            <li><a href="">Học bổng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Học tập tại FPTU</h3>
+          <ul>
+            <li><a href="">Ngành - Chuyên ngành đào tạo</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Dự án startup nổi bật</a></li>
+            <li><a href="">Trải nghiệm học tập toàn cầu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:(024) 7300 5588">(024) 7300 5588</a></li>
+          </ul>
+          <h3>Email</h3>
+          <ul>
+            <li><a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer-item sm">
+          <h3>Thông tin Campus</h3>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>HÀ NỘI <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, Xã Hòa Lạc, TP. Hà Nội</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(024) 7300 5588">(024) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>TP. HỒ CHÍ MINH <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(028) 7300 5588">(028) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhcm@fpt.edu.vn">tuyensinhhcm@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>ĐÀ NẴNG <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị công nghệ FPT Đà Nẵng, Phường Ngũ Hành Sơn, TP. Đà Nẵng</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0236) 730 0999">(0236) 730 0999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhdanang@fpt.edu.vn">tuyensinhdanang@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>CẦN THƠ <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Số 600, đường Nguyễn Văn Cừ (nối dài), Phường An Bình, Thành phố Cần Thơ</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0292) 730 3636">(0292) 730 3636 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhcantho@fpt.edu.vn">tuyensinhcantho@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>QUY NHƠN <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị mới An Phú Thịnh, Phường Quy Nhơn Đông, Tỉnh Gia Lai</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0256) 7300 999">(0256) 7300 999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhquynhon@fpt.edu.vn">tuyensinhquynhon@fpt.edu.vn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bản quyền thuộc về Trường Đại học FPT.</p>
+        <div class="footer-social md">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cta">
+    <a href="">
+      <img src="./images/icon-cta-icon1.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon2.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon3.svg" alt="">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const media = window.matchMedia("(max-width: 1024px)");
+    if (media.matches) {
+      const swiper = new Swiper('.major-detail-explore-swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+  </script> 
+  <script src="./index2.js"></script>
+</body>
+
+</html>
