@@ -16,6 +16,7 @@ body {
   line-height: 1.2;
   color: var(--cl-text);
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -170,33 +171,93 @@ header.active .header-main-wrapper {
   justify-content: space-between;
   gap: 20px;
   align-items: center;
-  padding: 12px 0px;
 }
 .header-logo {
   width: 100%;
-  height: 60px;
   max-width: 220px;
+  padding: 12px 0px;
 }
-
+.header-logo img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+}
+.header-nav {
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 .header-menu {
   display: flex;
   align-items: center;
   gap: 22px;
   font-size: 14px;
   list-style-type: none;
+  height: 100%;
+  justify-content: end;
 }
-.header-menu li.active a {
-  color: var(--cl-primary);
-  font-weight: 700;
-  border-bottom: 2px solid var(--cl-primary);
+.header-menu > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.header-menu li a {
-  padding-bottom: 10px;
+.header-menu > li > a {
+  height: 100%;
   border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
 }
-.header-menu li a:hover {
-  border-color: var(--cl-primary);
-  color: var(--cl-primary);
+/* submenu */
+.header-menu > li .sub-menu {
+  position: absolute;
+  background: #fff;
+  padding: 24px 0px;
+  border: 1px solid #F2F2F2;
+  box-shadow: 0px 12px 12px 0px #00000012;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  z-index: 100;
+  width: max-content;
+  max-height: calc(100vh - 150px);
+  opacity: 0;
+  width: 220px;
+  visibility: hidden;
+  
+}
+.header-menu > li > .sub-menu {
+  top: 100%;
+  left: -40px;
+}
+.header-menu > li > .sub-menu li > .sub-menu {
+  left: 100%;
+  top: -1px;
+  height: calc(100% + 2px);
+}
+.header-menu > li > .sub-menu.shift-left {
+  transition: left 0.2s ease;
+}
+.header-menu > li:hover > .sub-menu, .header-menu > li:hover > .sub-menu li:hover > .sub-menu {
+  animation: submenuActive 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+.header-menu > li .sub-menu > li  {
+  padding: 0px 12px;
+  text-align: left;
+}
+.header-menu > li .sub-menu > li > a {
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-align: left;
+  padding: 8px 12px;
+  display: block;
 }
 .banner {
   position: relative;
@@ -2059,8 +2120,8 @@ section.major-detail-feature {
 .major-detail-train,
 .major-detail-explore {
   background-image: url("./images/info-img.svg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -3867,7 +3928,7 @@ section.recruitment-scho .title-common {
 .research-project-list,
 .research-news-swiper {
   margin-top: 60px;
-  padding: 0px 20px 40px !important;
+  padding: 0px 0px 40px !important;
 }
 .research-project-item img {
   border-radius: 8px;
@@ -3894,12 +3955,12 @@ section.recruitment-scho .title-common {
   position: relative;
 }
 .research-slider-btn-next {
-  right: -5px !important;
+  right: 5px !important;
   border-radius: 50%;
   box-shadow: 0px 2px 12px 0px #00000014;
 }
 .research-slider-btn-prev {
-  left: -5px !important;
+  left: 5px !important;
   border-radius: 50%;
   box-shadow: 0px 2px 12px 0px #00000014;
 }
@@ -4161,6 +4222,261 @@ section.recruitment-scho .title-common {
 .research-partner-dot.active {
   background-color: var(--cl-primary);
 }
+
+/* life-student */
+.facilities-main {
+  position: relative;
+  margin-top: 60px;
+}
+.facilities-swiper {
+  padding: 0px 0px 40px !important
+}
+.facilities-swiper .swiper-slide h3{
+  margin-top: 12px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+.facilities-swiper .swiper-slide span {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  display: block;
+  overflow: hidden;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%)
+}
+.facilities-swiper .swiper-slide span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.life-student-activity-desc {
+  margin-top:40px;
+  margin-bottom: 24px;
+  color: #3D3D3D;
+  line-height: 1.5;
+}
+.life-student-activity-list {
+  margin-top: 40px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.life-student-activity-list img {
+  height: 234px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.life-student-activity-list img:nth-child(1) {
+  max-width: calc(45% - 6px);
+}
+.life-student-activity-list img:nth-child(2) {
+  max-width: calc(55% - 6px);
+}
+.life-student-activity-list img:nth-child(3) {
+  max-width: calc(55% - 6px);
+}
+.life-student-activity-list img:nth-child(4) {
+  max-width: calc(45% - 6px);
+}
+.life-student-job-desc {
+  margin-top: 12px;
+  color: #3D3D3D;
+  line-height: 1.5;
+}
+.life-student-job-main {
+  margin-top: 60px;
+  position: relative;
+}
+.life-student-job-swiper .swiper-slide > span {
+  display: block;
+}
+.life-student-job-swiper .swiper-slide > span {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 0% 100%, 0% 100%);
+  overflow: hidden;
+}
+.life-student-job-swiper .swiper-slide > span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.life-student-job-swiper .swiper-slide div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+.life-student-job-swiper .swiper-slide div h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+.life-student-job-swiper .swiper-slide div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: var(--cl-primary);
+  font-size: 14px;
+  width: 100%;
+  min-height: 48px;
+  padding: 6px 12px;
+  color: var(--cl-primary);
+  border: 1px solid var(--cl-primary);
+  border-radius: 8px;
+  box-shadow: 4px 0px 0px 0px var(--cl-primary) inset;
+  font-weight: 600;
+  font-size: 16px;
+}
+.life-student-job-swiper .swiper-slide div a span {
+  display: flex;
+}
+.life-student-job-swiper .swiper-slide div a img{
+  max-width: 14px;
+}
+.life-student-story-swiper{
+  margin: 60px 0px;
+  padding: 20px 15px 60px !important;
+}
+.life-student-story-swiper .swiper-slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+.life-student-story-swiper .swiper-slide > span {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.life-student-story-swiper .swiper-slide > span::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-image: url('images/recruitment-decor1.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 160px;
+  z-index: 1;
+}
+.life-student-story-swiper .swiper-slide > span > img {
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.life-student-story-content {
+  position: relative;
+}
+.life-student-story-content p {
+  color: #242424;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  background:#FFF4EE;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+  padding: 32px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.life-student-story-content > img {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+.life-student-story .future-btn {
+  margin: 0px auto;
+}
+.life-student-support-main {
+  margin-top: 60px;
+  position: relative;
+}
+.life-student-support-swiper {
+  padding-bottom: 40px !important;
+}
+.life-student-support-swiper .swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px #0000000D;
+  background: white;
+
+}
+.life-student-support-swiper .swiper-slide > div {
+  padding: 12px 24px;
+  border-left: 4px solid var(--cl-primary);
+}
+.life-student-support-swiper .swiper-slide > div h3 {
+  color: #242424;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.life-student-support-swiper .swiper-slide > div p {
+  color: #3D3D3D;
+  line-height: 1.5;
+}
+.life-student-support-swiper .swiper-slide > span {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  display: block;
+}
+.life-student-support-swiper .swiper-slide > span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.life-student-campus .future-btn img {
+  max-width: 14px;
+  object-fit: contain;
+}
+.life-student-campus .branch-item .future-btn {
+  display: none !important; 
+  margin-top: 4px;
+}
+.life-student-campus .branch-item.active .future-btn {
+  display: flex !important;
+}
+.header-menu i, .header-nav .popup-top, .header-right-mobile, .header-menu .header-top-language, .header-menu .campus-item{
+  display: none;
+}
+@media screen and (min-width: 1253px) {
+  .research-slider-btn-next{
+    right: -20px !important;
+  }
+  .research-slider-btn-prev{
+    left: -20px !important;
+  }
+}
 @media screen and (min-width: 1024px) {
   .major-detail-explore-item:nth-child(1) {
     transform: rotate(-3deg) translateY(20px);
@@ -4173,6 +4489,16 @@ section.recruitment-scho .title-common {
   }
   .major-detail-explore-item:nth-child(4) {
     transform: rotate(3deg);
+  }
+  .header-menu > li.active > a, .header-menu > li > a:hover {
+    color: var(--cl-primary);
+    text-shadow: 
+      0 0 0 currentColor,
+      0.5px 0 currentColor;
+    border-bottom: 2px solid var(--cl-primary);
+  }
+  .header-menu > li .sub-menu > li.active > a, .header-menu > li .sub-menu > li:hover > a {
+    border-color: var(--cl-primary);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -4192,6 +4518,9 @@ section.recruitment-scho .title-common {
   }
 }
 @media screen and (max-width: 1023px) {
+  .header-menu i, .header-nav, .header-right-mobile {
+    display: block;
+  }
   section.recruitment-explore .major-detail-explore-item.swiper-slide {
     transform: none !important;
   }
@@ -4227,17 +4556,137 @@ section.recruitment-scho .title-common {
     display: block;
     cursor: pointer;
   }
-  .popup-menu {
+  .header-nav {
     position: fixed;
     top: 0;
     right: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     z-index: 100;
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
+    flex-direction: column;
+    transform: translateX(-100%);
+  }
+  .header-nav .header-menu {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    gap: 0px;
+    padding: 24px 8px;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .header-nav .header-menu > li {
+    width: 100%;
+    justify-content: flex-start;
+    height: fit-content;
+    padding-bottom: 16px;
+    position: relative;
+    flex-direction: column;
+  }
+  .header-nav .header-menu > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 8px);
+    height: 1px;
+    background-color: #CCCCCC;
+  }
+  .header-menu > li > a {
+    padding: 0px 8px;
+    height: fit-content;
+    border: none !important;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  .header-menu > li > a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 16px);
+    width: 2px;
+    background-color: var(--cl-primary);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .header-menu > li.active > a:before {
+    opacity: 1;
+  }
+  .header-menu > li.active > a {
+    color: var(--cl-primary);
+  }
+  .header-menu > li a > i {
+    flex-shrink: 0;
+  }
+  .header-menu > li.active > a > i, .header-menu > li > .sub-menu > li.active > a > i {
+    transform: rotate(180deg);
+    color: var(--cl-primary);
+  }
+  .header-menu > li > .sub-menu, .header-menu > li > .sub-menu li > .sub-menu {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    box-shadow: 0px 0px 0px;
+    padding: 12px 0px;
+    max-height: 100%;
+    visibility: visible;
+    opacity: 1;
+    border: none;
+  }
+  .header-menu > li .sub-menu > li {
+    padding: 0px 8px;
+  }
+  .header-menu > li .sub-menu > li > a {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header-menu > li .sub-menu {
+    height: fit-content;
+    display: none;
+    padding-bottom: 0px;
+  }
+  .header-menu > li > .sub-menu > li > .sub-menu > li {
+    padding: 0px;
+  }
+  .header-menu > li > .sub-menu > li > .sub-menu > li > a {
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #707070;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header-menu > li > .sub-menu > li > .sub-menu > li > a::before {
+    content: '•';
+    margin-right: 8px;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .header-menu > li.active > .sub-menu, .header-menu > li > .sub-menu > li.active > .sub-menu {
+    display: flex;
+  }
+  .header-menu > li > .sub-menu li > .sub-menu {
+    height: fit-content;
+    padding-bottom: 0px;
   }
   .icon-close-menu {
     display: block;
@@ -4252,20 +4701,17 @@ section.recruitment-scho .title-common {
   .icon-close-menu:hover {
     color: var(--cl-primary);
   }
-  .popup-menu-inner {
-    flex-direction: column;
-    max-width: 500px;
-    background-color: white;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
-    width: 100%;
-    height: 100%;
+  .header-menu .campus-item, .header-menu .header-top-language {
+    display: flex;
   }
-  .popup-menu.active {
+  .header-menu .header-top-language {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0px 8px;
+  }
+  .header-nav.active {
     opacity: 1;
     visibility: visible;
-  }
-  .popup-menu.active .popup-menu-inner {
     transform: translateX(0);
   }
   .title-large-2,
@@ -4342,6 +4788,54 @@ section.recruitment-scho .title-common {
   .research-achivement::before {
     display: none;
   }
+  .header-search {
+    position: relative;
+  }
+  .header-search .header-top-search {
+    position: absolute;
+    top: 190%;
+    right: -30px;
+  }
+  .icon-search-sm {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    cursor: pointer;
+  }
+  .header-right-mobile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .icon-menu {
+    display: flex;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-nav .popup-top {
+    width: 100%;
+    display: flex;
+    padding: 12px 16px;
+    background: #f2f2f2;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popup-top a {
+    max-width: 140px;
+    max-height: 40px;
+  }
+  .header-search .header-top-search {
+    display: none;
+  }
+  .header-search .header-top-search.active {
+    display: flex;
+  }
+  .header-top {
+    background: transparent;
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   .cta {
@@ -4386,9 +4880,6 @@ section.recruitment-scho .title-common {
   .header-top-right {
     gap: 20px;
   }
-  /* .local-top span img {
-    display: none;
-  } */
   .local-item-info > b {
     font-size: 24px;
   }
@@ -4842,47 +5333,14 @@ section.recruitment-scho .title-common {
   .overview-major-item-content p {
     font-size: 16px;
   }
-  .header-search {
-    position: relative;
-  }
-  .header-search .header-top-search {
-    position: absolute;
-    top: 190%;
-    right: -30px;
-  }
-  .icon-search-sm {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-  .header-right-mobile {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  .icon-menu {
-    display: flex;
-  }
+  
   .header-logo img {
     max-width: 140px;
     height: 40px;
   }
-  .header-search.sm .header-top-search {
-    display: none;
-  }
-  .header-search.sm .header-top-search.active {
-    display: flex;
-  }
-  .header-top {
-    background: transparent;
-    padding: 0px;
-  }
+  
   .header-top-base {
     flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-  .header-menu {
     gap: 10px;
     align-items: flex-start;
   }
@@ -5057,18 +5515,8 @@ section.recruitment-scho .title-common {
   .footer2 .footer-item.footer-campus:hover > div {
     display: block;
   }
-  .popup-top {
-    display: flex;
-    padding: 12px 16px;
-    background: #f2f2f2;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .popup-top a {
-    max-width: 140px;
-    max-height: 40px;
-  }
-  .popup-menu-list ul {
+  
+  .popup-menu-list > ul {
     padding: 20px 16px;
     display: flex;
     flex-direction: column;
@@ -5076,17 +5524,17 @@ section.recruitment-scho .title-common {
     overflow-y: auto;
     max-height: calc(100vh - 64px);
   }
-  .popup-menu-list li:not(:last-child) {
+  .popup-menu-list > ul > li:not(:last-child) {
     border-bottom: 1px solid #cccccc;
     padding-bottom: 20px;
   }
-  .popup-menu-list li a {
+  .popup-menu-list > ul > li > a {
     color: #242424;
     font-size: 14px;
     font-weight: 700;
     display: flex;
   }
-  .popup-menu-list li.active a {
+  .popup-menu-list > ul > li.active > a {
     color: var(--cl-primary);
     border-right: 4px solid var(--cl-primary);
   }
@@ -6001,5 +6449,74 @@ section.recruitment-scho .title-common {
   }
   .research-partner-slider {
     padding: 20px 0px;
+  }
+  .facilities-swiper .swiper-slide h3 {
+    font-size: 14px;
+  }
+  .life-student-activity-desc {
+    margin: 24px 0px 12px;
+  }
+  .life-student-activity-list img {
+    height: 166px;
+    border-radius: 4px;
+  }
+  .life-student-job-swiper .swiper-slide div {
+    padding: 12px;
+  }
+  .life-student-job-swiper .swiper-slide div h3 {
+    font-size: 14px;
+  }
+  .life-student-job-swiper .swiper-slide div a {
+    min-height: 44px;
+    font-size: 14px;
+  }
+  .life-student-story-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .life-student-story-swiper {
+    margin: 16px 0px;
+    padding: 10px 10px 40px !important;
+  }
+  .life-student-story-content p {
+    padding: 22px;
+    font-size: 14px;
+    min-height: 100%;
+  }
+  .life-student-story-swiper .swiper-slide > span::before {
+    width: 75px;
+    height: 90px;
+    left: -10px;
+    top: -10px;
+  }
+  .life-student-story-content > img {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+  .life-student-campus .branch-item i {
+    color: var(--cl-primary);
+    margin-right: 12px;
+  }
+  .life-student-campus .branch-item {
+    flex-direction: column-reverse;
+  }
+  .life-student-campus .branch-item.active {
+    transform: scale(1);
+    border-radius: 0px;
+  }
+  .life-student-campus .branch-item-content > span{
+    display: block !important;
+  }
+  .life-student-campus .branch-item-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .life-student-campus .branch-item-content > div h3 {
+    padding-left: 12px;
+  }
+  .life-student-campus .branch-item-content > span img {
+width: 100%;
   }
 }
