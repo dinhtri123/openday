@@ -154,6 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
           item.classList.remove("active");
         });
         lifeDkItem.classList.add("active");
+        const img = lifeDkItem.dataset.img;
+        document.querySelector(".life-dk-bg img").src = img;
       });
     });
     lifeDkItems.forEach((lifeDkItem) => {
