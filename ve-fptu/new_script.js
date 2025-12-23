@@ -20,3 +20,77 @@ document.querySelectorAll('.history-timeline-item').forEach(item => {
     }
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const counters = document.querySelectorAll('.achievements .counter');
+  
+  const animateCounter = (counter) => {
+    const target = parseInt(counter.getAttribute('data-target'));
+    const duration = 2000;
+    const increment = target / (duration / 16);
+    let current = 0;
+    
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = Math.ceil(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target;
+      }
+    };
+    
+    updateCounter();
+  };
+  
+  const observerOptions = {
+    threshold: 0.3,
+    rootMargin: '0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        animateCounter(counter);
+        observer.unobserve(counter);
+      }
+    });
+  }, observerOptions);
+  
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+});
+
+// Campus Accordion Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.vefptu-campus-accordion-item');
+  
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.vefptu-campus-accordion-header');
+    const toggle = item.querySelector('.vefptu-campus-accordion-toggle');
+    
+    // Click on header or toggle button
+    const handleClick = (e) => {
+      e.preventDefault();
+      
+      // Close all other items
+      accordionItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+      
+      // Toggle current item
+      item.classList.toggle('active');
+    };
+    
+    header.addEventListener('click', handleClick);
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      handleClick(e);
+    });
+  });
+});

@@ -662,6 +662,7 @@
   padding: 80px 0;
   position: relative;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .management::before {
@@ -683,6 +684,11 @@
 .management .container {
   position: relative;
   z-index: 1;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  overflow: hidden;
 }
 
 .management h2 {
@@ -708,6 +714,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  overflow: hidden;
 }
 
 .management-card-main {
@@ -718,6 +725,8 @@
   padding: 80px 40px 40px;
   position: relative;
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.08));
+  overflow: hidden;
+  margin: 0;
 }
 
 .management-card-decor {
@@ -734,6 +743,7 @@
 .management-card-decor-top img {
   width: 120px;
   height: auto;
+  display: block;
 }
 
 .management-card-decor-bottom {
@@ -744,6 +754,7 @@
 .management-card-decor-bottom img {
   width: 140px;
   height: auto;
+  display: block;
 }
 
 .management-card-overlay {
@@ -759,14 +770,14 @@
   height: 23px;
   transform: scale(2);
   transform-origin: top left;
+  display: block;
 }
 
-/* ĐÂY LÀ PHẦN THAY ĐỔI - Content trước, Image sau */
 .management-card-main-inner {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 280px; /* Đảo ngược: content 1fr, image 280px */
+  grid-template-columns: 1fr 280px;
   gap: 40px;
   align-items: start;
 }
@@ -851,18 +862,47 @@
   margin: 0;
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
 @media (max-width: 991px) {
   .management {
     padding: 60px 0;
+  }
+
+  .management .container {
+    padding: 0 20px;
   }
 
   .management-card-main {
     padding: 60px 32px 32px;
   }
 
+  /* Giảm kích thước decor */
+  .management-card-decor-top {
+    top: -15px;
+    left: -20px;
+  }
+
+  .management-card-decor-top img {
+    width: 70px;
+  }
+
+  .management-card-decor-bottom {
+    bottom: -10px;
+    right: -15px;
+  }
+
+  .management-card-decor-bottom img {
+    width: 80px;
+  }
+
+  .management-card-overlay {
+    left: 32px;
+  }
+
   .management-card-overlay img {
-    height: 60px;
+    height: 20px;
     transform: scale(1.5);
   }
 
@@ -874,39 +914,68 @@
   .management-card-main-inner .management-card-image {
     max-width: 240px;
     margin: 0 auto;
-    order: -1; /* Đưa image lên trên content khi mobile */
+    order: -1;
   }
 
+  /* Grid 2 cột cho tablet */
   .management-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .management-card-small .management-card-image {
+    height: 220px;
+  }
 }
 
+/* Mobile */
 @media (max-width: 576px) {
   .management {
     padding: 50px 0;
   }
 
+  .management .container {
+    padding: 0 16px;
+  }
+
   .management-tab {
     font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .management-tabs {
+    margin-bottom: 32px;
+  }
+
+  .management-content {
+    gap: 24px;
   }
 
   .management-card-main {
-    padding: 50px 24px 24px;
+    padding: 50px 20px 24px;
   }
 
-  .management-card-decor-top img {
-    width: 80px;
+  /* ẨN HOÀN TOÀN DECOR Ở MOBILE */
+  .management-card-decor {
+    display: none !important;
   }
 
-  .management-card-decor-bottom img {
-    width: 90px;
+  .management-card-overlay {
+    left: 20px;
+    top: 8px;
   }
 
   .management-card-overlay img {
-    height: 50px;
-    transform: scale(1.3);
+    height: 18px;
+    transform: scale(1.2);
+  }
+
+  .management-card-main-inner {
+    gap: 20px;
+  }
+
+  .management-card-main-inner .management-card-image {
+    max-width: 200px;
   }
 
   .management-card-name {
@@ -915,8 +984,10 @@
 
   .management-card-desc {
     font-size: 14px;
+    line-height: 1.6;
   }
 
+  /* Grid 1 cột cho mobile */
   .management-grid {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -929,8 +1000,42 @@
   .management-card-small .management-card-info {
     padding: 16px;
   }
+
+  .management-card-small .management-card-name {
+    font-size: 15px;
+  }
+
+  .management-card-title {
+    font-size: 13px;
+  }
 }
 
+/* Extra small mobile */
+@media (max-width: 375px) {
+  .management .container {
+    padding: 0 12px;
+  }
+
+  .management-card-main {
+    padding: 40px 16px 20px;
+  }
+
+  .management-card-overlay {
+    left: 16px;
+  }
+
+  .management-card-main-inner .management-card-image {
+    max-width: 180px;
+  }
+
+  .management-card-name {
+    font-size: 16px;
+  }
+
+  .management-card-desc {
+    font-size: 13px;
+  }
+}
 
 .history {
   padding: 80px 0;
@@ -1319,5 +1424,1421 @@
 
   .history-timeline-year {
     font-size: 12px;
+  }
+}
+
+
+/* ====================================
+   Outstanding Position Section
+   ==================================== */
+
+.outstanding-position {
+  padding: 80px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Background Decoration */
+.outstanding-position::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  background-image: url('./images/intro-decor.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.outstanding-position .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ====================================
+   Header
+   ==================================== */
+
+.outstanding-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.outstanding-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1.2;
+}
+
+.title-decor-left img,
+.title-decor-right img {
+  height: 24px;
+  width: auto;
+}
+
+/* ====================================
+   Grid Layout
+   ==================================== */
+
+.outstanding-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden; /* CRITICAL: Clip overflow */
+}
+
+/* ====================================
+   Featured Card (Left)
+   ==================================== */
+
+.outstanding-featured {
+  background: #fff;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #e5e5e5;
+  overflow: hidden; /* CRITICAL: Clip sphere overflow */
+  isolation: isolate; /* Create stacking context */
+}
+
+/* Background Sphere - Only shows in left card */
+.featured-bg-sphere {
+  position: absolute;
+  right: -150px;
+  bottom: -130px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.featured-bg-sphere img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Content */
+.featured-content {
+  position: relative;
+  z-index: 2;
+}
+
+.featured-number {
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featured-rank {
+  font-size: 16px;
+  color: #707070;
+  margin: 0;
+}
+
+.featured-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+}
+
+.featured-desc {
+  font-size: 16px;
+  color: #707070;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Badge */
+.featured-badge {
+  position: relative;
+  z-index: 2;
+  max-width: 220px;
+}
+
+.featured-badge img {
+  width: 100%;
+  height: auto;
+}
+
+/* ====================================
+   Right Side - 3 Cards
+   ==================================== */
+
+.outstanding-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden; /* Ensure nothing bleeds into right side */
+}
+
+/* Card Base Style */
+.outstanding-card {
+  background: #fff;
+  padding: 24px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: relative; /* Create positioning context */
+  z-index: 2; /* Above any background elements */
+}
+
+/* Remove borders on edges */
+.outstanding-card:nth-child(2) {
+  border-right: none;
+}
+
+.outstanding-card:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+.outstanding-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Card Number */
+.card-number {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1;
+}
+
+.card-label {
+  font-size: 16px;
+  color: #707070;
+  margin: 0;
+}
+
+.card-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #707070;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ====================================
+   Wide Card (Bottom - Spans 2 Columns)
+   ==================================== */
+
+.outstanding-card-wide {
+  grid-column: span 2;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  background: #fafafa;
+}
+
+.card-number-large {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.card-info-wide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-info-wide .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+}
+
+/* ====================================
+   RESPONSIVE - TABLET
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .outstanding-position {
+    padding: 60px 0;
+  }
+
+  .outstanding-title {
+    font-size: 36px;
+  }
+
+  .outstanding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outstanding-featured {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .featured-number {
+    font-size: 100px;
+  }
+
+  .featured-bg-sphere {
+    width: 300px;
+    height: 300px;
+    right: -100px;
+    bottom: -100px;
+  }
+
+  .card-number {
+    font-size: 48px;
+  }
+
+  .card-number-large {
+    font-size: 60px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .outstanding-position {
+    padding: 40px 0;
+  }
+
+  .outstanding-position::before {
+    background-size: contain;
+  }
+
+  .outstanding-header {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .outstanding-title {
+    font-size: 28px;
+  }
+
+  .title-decor-left img,
+  .title-decor-right img {
+    height: 18px;
+  }
+
+  .outstanding-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .outstanding-featured {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .featured-number {
+    font-size: 80px;
+  }
+
+  .featured-title {
+    font-size: 24px;
+  }
+
+  .featured-desc {
+    font-size: 14px;
+  }
+
+  .featured-bg-sphere {
+    width: 200px;
+    height: 200px;
+    right: -60px;
+    bottom: -60px;
+  }
+
+  .featured-badge {
+    max-width: 180px;
+  }
+
+  .outstanding-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .outstanding-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .outstanding-card:hover {
+    transform: none;
+  }
+
+  .card-number {
+    font-size: 40px;
+  }
+
+  .card-total {
+    font-size: 16px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+  }
+
+  .outstanding-card-wide {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .card-number-large {
+    font-size: 50px;
+  }
+
+  .card-info-wide .card-title {
+    font-size: 18px;
+  }
+}
+
+/* ====================================
+   Achievements Section
+   ==================================== */
+
+.achievements {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.achievements .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ====================================
+   Header
+   ==================================== */
+
+.achievements-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.achievements-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1.2;
+}
+
+.title-decor-left img,
+.title-decor-right img {
+  height: 24px;
+  width: auto;
+}
+
+/* ====================================
+   Grid - 4 Columns
+   ==================================== */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ====================================
+   Achievement Card (Background Image Cover)
+   ==================================== */
+
+.achievement-card {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--cl-primary);
+}
+
+/* Overlay for better text readability */
+.achievement-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Content */
+.achievement-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Number */
+.achievement-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1;
+}
+
+.achievement-number .counter {
+  font-family: inherit;
+}
+
+/* Description */
+.achievement-desc {
+  font-size: 14px;
+  color: #242424;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ====================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .achievements {
+    padding: 60px 0;
+  }
+
+  .achievements-title {
+    font-size: 36px;
+  }
+
+  /* 2 columns on tablet */
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .achievement-card {
+    min-height: 320px;
+  }
+
+  .achievement-number {
+    font-size: 42px;
+  }
+
+  .achievement-desc {
+    font-size: 13px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE (Max 767px)
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .achievements {
+    padding: 40px 0;
+  }
+
+  /* Header */
+  .achievements-header {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .achievements-title {
+    font-size: 28px;
+  }
+
+  .title-decor-left img,
+  .title-decor-right img {
+    height: 18px;
+  }
+
+  /* 2x2 Grid on mobile (like image 2) */
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .achievement-card {
+    min-height: 240px;
+  }
+
+  .achievement-content {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .achievement-number {
+    font-size: 32px;
+  }
+
+  .achievement-desc {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Remove hover effect on mobile */
+  .achievement-card:hover {
+    transform: none;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - Small Mobile (< 480px)
+   ==================================== */
+
+@media screen and (max-width: 480px) {
+  .achievements {
+    padding: 32px 0;
+  }
+
+  .achievements-title {
+    font-size: 24px;
+  }
+
+  .achievements-grid {
+    gap: 12px;
+  }
+
+  .achievement-card {
+    min-height: 200px;
+  }
+
+  .achievement-content {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .achievement-number {
+    font-size: 28px;
+  }
+
+  .achievement-desc {
+    font-size: 11px;
+  }
+}
+
+/* ====================================
+   Quality Standards Section
+   ==================================== */
+
+.quality-standards {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.quality-standards .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ====================================
+   Header
+   ==================================== */
+
+.quality-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.quality-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--cl-primary);
+  line-height: 1.2;
+}
+
+.title-decor-right {
+  flex: 1;
+}
+
+.title-decor-right img {
+  height: 24px;
+  width: auto;
+}
+
+/* ====================================
+   2 Columns Grid
+   ==================================== */
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;;
+}
+
+.quality-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ====================================
+   Quality Item
+   ==================================== */
+
+.quality-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Icon - Larger & No Background Color */
+.quality-icon {
+  flex-shrink: 0;
+  width: 80px; /* Larger */
+  height: 80px; /* Larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quality-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Preserve aspect ratio */
+}
+
+/* Content */
+.quality-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quality-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+}
+
+.quality-desc {
+  font-size: 14px;
+  color: #707070;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ====================================
+   RESPONSIVE - TABLET (768px - 1023px)
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .quality-standards {
+    padding: 60px 0;
+  }
+
+  .quality-title {
+    font-size: 36px;
+  }
+
+  /* Single column on tablet */
+  .quality-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .quality-column {
+    gap: 28px;
+  }
+
+  .quality-item-title {
+    font-size: 18px;
+  }
+
+  .quality-desc {
+    font-size: 13px;
+  }
+
+  .quality-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE (Max 767px)
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .quality-standards {
+    padding: 40px 0;
+  }
+
+  /* Header */
+  .quality-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .quality-title {
+    font-size: 28px;
+  }
+
+  .title-decor-right {
+    width: 100%;
+  }
+
+  .title-decor-right img {
+    height: 18px;
+  }
+
+  /* Single column on mobile */
+  .quality-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .quality-column {
+    gap: 24px;
+  }
+
+  /* Keep horizontal layout on mobile (don't stack) */
+  .quality-item {
+    gap: 16px;
+  }
+
+  .quality-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .quality-item-title {
+    font-size: 16px;
+  }
+
+  .quality-desc {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - Small Mobile (< 480px)
+   ==================================== */
+
+@media screen and (max-width: 480px) {
+  .quality-standards {
+    padding: 32px 0;
+  }
+
+  .quality-title {
+    font-size: 24px;
+  }
+
+  .quality-grid {
+    gap: 20px;
+  }
+
+  .quality-column {
+    gap: 20px;
+  }
+
+  .quality-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .quality-item-title {
+    font-size: 15px;
+  }
+
+  .quality-desc {
+    font-size: 12px;
+  }
+}
+
+
+/* ====================================
+   Campus Section
+   ==================================== */
+
+.vefptu-campus-section {
+  padding: 80px 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.vefptu-campus-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ====================================
+   Title Common
+   ==================================== */
+
+.vefptu-campus-section .title-common {
+  margin-bottom: 24px;
+}
+
+/* ====================================
+   Intro Text
+   ==================================== */
+
+.vefptu-campus-intro {
+  font-size: 15px;
+  color: #707070;
+  line-height: 1.8;
+  margin: 0 0 40px 0;
+  max-width: 100%;
+}
+
+/* ====================================
+   Background Decoration
+   ==================================== */
+
+.vefptu-campus-background-decor {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  z-index: 1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.vefptu-campus-background-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ====================================
+   DESKTOP VERSION - Show / Hide
+   ==================================== */
+
+.vefptu-campus-desktop {
+  display: flex;
+}
+
+.vefptu-campus-mobile {
+  display: none;
+}
+
+/* ====================================
+   Campus Grid - Desktop
+   ==================================== */
+
+.vefptu-campus-grid {
+  position: relative;
+  z-index: 2;
+  gap: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.vefptu-campus-card {
+  flex: 1;
+  min-width: 200px;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-right: 1px solid #e5e5e5;
+}
+
+.vefptu-campus-card:last-child {
+  border-right: none;
+}
+
+.vefptu-campus-card:hover,
+.vefptu-campus-card.active {
+  flex: 2.5;
+}
+
+.vefptu-campus-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.vefptu-campus-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vefptu-campus-card:hover .vefptu-campus-image img,
+.vefptu-campus-card.active .vefptu-campus-image img {
+  transform: scale(1.08);
+}
+
+.vefptu-campus-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  min-height: 160px;
+  background: #fff;
+}
+
+.vefptu-campus-decorations {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.vefptu-campus-card:hover .vefptu-campus-decorations,
+.vefptu-campus-card.active .vefptu-campus-decorations {
+  opacity: 0.7;
+}
+
+.vefptu-campus-decorations .decor-top {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 170px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.vefptu-campus-decorations .decor-bottom {
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+  width: 300px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.vefptu-campus-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.vefptu-campus-location img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.vefptu-campus-card:hover .vefptu-campus-location img,
+.vefptu-campus-card.active .vefptu-campus-location img {
+  transform: scale(1.1);
+}
+
+.vefptu-campus-location h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.vefptu-campus-card:hover .vefptu-campus-location h3,
+.vefptu-campus-card.active .vefptu-campus-location h3 {
+  font-size: 18px;
+  color: var(--cl-primary);
+}
+
+.vefptu-campus-desc {
+  font-size: 13px;
+  color: #707070;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.vefptu-campus-card:hover .vefptu-campus-desc,
+.vefptu-campus-card.active .vefptu-campus-desc {
+  color: #242424;
+}
+
+/* ====================================
+   MOBILE VERSION - Accordion
+   ==================================== */
+
+.vefptu-campus-accordion-item {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.vefptu-campus-accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Accordion Header */
+.vefptu-campus-accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.3s ease;
+}
+
+.vefptu-campus-accordion-item.active .vefptu-campus-accordion-header {
+  background: #fff;
+}
+
+.vefptu-campus-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.vefptu-campus-accordion-title img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.vefptu-campus-accordion-title h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.vefptu-campus-accordion-item.active .vefptu-campus-accordion-title h3 {
+  color: var(--cl-primary);
+}
+
+/* Toggle Button */
+.vefptu-campus-accordion-toggle {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 0;
+}
+
+.vefptu-campus-accordion-toggle .toggle-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vefptu-campus-accordion-toggle .toggle-icon::before,
+.vefptu-campus-accordion-toggle .toggle-icon::after {
+  content: "";
+  position: absolute;
+  background: var(--cl-primary);
+  transition: all 0.3s ease;
+}
+
+.vefptu-campus-accordion-toggle .toggle-icon::before {
+  width: 20px;
+  height: 2px;
+}
+
+.vefptu-campus-accordion-toggle .toggle-icon::after {
+  width: 2px;
+  height: 20px;
+}
+
+.vefptu-campus-accordion-item.active .vefptu-campus-accordion-toggle .toggle-icon::after {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+/* Accordion Content */
+.vefptu-campus-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+  padding: 0 16px;
+  position: relative;
+}
+
+.vefptu-campus-accordion-item.active .vefptu-campus-accordion-content {
+  max-height: 800px;
+  padding: 0 16px 16px;
+}
+
+/* Decorations in Accordion */
+.vefptu-campus-accordion-decorations {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.vefptu-campus-accordion-decorations .decor-top {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.vefptu-campus-accordion-decorations .decor-bottom {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.vefptu-campus-accordion-desc {
+  font-size: 13px;
+  color: #707070;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.vefptu-campus-accordion-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.vefptu-campus-accordion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====================================
+   RESPONSIVE - TABLET
+   ==================================== */
+
+@media screen and (max-width: 1023px) {
+  .vefptu-campus-section {
+    padding: 60px 0;
+  }
+
+  .vefptu-campus-section .title-common h2 {
+    font-size: 36px;
+  }
+
+  .vefptu-campus-intro {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .vefptu-campus-background-decor {
+    width: 450px;
+    height: 450px;
+    right: -80px;
+  }
+
+  .vefptu-campus-card {
+    min-width: 160px;
+  }
+
+  .vefptu-campus-image {
+    height: 180px;
+  }
+
+  .vefptu-campus-content {
+    padding: 16px;
+    min-height: 140px;
+  }
+
+  .vefptu-campus-decorations .decor-top {
+    width: 120px;
+    height: 60px;
+  }
+
+  .vefptu-campus-decorations .decor-bottom {
+    width: 200px;
+    height: 60px;
+    right: 30px;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - MOBILE (Switch to Accordion)
+   ==================================== */
+
+@media screen and (max-width: 767px) {
+  .vefptu-campus-section {
+    padding: 50px 0;
+  }
+
+  .vefptu-campus-section .title-common {
+    margin-bottom: 20px;
+  }
+
+  .vefptu-campus-section .title-common h2 {
+    font-size: 28px;
+  }
+
+  .vefptu-campus-section .title-common-decor-right img {
+    max-width: 100px;
+  }
+
+  .vefptu-campus-intro {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .vefptu-campus-background-decor {
+    display: none;
+  }
+
+  /* HIDE DESKTOP, SHOW MOBILE */
+  .vefptu-campus-desktop {
+    display: none !important;
+  }
+
+  .vefptu-campus-mobile {
+    display: block;
+  }
+}
+
+/* ====================================
+   RESPONSIVE - Small Mobile
+   ==================================== */
+
+@media screen and (max-width: 576px) {
+  .vefptu-campus-section {
+    padding: 40px 0;
+  }
+
+  .vefptu-campus-section .title-common h2 {
+    font-size: 24px;
+  }
+
+  .vefptu-campus-section .title-common-decor-right img {
+    max-width: 80px;
+  }
+
+  .vefptu-campus-accordion-header {
+    padding: 14px;
+  }
+
+  .vefptu-campus-accordion-title h3 {
+    font-size: 15px;
+  }
+
+  .vefptu-campus-accordion-desc {
+    font-size: 12px;
+  }
+
+  .vefptu-campus-accordion-image {
+    height: 180px;
+  }
+
+  .vefptu-campus-accordion-decorations .decor-top {
+    width: 70px;
+    height: 35px;
+  }
+
+  .vefptu-campus-accordion-decorations .decor-bottom {
+    width: 100px;
+    height: 35px;
   }
 }
