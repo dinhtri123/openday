@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(!media.matches) {
     const lifeDkItems = document.querySelectorAll(".life-dk-item");
     lifeDkItems.forEach((lifeDkItem) => {
-      lifeDkItem.addEventListener("mouseenter", () => {
+      lifeDkItem.addEventListener("click", () => {
         lifeDkItems.forEach((item) => {
           item.classList.remove("active");
         });
@@ -158,13 +158,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".life-dk-bg img").src = img;
       });
     });
-    lifeDkItems.forEach((lifeDkItem) => {
-      lifeDkItem.addEventListener("mouseleave", () => {
-        lifeDkItems.forEach((item) => {
-          item.classList.remove("active");
-        });
-      });
-    });
+    // lifeDkItems.forEach((lifeDkItem) => {
+    //   lifeDkItem.addEventListener("mouseleave", () => {
+    //     lifeDkItems.forEach((item) => {
+    //       item.classList.remove("active");
+    //     });
+    //   });
+    // });
   }
   // slider career
   const btnPrevCareer = document.querySelector(".career-right-bottom-btn-prev");

@@ -697,6 +697,7 @@ section.train {
   color: #9e9e9e;
   transition: all 0.3s ease;
   line-height: 1.4;
+  cursor: default;
 }
 .life-inner {
   gap: 12px;
