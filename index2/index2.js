@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabMajorItem = document.querySelectorAll(".overview-major-item");
     tabTitleMajor.forEach((tabTitle) => {
       tabTitle.addEventListener("click", () => {
-        tabMajorItem.forEach((item) => {
-          item.classList.remove("active");
-        });
-        tabTitle.parentElement.classList.add("active");
+        // tabMajorItem.forEach((item) => {
+        //   item.classList.remove("active");
+        // });
+        tabTitle.parentElement.classList.toggle("active");
       });
     });
   }
