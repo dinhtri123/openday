@@ -4629,6 +4629,11 @@ section.recruitment-scho .title-common {
   }
   .header-menu > li a > i {
     flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header-menu > li.active > a > i, .header-menu > li > .sub-menu > li.active > a > i {
     transform: rotate(180deg);

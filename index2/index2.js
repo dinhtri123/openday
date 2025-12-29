@@ -364,18 +364,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerMenu = document.querySelector(".header-menu");
     
     headerMenu?.addEventListener("click", (e) => {
-      const menuItem = e.target.closest("li");
-      if (!menuItem) return;
-      e.stopPropagation();
-      const isTopLevel = menuItem.parentElement === headerMenu;
-      const siblingSelector = isTopLevel 
-        ? ".header-menu > li.active" 
-        : ".header-menu .sub-menu > li.active";
-      document.querySelectorAll(siblingSelector).forEach((item) => {
-        if (item !== menuItem) item.classList.remove("active");
-      });
-      if (menuItem.querySelector(".sub-menu")) {
-        menuItem.classList.toggle("active");
+      const clickedIcon = e.target.closest("i");
+      const clickedLink = e.target.closest("a"); 
+      if(clickedIcon && clickedLink) {
+        const menuItem = e.target.closest("li");
+        if (!menuItem) return;
+        e.stopPropagation();
+        e.preventDefault();
+        const isTopLevel = menuItem.parentElement === headerMenu;
+        const siblingSelector = isTopLevel 
+          ? ".header-menu > li.active" 
+          : ".header-menu .sub-menu > li.active";
+        document.querySelectorAll(siblingSelector).forEach((item) => {
+          if (item !== menuItem) item.classList.remove("active");
+        });
+        if (menuItem.querySelector(".sub-menu")) {
+          menuItem.classList.toggle("active");
+        }
+        return;
       }
     });
   }
