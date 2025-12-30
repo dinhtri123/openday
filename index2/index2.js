@@ -88,10 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // hover event
   const eventItems = document.querySelectorAll(".event-item");
   eventItems.forEach((eventItem) => {
+    if(mediaMd.matches) {
     eventItem.addEventListener("mouseenter", () => {
-      const img = eventItem.dataset.img;
-      document.querySelector(".event-img img").src = img;
-    });
+        const img = eventItem.dataset.img;
+        document.querySelector(".event-img img").src = img;
+      });
+    }else {
+      // eventItem.addEventListener("click", () => {
+      //   const img = eventItem.dataset.img;
+      //   document.querySelector(".event-img img").src = img;
+      // });
+    }
   });
   // hover campus
   const campusItems = document.querySelectorAll(".branch-item");
@@ -385,4 +392,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  const sliders = document.querySelectorAll('.event-img-slider');
+    sliders.forEach(slider => {
+      new Swiper(slider, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: slider.querySelector('.swiper-pagination'),
+          clickable: true,
+        },
+        navigation: {
+          nextEl: slider.querySelector('.swiper-button-next'),
+          prevEl: slider.querySelector('.swiper-button-prev'),
+        },
+      });
+    });
+
 });

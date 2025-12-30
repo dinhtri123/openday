@@ -1065,6 +1065,7 @@ section.info {
   padding: 0px 24px 24px 0px;
   border-bottom: 1px solid #cccccc;
   flex: 1;
+  cursor: default;
 }
 .event-item-content h3 {
   font-size: 18px;
@@ -3275,10 +3276,6 @@ section.recruitment-scho .title-common {
   width: fit-content;
   margin: -30px auto 0px;
 }
-.recruitment-event .event-main {
-  grid-template-columns: 1fr 1.2fr;
-  align-items: center;
-}
 .recruitment-event .title-common {
   justify-content: flex-start;
 }
@@ -4469,6 +4466,38 @@ section.recruitment-scho .title-common {
 }
 .header-menu i, .header-nav .popup-top, .header-right-mobile, .header-menu .header-top-language, .header-menu .campus-item{
   display: none;
+}
+.event-img-slider {
+  margin-top: 20px;
+  max-width: 100%;
+  background-image: url('./images/event-bg-2.svg');
+  background-size:100% 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 20px 0px 40px !important;
+  min-height: 260px;
+}
+.event-img-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px 0px 20px;
+
+}
+.event-img-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px auto;
+  max-width: 250px;
+  max-height: 190px;
+  border-radius: 6px;
+}
+.event-img-slider .swiper-button-next {
+  right: 0px !important;
+}
+.event-img-slider .swiper-button-prev {
+  left: 0px !important;
 }
 @media screen and (min-width: 1253px) {
   .research-slider-btn-next{
@@ -6051,9 +6080,6 @@ section.recruitment-scho .title-common {
     gap: 20px;
     margin-top: 20px;
   }
-  .recruitment-event .event-main {
-    grid-template-columns: 1fr;
-  }
   .recruitment-form-main form {
     grid-template-columns: 1fr;
   }
@@ -6526,3 +6552,5 @@ section.recruitment-scho .title-common {
 width: 100%;
   }
 }
+
+
