@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-search">
+          <span>
+            <img src="./images/icon-search.svg" alt="">
+          </span>
+          <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="header-top-right">
+          <ul class="header-top-base">
+            <li><a href="">Campus Hà Nội</a></li>
+            <li><a href="#">Campus HCM</a></li>
+            <li><a href="#">Campus Đà Nẵng</a></li>
+            <li><a href="#">Campus Cần Thơ</a></li>
+            <li><a href="#">Campus Quy Nhơn</a></li>
+          </ul>
+          <div class="header-top-language">
+            <span>
+              <img src="./images/icon-lang.svg" alt="">
+            </span>
+            <div>
+              <p class="active">VN</p>
+              <span></span>
+              <p>EN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-wrapper">
+      <div class="container">
+        <div class="header-main">
+          <a href="/" class="header-logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="header-nav">
+            <div class="popup-top">
+              <a href="/">
+                <img src="./images/logo.png" alt="">
+              </a>
+              <div class="icon-close-menu">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <ul class="header-menu">
+              <li>
+                <a href="#">Về FPTU <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Câu chuyện thương hiệu <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Ban lãnh đạo <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Ban giám hiệu</a></li>
+                  <li><a href="">Lịch sử hình thành</a></li>
+                  <li><a href="">Vị thế</a></li>
+                  <li><a href="">Thành tựu</a></li>
+                  <li><a href="">Chất lượng</a></li>
+                  <li><a href="">Ngành đào tạo</a></li>
+                  <li><a href="">Campus</a></li>
+                  <li><a href="">Cơ sở vật chất </a></li>
+                  <li><a href="">Đối tác & Hợp tác quốc tế</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Đào tạo <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Câu chuyện thương hiệu</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Ban lãnh đạo</a></li>
+                  <li><a href="">Ban giám hiệu</a></li>
+                  <li><a href="">Lịch sử hình thành</a></li>
+                  <li><a href="">Vị thế</a></li>
+                  <li><a href="">Thành tựu</a></li>
+                  <li><a href="">Chất lượng</a></li>
+                  <li><a href="">Ngành đào tạo</a></li>
+                  <li><a href="">Campus</a></li>
+                  <li><a href="">Cơ sở vật chất </a></li>
+                  <li><a href="">Đối tác & Hợp tác quốc tế</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Tuyển sinh <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Câu chuyện thương hiệu</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Ban lãnh đạo</a></li>
+                  <li><a href="">Ban giám hiệu</a></li>
+                  <li><a href="">Lịch sử hình thành</a></li>
+                  <li><a href="">Vị thế</a></li>
+                  <li><a href="">Thành tựu</a></li>
+                  <li><a href="">Chất lượng</a></li>
+                  <li><a href="">Ngành đào tạo</a></li>
+                  <li><a href="">Campus</a></li>
+                  <li><a href="">Cơ sở vật chất </a></li>
+                  <li><a href="">Đối tác & Hợp tác quốc tế</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Đời sống sinh viên <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Câu chuyện thương hiệu</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Ban lãnh đạo</a></li>
+                  <li><a href="">Ban giám hiệu</a></li>
+                  <li><a href="">Lịch sử hình thành</a></li>
+                  <li><a href="">Vị thế</a></li>
+                  <li><a href="">Thành tựu</a></li>
+                  <li><a href="">Chất lượng</a></li>
+                  <li><a href="">Ngành đào tạo</a></li>
+                  <li><a href="">Campus</a></li>
+                  <li><a href="">Cơ sở vật chất </a></li>
+                  <li><a href="">Đối tác & Hợp tác quốc tế</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Nghiên cứu & đổi mới<i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Câu chuyện thương hiệu</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Câu chuyện thương hiệu</a></li>
+                      <li><a href="">Ban lãnh đạo</a></li>
+                      <li><a href="">Ban giám hiệu</a></li>
+                      <li><a href="">Lịch sử hình thành</a></li>
+                      <li><a href="">Vị thế</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Ban lãnh đạo</a></li>
+                  <li><a href="">Ban giám hiệu</a></li>
+                  <li><a href="">Lịch sử hình thành</a></li>
+                  <li><a href="">Vị thế</a></li>
+                  <li><a href="">Thành tựu</a></li>
+                  <li><a href="">Chất lượng</a></li>
+                  <li><a href="">Ngành đào tạo</a></li>
+                  <li><a href="">Campus</a></li>
+                  <li><a href="">Cơ sở vật chất </a></li>
+                  <li><a href="">Đối tác & Hợp tác quốc tế</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Tin tức</a>
+              </li>
+              <li class="campus-item">
+                <a href="#">Campus Hà Nội</a>
+              </li>
+              <li class="campus-item">
+                <a href="#">Campus TP.HCM</a>
+              </li>
+              <li class="campus-item">
+                <a href="#">Campus Đà Nẵng</a>
+              </li>
+              <li class="campus-item">
+                <a href="#">Campus Cần Thơ</a>
+              </li>
+              <li class="campus-item">
+                <a href="#">Campus Quy Nhơn</a>
+              </li>
+              <div class="header-top-language">
+                <span>
+                  <img src="./images/icon-lang.svg" alt="">
+                </span>
+                <div>
+                  <p class="active">VN</p>
+                  <span></span>
+                  <p>EN</p>
+                </div>
+              </div>
+            </ul>
+          </nav>
+          <div class="header-right-mobile">
+            <div class="header-search">
+              <span class="icon-search-sm">
+                <img src="./images/icon-search-mb.svg" alt="">
+              </span>
+              <div class="header-top-search">
+                <span>
+                  <img src="./images/icon-search.svg" alt="">
+                </span>
+                <input type="search" name="search-mobile" id="search-mobile" placeholder="Search">
+              </div>
+            </div>
+            <span class="icon-menu">
+              <img src="./images/icon-menu.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="scholarship-banner">
+      <span class="scholarship-banner-sub-title">
+        Chương trình tìm kiếm
+      </span>
+      <h2>NHÂN TÀI KỶ NGUYÊN SỐ <br class="sm"> VIỆT NAM</h2>
+      <h3>Học bổng Nguyễn Văn Đạo <br class="sm"> do trường Đại học FPT tổ chức</h3>
+      <span class="scholarship-banner-logo">
+        <img src="./images/scholarship-banner-logo.svg" alt="">
+      </span>
+      <div class="scholarship-banner-content">
+        <div>
+          <p>Tìm kiếm tài năng</p>
+          <div>
+            <strong>330</strong>
+            <span>Tinh hoa</span>
+          </div>
+          <p>Dẫn dắt tương lai số Việt Nam</p>
+        </div>
+        <div>
+          <p></p>
+          <div>
+            <strong>05</strong>
+            <span>Hạng mục</span>
+          </div>
+          <p>Học bổng danh giá</p>
+        </div>
+        <div>
+          <p>Lên đến</p>
+          <div>
+            <strong>130</strong>
+            <span>Tỷ</span>
+          </div>
+          <p>Tổng giá trị</p>
+        </div>
+      </div>
+      <div class="scholarship-banner-btn">
+        <a href="">Đăng ký tham gia <img src="./images/icon-arrow-primary.svg" alt=""></a>
+        <a href="">Đề cử tài năng <img src="./images/icon-arrow-white.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="breadcrumb">
+        <span>
+          <img src="./images/icon-house.svg" alt="">
+        </span>
+        <span>
+          <img src="./images/icon-arrow-right-gray.svg" alt="">
+        </span>
+        <p>Học bổng</p>
+      </div>
+    </div>
+    <section class="scholarship-intro">
+      <div class="container">
+        <div class="scholarship-intro-main">
+          <div class="scholarship-intro-video">
+            <iframe width="543" height="315" src="https://www.youtube.com/embed/UiH1d9dsZ4c"
+              title="Giới thiệu Trường Đại học FPT" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="scholarship-intro-content">
+            <h2>“<strong>Không chỉ là học bổng</strong> – Đây là hành trình tìm kiếm thế hệ dẫn dắt tương lai"</h2>
+            <p>Chương trình "Tìm kiếm Nhân tài Kỷ nguyên Số Việt Nam” là hành trình toàn quốc nhằm phát hiện 100 tài
+              năng tinh hoa dẫn dắt tương lai số.<br>
+              Chương trình dành cho học sinh lớp 12 trên toàn quốc. FPT University đầu tư quỹ học bổng 13.8 triệu USD để
+              tìm kiếm những cá nhân xuất sắc nhất trong công nghệ, tư duy và lãnh đạo.<br>
+              Không chỉ là học bổng – đây là sứ mệnh kiến tạo thế hệ nhân tài dẫn đường cho Việt Nam trong kỷ nguyên số.
+            </p>
+            <div class="scholarship-banner-btn scholarship-intro-content-btn">
+              <a href="">Đăng ký tham gia <img src="./images/icon-arrow-white.svg" alt=""></a>
+              <a href="">Đề cử tài năng <img src="./images/icon-arrow-primary.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scholarship-categories">
+      <div class="container">
+        <div class="title-common">
+          <h2>6 Hạng mục <br class="sm"><strong>học bổng tài năng</strong></h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="scholarship-categories-list">
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng Tinh<br class="md"> hoa mở lối</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng <br>
+                Tinh hoa công nghệ</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng <br>
+                Chiến binh công nghệ</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng Tài<br> năng khởi nghiệp</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng <br>
+                Nhà lãnh đạo trẻ</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/scholarship-categories-item-bg.png" class="md" alt="">
+            <img src="./images/scholarship-categories-item-bg-sm.png" class="sm" alt="">
+            <div>
+              <h3>Học bổng <br>
+                Bản lĩnh thế hệ</h3>
+              <p>Giá trị: $$$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scholarship-benefits">
+      <div class="container">
+        <div class="title-common">
+          <span class="title-common-decor-left md"><img src="./images/title-common-decor-right-white.svg" alt=""></span>
+          <h2><strong class="sm">Quyền lợi</strong> <span class="md">Quyền lợi</span> khi tham gia chương trình</h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right-white.svg" alt=""></span>
+        </div>
+        <div class="scholarship-benefits-list">
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon1.svg" alt="">
+            </span>
+            <p>Mentorship với lãnh đạo cấp cao đến từ mạng lưới đối tác trong nước và toàn cầu của Quỹ học bổng</p>
+          </div>
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon2.svg" alt="">
+            </span>
+            <p>Được cấp account tài nguyên học tập cao cấp (FCI AI Factory)</p>
+          </div>
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon3.svg" alt="">
+            </span>
+            <p>Ngân sách trải nghiệm quốc tế lên tới 150 triệu đồng </p>
+          </div>
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon4.svg" alt="">
+            </span>
+            <p>Thực tập quốc tế và được lựa chọn địa điểm làm việc tại các chi nhánh toàn cầu của Tập đoàn FPT và các
+              đối tác toàn cầu của Tập đoàn FPT</p>
+          </div>
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon5.svg" alt="">
+            </span>
+            <p>Cơ hội miễn 100% học phí và trợ cấp sinh hoạt lên tới 240 triệu</p>
+          </div>
+          <div class="scholarship-benefits-item">
+            <span>
+              <img src="./images/scholarship-benefits-icon6.svg" alt="">
+            </span>
+            <p>Vinh danh tại sự kiện trao giải và cơ hội trở thành đại sứ truyền cảm hứng</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scholarship-expert">
+      <div class="container">
+        <div class="title-common">
+          <h2>Hội đồng <br class="sm"><strong>chuyên môn & cố vấn</strong></h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="scholarship-expert-main">
+          <div class="swiper scholarship-expert-swiper">
+            <div class="swiper-wrapper scholarship-expert-list">
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img1.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img2.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img3.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img4.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img5.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+              <div class="scholarship-expert-item swiper-slide">
+                <div class="scholarship-expert-item-img">
+                  <img src="./images/branch-img6.png" alt="">
+                </div>
+                <div class="scholarship-expert-item-content">
+                  <h3>Ông Nguyễn Thành Nam</h3>
+                  <p>Chức danh</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="scholarship-expert-slider-btn research-slider-btn sm">
+            <div class="swiper-button-next scholarship-expert-slider-btn-next"></div>
+            <div class="swiper-button-prev scholarship-expert-slider-btn-prev"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="scholarship-brand">
+      <div class="container">
+        <div class="title-common">
+          <h2>Các đơn vị<strong> đồng hành</strong></h2>
+          <span class="title-common-decor-right"><img src="./images/title-common-decor-right.svg" alt=""></span>
+        </div>
+        <div class="scholarship-brand-list">
+          <div class="scholarship-brand-item">
+            <h3>Các trường đại học đối tác</h3>
+            <div class="scholarship-brand-item-list">
+              <span>
+                <img src="./images/scholarship-brand-logo1.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo2.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo3.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo4.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo5.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo6.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo77.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo8.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo9.svg" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="scholarship-brand-item">
+            <h3>Tổ chức và doanh nghiệp đồng hành</h3>
+            <div class="scholarship-brand-item-list">
+              <span>
+                <img src="./images/scholarship-brand-logo10.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo11.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo12.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo13.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo14.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo15.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo16.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo17.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo18.svg" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="scholarship-brand-item">
+            <h3>Đại sứ truyền cảm hứng</h3>
+            <div class="scholarship-brand-item-list">
+              <span>
+                <img src="./images/scholarship-brand-logo1.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo2.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo3.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo4.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo5.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo6.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo77.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo8.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo9.svg" alt="">
+              </span>
+            </div>
+          </div>
+          <div class="scholarship-brand-item">
+            <h3>Các đơn vị truyền thông</h3>
+            <div class="scholarship-brand-item-list">
+              <span>
+                <img src="./images/scholarship-brand-logo10.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo11.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo12.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo13.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo14.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo15.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo16.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo17.svg" alt="">
+              </span>
+              <span>
+                <img src="./images/scholarship-brand-logo18.svg" alt="">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="campus-fee exam-study">
+      <div class="container">
+        <div class="campus-fee-main">
+          <img src="./images/exam-banner-study.png" alt="">
+          <span class="exam-study-decor">
+            <img src="./images/exam-study-decor.svg" alt="">
+          </span>
+          <div class="campus-fee-content">
+            <h3>FAQ</h3>
+            <p>Các câu hỏi thường gặp về chương trình học bổng FPTU 2026</p>
+          </div>
+          <a href="" class="campus-fee-btn">
+            Xem ngay
+            <span>
+              <img src="./images/icon-arrow.png" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="major-detail-explore">
+      <div class="container">
+        <div class="title-common">
+          <h2>Khám phá thêm <br><strong>cùng FPTU</strong></h2>
+        </div>
+
+        <div class="swiper scholarship-news-swiper">
+          <div class="swiper-wrapper major-detail-explore-list">
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Học bổng</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/info-img3.png" alt="">
+              </div>
+              <div>
+                <h3>Tuyển sinh</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img2.png" alt="">
+              </div>
+              <div>
+                <h3>Campus</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="major-detail-explore-item swiper-slide">
+              <div class="major-detail-explore-item-img">
+                <img src="./images/major-detail-explore-img1.png" alt="">
+              </div>
+              <div>
+                <h3>Đào tạo</h3>
+                <p>Học CNTT ở FPTU khiến mình thấy bản thân thật “cool”. Mỗi dự án là một cơ hội để tạo ra điều mới và
+                  chạm tới thế giới số. Mình cảm nhận rõ mình đang đi đúng hướng.</p>
+                <a href="">Xem chi tiết <img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer2">
+    <div class="container">
+      <div class="footer-list">
+        <a href="/">
+          <img src="./images/logo.png" alt="">
+        </a>
+        <div class="footer-social sm">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+        <div class="footer-item">
+          <h3>Giới thiệu chung</h3>
+          <ul>
+            <li><a href="">Về FPTU</a></li>
+            <li><a href="">Cơ sử vật chất & campus</a></li>
+            <li><a href="">Đối tác & hợp tác quốc tế</a></li>
+            <li><a href="">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Truy cập nhanh</h3>
+          <ul>
+            <li><a href="">Thông tin tuyển sinh năm 2026</a></li>
+            <li><a href="">Open days</a></li>
+            <li><a href="">Học phí</a></li>
+            <li><a href="">Học bổng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Học tập tại FPTU</h3>
+          <ul>
+            <li><a href="">Ngành - Chuyên ngành đào tạo</a></li>
+            <li><a href="">Cuộc sống sinh viên</a></li>
+            <li><a href="">Dự án startup nổi bật</a></li>
+            <li><a href="">Trải nghiệm học tập toàn cầu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:(024) 7300 5588">(024) 7300 5588</a></li>
+          </ul>
+          <h3>Email</h3>
+          <ul>
+            <li><a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer-item sm">
+          <h3>Thông tin Campus</h3>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>HÀ NỘI <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu Giáo dục và Đào tạo - Khu Công nghệ cao Hòa Lạc - Km29 Đại lộ Thăng Long, Xã Hòa Lạc, TP. Hà Nội</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(024) 7300 5588">(024) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhanoi@fpt.edu.vn">tuyensinhhanoi@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>TP. HỒ CHÍ MINH <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(028) 7300 5588">(028) 7300 5588 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhhcm@fpt.edu.vn">tuyensinhhcm@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>ĐÀ NẴNG <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị công nghệ FPT Đà Nẵng, Phường Ngũ Hành Sơn, TP. Đà Nẵng</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0236) 730 0999">(0236) 730 0999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhdanang@fpt.edu.vn">tuyensinhdanang@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>CẦN THƠ <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Số 600, đường Nguyễn Văn Cừ (nối dài), Phường An Bình, Thành phố Cần Thơ</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0292) 730 3636">(0292) 730 3636 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhcantho@fpt.edu.vn">tuyensinhcantho@fpt.edu.vn</a>
+          </div>
+        </div>
+        <div class="footer-item footer-campus">
+          <h3>QUY NHƠN <img src="./images/icon-arrow-right-gray.svg" alt="" class="sm"></h3>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Khu đô thị mới An Phú Thịnh, Phường Quy Nhơn Đông, Tỉnh Gia Lai</p>
+          </div>
+          <div>
+            <h4>Hotline</h4>
+            <a href="tel:(0256) 7300 999">(0256) 7300 999 </a>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:tuyensinhquynhon@fpt.edu.vn">tuyensinhquynhon@fpt.edu.vn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bản quyền thuộc về Trường Đại học FPT.</p>
+        <div class="footer-social md">
+          <a href="https://www.facebook.com/university.fpt.edu.vn" target="_blank">
+            <img src="./images/icon-fb-color.svg" alt="">
+          </a>
+          <a href="https://zalo.me/daihocfpt" target="_blank">
+            <img src="./images/icon-zalo.svg" alt="">
+          </a>
+          <a href="https://www.youtube.com/@FPTUniversityChannel-1" target="_blank">
+            <img src="./images/icon-ytb-color.svg" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@fptuniversity?lang=vi-VN" target="_blank">
+            <img src="./images/icon-tiktok-color.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cta">
+    <a href="">
+      <img src="./images/icon-cta-icon1.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon2.svg" alt="">
+    </a>
+    <a href="">
+      <img src="./images/icon-cta-icon3.svg" alt="">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const media = window.matchMedia("(max-width: 767px)");
+    if (media.matches) {
+      const scholarshipExpertSlider = new Swiper('.scholarship-expert-swiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
+        navigation: {
+          nextEl: '.scholarship-expert-slider-btn .scholarship-expert-slider-btn-next',
+          prevEl: '.scholarship-expert-slider-btn .scholarship-expert-slider-btn-next',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+    const mediaMd = window.matchMedia("(max-width: 1023px)");
+    if (mediaMd.matches) {
+      const swiper = new Swiper('.scholarship-news-swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+  </script>
+  <script src="./index2.js"></script>
+</body>
+
+</html>
