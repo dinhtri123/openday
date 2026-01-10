@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   const header = document.querySelector("header");
   window.addEventListener("scroll", () => {
-    if(window.scrollY > 100) {
+    if (window.scrollY > 100) {
       header.classList.add("active");
     } else {
       header.classList.remove("active");
     }
-  }); 
+  });
   iconMenu.addEventListener("click", () => {
     headerNav.classList.toggle("active");
   });
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // tab
   const tabItems = document.querySelectorAll(".overview-train-tab-item");
   const trainContents = document.querySelectorAll(".train-content-tab");
-  if(tabItems.length > 0) {
+  if (tabItems.length > 0) {
     tabItems.forEach((tabItem) => {
       tabItem.addEventListener("click", () => {
         trainContents.forEach((trainContent) => {
@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // hover event
   const eventItems = document.querySelectorAll(".event-item");
   eventItems.forEach((eventItem) => {
-    if(mediaMd.matches) {
-    eventItem.addEventListener("mouseenter", () => {
+    if (mediaMd.matches) {
+      eventItem.addEventListener("mouseenter", () => {
         const img = eventItem.dataset.img;
         document.querySelector(".event-img img").src = img;
       });
-    }else {
+    } else {
       // eventItem.addEventListener("click", () => {
       //   const img = eventItem.dataset.img;
       //   document.querySelector(".event-img img").src = img;
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // show more major
   const btnShowMoreMajor = document.querySelector(".overview-major-btn");
-  if(btnShowMoreMajor) {
+  if (btnShowMoreMajor) {
     btnShowMoreMajor.addEventListener("click", (e) => {
       const majorList = document.querySelector(".overview-major-list");
       majorList.classList.toggle("active");
@@ -152,8 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // life desktop hover 
-  if(!media.matches) {
+  // life desktop hover
+  if (!media.matches) {
     const lifeDkItems = document.querySelectorAll(".life-dk-item");
     lifeDkItems.forEach((lifeDkItem) => {
       lifeDkItem.addEventListener("click", () => {
@@ -178,55 +178,69 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnNextCareer = document.querySelector(".career-right-bottom-btn-next");
   const careerImg = document.querySelector(".career-img");
   const careerImgItems = document.querySelectorAll(".career-img img");
-  const careerRightNumberCurrent = document.querySelector(".career-right-number-current");
-  if(btnPrevCareer && btnNextCareer && careerImg && careerRightNumberCurrent) {
+  const careerRightNumberCurrent = document.querySelector(
+    ".career-right-number-current"
+  );
+  if (btnPrevCareer && btnNextCareer && careerImg && careerRightNumberCurrent) {
     btnPrevCareer.addEventListener("click", () => {
       careerImg.scrollLeft -= careerImg.scrollWidth / careerImgItems.length;
     });
     btnNextCareer.addEventListener("click", () => {
-      careerImg.scrollLeft += careerImg.scrollWidth / careerImgItems.length; 
+      careerImg.scrollLeft += careerImg.scrollWidth / careerImgItems.length;
     });
     careerImg.addEventListener("scroll", () => {
       const itemWidth = careerImgItems[0].offsetWidth;
       const currentIndex = Math.round(careerImg.scrollLeft / itemWidth) + 1;
-      careerRightNumberCurrent.textContent = Math.min(currentIndex, careerImgItems.length);
+      careerRightNumberCurrent.textContent = Math.min(
+        currentIndex,
+        careerImgItems.length
+      );
     });
   }
   // recruitment faq
   const recruitmentFaqItems = document.querySelectorAll(".recuitment-faq-item");
-  recruitmentFaqItems.forEach((recruitmentFaqItem) => {
-    recruitmentFaqItem.addEventListener("click", () => {
-      recruitmentFaqItems.forEach((item) => {
-        item.classList.remove("active");
+  recruitmentFaqItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      recruitmentFaqItems.forEach((itemChild) => {
+        if (item !== itemChild) {
+          itemChild.classList.remove("active");
+        }
       });
-      recruitmentFaqItem.classList.add("active");
+      item.classList.toggle("active");
     });
   });
 
   // research partner slider
   const partnerSlider = document.querySelector(".research-partner-slider");
-  if(partnerSlider) {
-    const partnerSliderItems = document.querySelectorAll(".research-partner-item");
-    const partnerSliderPrev = document.querySelector(".research-partner-btn-prev");
-    const partnerSliderNext = document.querySelector(".research-partner-btn-next");
+  if (partnerSlider) {
+    const partnerSliderItems = document.querySelectorAll(
+      ".research-partner-item"
+    );
+    const partnerSliderPrev = document.querySelector(
+      ".research-partner-btn-prev"
+    );
+    const partnerSliderNext = document.querySelector(
+      ".research-partner-btn-next"
+    );
     const partnerMain = document.querySelector(".research-partner-main");
-    const partnerPagination = document.querySelector(".research-partner-pagination");
+    const partnerPagination = document.querySelector(
+      ".research-partner-pagination"
+    );
     const totalItems = partnerSliderItems.length;
     let currentIndex = 0;
     let isTransitioning = false;
     const gap = 32;
-    if(media.matches) {
+    if (media.matches) {
       visibleItems = 1;
-    }else {
+    } else {
       visibleItems = 3;
     }
     const originalItems = Array.from(partnerSliderItems);
-    originalItems.forEach(item => {
+    originalItems.forEach((item) => {
       const clone = item.cloneNode(true);
       partnerSlider.appendChild(clone);
-
     });
-    originalItems.forEach(item => {
+    originalItems.forEach((item) => {
       const clone = item.cloneNode(true);
       partnerSlider.insertBefore(clone, partnerSlider.lasttChild);
     });
@@ -234,28 +248,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const allItems = document.querySelectorAll(".research-partner-item");
     currentIndex = totalItems;
     for (let i = 0; i < totalItems; i++) {
-      const dot = document.createElement('span');
-      dot.classList.add('research-partner-dot');
+      const dot = document.createElement("span");
+      dot.classList.add("research-partner-dot");
       if (i === 0) {
-        dot.classList.add('active');
+        dot.classList.add("active");
       }
       dot.dataset.index = i;
       partnerPagination.appendChild(dot);
     }
-    const paginationDots = document.querySelectorAll('.research-partner-dot');
+    const paginationDots = document.querySelectorAll(".research-partner-dot");
 
     function updatePagination() {
       const realIndex = currentIndex % totalItems;
       paginationDots.forEach((dot, index) => {
-        dot.classList.remove('active');
+        dot.classList.remove("active");
         if (index === realIndex) {
-          dot.classList.add('active');
+          dot.classList.add("active");
         }
       });
     }
 
     paginationDots.forEach((dot) => {
-      dot.addEventListener('click', () => {
+      dot.addEventListener("click", () => {
         if (isTransitioning) return;
         const targetIndex = parseInt(dot.dataset.index);
         isTransitioning = true;
@@ -267,38 +281,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setItemWidths() {
       const containerWidth = partnerMain.offsetWidth;
-      const itemWidth = (containerWidth - gap * (visibleItems - 1)) / visibleItems;
-      allItems.forEach(item => {
+      const itemWidth =
+        (containerWidth - gap * (visibleItems - 1)) / visibleItems;
+      allItems.forEach((item) => {
         item.style.width = `${itemWidth}px`;
       });
       return itemWidth;
     }
 
     function updateSlider(animate = true) {
-      const itemWidth = setItemWidths(); 
-      const slideWidth = itemWidth + gap; 
+      const itemWidth = setItemWidths();
+      const slideWidth = itemWidth + gap;
       const containerWidth = partnerMain.offsetWidth;
-      const offset = (containerWidth - itemWidth) / 2; 
-      
+      const offset = (containerWidth - itemWidth) / 2;
+
       if (animate) {
-        partnerSlider.style.transition = 'transform 0.4s ease';
+        partnerSlider.style.transition = "transform 0.4s ease";
       } else {
-        partnerSlider.style.transition = 'none';
+        partnerSlider.style.transition = "none";
       }
-      partnerSlider.style.transform = `translateX(${offset - currentIndex * slideWidth}px)`;
-      
+      partnerSlider.style.transform = `translateX(${
+        offset - currentIndex * slideWidth
+      }px)`;
+
       allItems.forEach((item, index) => {
-        item.classList.remove('active');
+        item.classList.remove("active");
         if (index === currentIndex) {
-          item.classList.add('active');
+          item.classList.add("active");
         }
       });
       updatePagination();
     }
 
-    partnerSlider.addEventListener('transitionend', () => {
+    partnerSlider.addEventListener("transitionend", () => {
       isTransitioning = false;
-      
+
       if (currentIndex >= totalItems * 2) {
         currentIndex = totalItems;
         updateSlider(false);
@@ -309,78 +326,86 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    partnerSliderNext.addEventListener('click', () => {
+    partnerSliderNext.addEventListener("click", () => {
       if (isTransitioning) return;
       isTransitioning = true;
       currentIndex++;
       updateSlider();
     });
-    
-    partnerSliderPrev.addEventListener('click', () => {
+
+    partnerSliderPrev.addEventListener("click", () => {
       if (isTransitioning) return;
       isTransitioning = true;
       currentIndex--;
       updateSlider();
     });
-    
-    window.addEventListener('resize', () => updateSlider(false));
-    
+
+    window.addEventListener("resize", () => updateSlider(false));
+
     updateSlider(false);
   }
   // handle submenu
-  if(mediaMd.matches) {
+  if (mediaMd.matches) {
     const handleSubmenuOverflow = () => {
-      const subMenuParentItems = document.querySelectorAll(".header-menu > li > .sub-menu > li");
-      
+      const subMenuParentItems = document.querySelectorAll(
+        ".header-menu > li > .sub-menu > li"
+      );
+
       subMenuParentItems.forEach((item) => {
         const secondLevelSubmenu = item.querySelector(".sub-menu");
-        
+
         if (secondLevelSubmenu) {
           item.addEventListener("mouseenter", () => {
-            const firstLevelSubmenu = item.closest(".header-menu > li > .sub-menu");
+            const firstLevelSubmenu = item.closest(
+              ".header-menu > li > .sub-menu"
+            );
             const firstLevelRect = firstLevelSubmenu.getBoundingClientRect();
             const secondLevelWidth = secondLevelSubmenu.offsetWidth || 220;
-            const overflow = (firstLevelRect.right + secondLevelWidth) - window.innerWidth;
-            
+            const overflow =
+              firstLevelRect.right + secondLevelWidth - window.innerWidth;
+
             if (overflow > 0) {
               const shiftAmount = overflow;
-              const currentLeft = parseInt(getComputedStyle(firstLevelSubmenu).left) || -40;
+              const currentLeft =
+                parseInt(getComputedStyle(firstLevelSubmenu).left) || -40;
               firstLevelSubmenu.style.left = `${currentLeft - shiftAmount}px`;
-              firstLevelSubmenu.classList.add('shift-left');
+              firstLevelSubmenu.classList.add("shift-left");
             }
           });
-          
+
           item.addEventListener("mouseleave", () => {
-            const firstLevelSubmenu = item.closest(".header-menu > li > .sub-menu");
-            firstLevelSubmenu.style.left = '';
-            firstLevelSubmenu.classList.remove('shift-left');
+            const firstLevelSubmenu = item.closest(
+              ".header-menu > li > .sub-menu"
+            );
+            firstLevelSubmenu.style.left = "";
+            firstLevelSubmenu.classList.remove("shift-left");
           });
         }
       });
     };
-    
+
     handleSubmenuOverflow();
-    
-    window.addEventListener('resize', () => {
-      document.querySelectorAll('.sub-menu.shift-left').forEach(el => {
-        el.style.left = '';
-        el.classList.remove('shift-left');
+
+    window.addEventListener("resize", () => {
+      document.querySelectorAll(".sub-menu.shift-left").forEach((el) => {
+        el.style.left = "";
+        el.classList.remove("shift-left");
       });
     });
-  }else {
+  } else {
     const headerMenu = document.querySelector(".header-menu");
-    
+
     headerMenu?.addEventListener("click", (e) => {
       const clickedIcon = e.target.closest("i");
-      const clickedLink = e.target.closest("a"); 
-      if(clickedIcon && clickedLink) {
+      const clickedLink = e.target.closest("a");
+      if (clickedIcon && clickedLink) {
         const menuItem = e.target.closest("li");
         if (!menuItem) return;
         e.stopPropagation();
         e.preventDefault();
         const isTopLevel = menuItem.parentElement === headerMenu;
-        const siblingSelector = isTopLevel 
-          ? ".header-menu > li.active" 
+        const siblingSelector = isTopLevel
+          ? ".header-menu > li.active"
           : ".header-menu .sub-menu > li.active";
         document.querySelectorAll(siblingSelector).forEach((item) => {
           if (item !== menuItem) item.classList.remove("active");
@@ -392,21 +417,54 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  const sliders = document.querySelectorAll('.event-img-slider');
-    sliders.forEach(slider => {
-      new Swiper(slider, {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: {
-          el: slider.querySelector('.swiper-pagination'),
-          clickable: true,
-        },
-        navigation: {
-          nextEl: slider.querySelector('.swiper-button-next'),
-          prevEl: slider.querySelector('.swiper-button-prev'),
-        },
+  const sliders = document.querySelectorAll(".event-img-slider");
+  sliders.forEach((slider) => {
+    new Swiper(slider, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+    });
+  });
+  // scholarship form
+  const scholarshipFormTab = document.querySelectorAll(
+    ".scholarship-form-tab-item"
+  );
+  const scholarshipFormMain = document.querySelectorAll(
+    ".recruitment-form-main"
+  );
+  scholarshipFormTab.forEach((item) => {
+    item.addEventListener("click", () => {
+      scholarshipFormTab.forEach((itemChild) => {
+        itemChild.classList.remove("active");
+      });
+      scholarshipFormMain.forEach((itemChild) => {
+        itemChild.classList.remove("active");
+      });
+      const formId = item.dataset.formId;
+      const form = document.querySelector(`[data-form="${formId}"]`);
+      form.classList.add("active");
+      item.classList.add("active");
+    });
+  });
+  if (media.matches) {
+    const scholarshipFormItemTitle = document.querySelectorAll(
+      ".scholarship-form-item-title"
+    );
+    const scholarshipFormItem = document.querySelectorAll(
+      ".scholarship-form-item"
+    );
+    scholarshipFormItemTitle.forEach((item) => {
+      item.addEventListener("click", () => {
+        item.closest(".scholarship-form-item").classList.toggle("active-mobile");
       });
     });
-
+  }
 });
